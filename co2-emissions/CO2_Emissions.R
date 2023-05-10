@@ -2,7 +2,7 @@ library(tidyverse)
 library(readxl)
 library(scales)
 
-emissions <- read_xlsx(here::here("Everything","CO2_Emissions","annual-co2-emissions-per-country.xlsx"))
+emissions <- read_xlsx(here::here("co2-emissions","annual_co2_emissions.xlsx"))
 
 data1 <- subset(emissions, Entity == c("China", "India", "United States", "United Kingdom"))
 
