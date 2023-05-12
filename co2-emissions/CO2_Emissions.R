@@ -63,7 +63,7 @@ fig02 <- ggplot(data1, aes(x = Year, y = Emissions/1000000000, group = Entity, c
         legend.position = "none") + 
   coord_cartesian(clip = "off")
 
-ggsave(here::here("co2-emissions", "fig02_ciuu_original_recreation.png"), fig02, device = "png")
+ggsave(here::here("co2-emissions", "fig02_ciuu_full_unmasked.png"), fig02, device = "png")
 
 ## FIGURE 1: Y-AXIS MASKED
 
@@ -104,7 +104,7 @@ ggsave(here::here("co2-emissions", "fig01_ciuu_yaxis_masked.png"), fig01, device
 ## FIGURE 7: RECREATED GRAPHIC FOR FRUU
 
 #recreating US, UK, France, Russia Graph 
-fiog07 <- ggplot(data2, aes(x = Year, y = Emissions/1000000000, group = Entity, color = Entity)) +
+fig07 <- ggplot(data2, aes(x = Year, y = Emissions/1000000000, group = Entity, color = Entity)) +
   geom_line() + 
   geom_text(data = df2, aes(label = Entity), hjust = -0.1) +
   scale_color_manual(values = c("#c76c32", "#845ca2", "#24958f", "#d31f73")) +
@@ -134,7 +134,7 @@ fiog07 <- ggplot(data2, aes(x = Year, y = Emissions/1000000000, group = Entity, 
         legend.position = "none") + 
   coord_cartesian(clip = "off")
 
-ggsave(here::here("co2-emissions", "fig07_fruu_original_recreation.png"), fig07, device = "png")
+ggsave(here::here("co2-emissions", "fig07_fruu_full_unmasked.png"), fig07, device = "png")
 
 ## FIGURE 3: FULLY MASKED
 
