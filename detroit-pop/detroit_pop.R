@@ -1,16 +1,33 @@
+#
+# FILE:
+#  detroit_pop.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, code to save plots)
+
 library(tidyverse)
 library(readxl)
 library(scales)
 library(grid)
 
 #reading data in
-detroit <- read_xlsx(here::here("Everything","Detroit Pop Graph","DetroitPopData.xlsx"))
+detroit <- read_xlsx(here::here("detroit-pop", "detroit_pop_data.xlsx"))
 
-################# Part 1 #################
+## FIGURE 4: RECREATED GRAPHIC
 
 #full graph
 
-ggplot(detroit, aes(x = Year, y = Population)) + 
+fig04 <- ggplot(detroit, aes(x = Year, y = Population)) + 
   geom_line(color = "#006ab5", size = 0.8) + 
   scale_y_continuous(breaks = seq(0, 1200000, 200000), limits = c(0, 1200000), 
                      expand = c(0.02,0), label = comma) +
@@ -26,11 +43,13 @@ ggplot(detroit, aes(x = Year, y = Population)) +
   theme(axis.text.y = element_text(color = "black")) + 
   theme(axis.text.x = element_text(color = "black", size = 10))
 
-################# Part 2 #################
+ggsave(here::here("detroit-pop", "fig04_full_unmasked.png"), fig04, device = "png")
+
+## FIGURE 1: RECREATED GRAPHIC
 
 #everything masked
 
-ggplot(detroit, aes(x = Year, y = Population)) + 
+fig01 <- ggplot(detroit, aes(x = Year, y = Population)) + 
   geom_line(color = "#006ab5", size = 0.8) + 
   scale_y_continuous(breaks = seq(0, 1200000, 200000), limits = c(0, 1200000), 
                      expand = c(0.02,0), label = comma) +
@@ -46,11 +65,13 @@ ggplot(detroit, aes(x = Year, y = Population)) +
   theme(axis.text.y = element_text(color = "white")) + 
   theme(axis.text.x = element_text(color = "white"))
 
-################# Part 3 #################
+ggsave(here::here("detroit-pop", "fig01_full_masked.png"), fig01, device = "png")
+
+## FIGURE 2: X-AXIS UNMASKED
 
 #only x axis revealed
 
-ggplot(detroit, aes(x = Year, y = Population)) + 
+fig02 <- ggplot(detroit, aes(x = Year, y = Population)) + 
   geom_line(color = "#006ab5", size = 0.8) + 
   scale_y_continuous(breaks = seq(0, 1200000, 200000), limits = c(0, 1200000), 
                      expand = c(0.02,0), label = comma) +
@@ -66,11 +87,13 @@ ggplot(detroit, aes(x = Year, y = Population)) +
   theme(axis.text.x = element_text(color = "black")) + 
   theme(axis.text.y = element_text(color = "white"))
 
-################# Part 4 #################
+ggsave(here::here("detroit-pop", "fig02_xaxis_unmasked.png"), fig02, device = "png")
+
+## FIGURE 3: Y-AXIS UNMASKED
 
 #x and y axis revealed
 
-ggplot(detroit, aes(x = Year, y = Population)) + 
+fig03 <- ggplot(detroit, aes(x = Year, y = Population)) + 
   geom_line(color = "#006ab5", size = 0.8) + 
   scale_y_continuous(breaks = seq(0, 1200000, 200000), limits = c(0, 1200000), 
                      expand = c(0.02,0), label = comma) +
@@ -85,3 +108,5 @@ ggplot(detroit, aes(x = Year, y = Population)) +
   theme(plot.title = element_text(size = 17, vjust = 2, hjust = 0.05)) + 
   theme(axis.text.y = element_text(color = "black")) + 
   theme(axis.text.x = element_text(color = "black", size = 10))
+
+ggsave(here::here("detroit-pop", "fig03_yaxis_unmasked.png"), fig03, device = "png")
