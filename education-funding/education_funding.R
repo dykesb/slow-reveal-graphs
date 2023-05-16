@@ -1,3 +1,20 @@
+#
+# FILE:
+#  education_funding.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, update file names)
+
 library(tidyverse)
 library(readxl)
 library(scales)
@@ -5,7 +22,7 @@ library(grid)
 library(ggrepel)
 
 #reading data in
-education <- read_xlsx(here::here("Everything","EducationFunding","EducationFundingData.xlsx"))
+education <- read_xlsx(here::here("education-funding","education_funding_data.xlsx"))
 
 df <- subset(education, Year == 2014)
 df1 <- subset(education, Country == "United Kingdom", Year = 2012)
