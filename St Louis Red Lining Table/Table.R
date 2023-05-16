@@ -1,4 +1,4 @@
-
+# https://storymaps.arcgis.com/stories/0f58d49c566b486482b3e64e9e5f7ac9?fbclid=IwAR1mHkKvDnZ9IKVgFFa3YQgn5KHzLHz02yhpDYzt2gMpIVI_R53w6BFsrgI
 
 library(tidyverse)
 library(gt)
@@ -6,8 +6,8 @@ library(gtExtras)
 
 # arrows
 
-up_arrow <- magick::image_read_svg(here::here('St Louis Red Lining Table', 'noun-arrow-1389952.svg')) %>%
-  image_scale("x15")
+# up_arrow <- magick::image_read_svg(here::here('St Louis Red Lining Table', 'noun-arrow-1389952.svg')) %>%
+#   image_scale("x15")
 
 # tidy dataframe
 stl_table <- tibble(
@@ -50,8 +50,8 @@ stl_table_rotated <- stl_table %>%
     A_diff_D = if_else(A_diff_D > 0, 
                        glue::glue("\U1F845 {if_else(between(A_diff_D, 0, 1), scales::percent(A_diff_D, accuracy = 1), scales::comma(A_diff_D, accuracy = 1))}"), 
                        glue::glue("\U1F847 {if_else(between(A_diff_D, -1, 0), scales::percent(abs(A_diff_D), accuracy = 1), scales::comma(abs(A_diff_D), accuracy = 1))}")),
-    A = glue::glue("{if_else(between(A, 0, 1), scales::percent(A, accuracy = 1), scales::comma(A, accuracy = 1))}"),
-    B = glue::glue("{if_else(between(B, 0, 1), scales::percent(B, accuracy = 1), scales::comma(A_diff_D, accuracy = 1))} {A_diff_B}"),
+    # A = glue::glue("{C} {A_diff_C}"),
+    B = glue::glue("{C} {A_diff_C}"),
     C = glue::glue("{C} {A_diff_C}"),
     D = glue::glue("{D} {A_diff_D}"),
     ) %>% 
