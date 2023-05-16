@@ -1,14 +1,33 @@
+#
+# FILE:
+#  detroit_pop.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, code to save plots)
+
 library(tidyverse)
 library(readxl)
 
-voyages <- read_xls(here::here("Slave Voyage Graph","Slave.xls")) %>% 
+voyages <- read_xls(here::here("slave-voyage","slave_voyage_data.xls")) %>% 
   rename("Embarked" = `Embarked Slaves`,
          "Disembarked" = `Disembarked Slaves`)
+
+## FIGURE 1: FULLY MASKED
 
 # Disembarked #008080
 # Embarked #AFEEEE
 
-ggplot(voyages) + 
+fig01 <- ggplot(voyages) + 
   geom_col(aes(x = Year, y = Embarked, color = "Embarked", fill = "Embarked")) +
   #geom_col(aes(x = Year, y = Disembarked, color = "Disembarked", fill = "Disembarked")) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)), breaks = seq(0, 130000, 20000),
@@ -43,10 +62,14 @@ ggplot(voyages) +
         legend.key = element_rect(color = "white")
         )
 
+ggsave(here::here("slave-voyage", "01_full_masked.png"), fig01)
+
+## FIGURE 2: LAYER 2 ADDED
+
 # Disembarked #008080
 # Embarked #AFEEEE
 
-ggplot(voyages) + 
+fig02 <- ggplot(voyages) + 
   geom_col(aes(x = Year, y = Embarked, color = "Embarked", fill = "Embarked")) +
   geom_col(aes(x = Year, y = Disembarked, color = "Disembarked", fill = "Disembarked")) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)), breaks = seq(0, 130000, 20000),
@@ -81,10 +104,14 @@ ggplot(voyages) +
         legend.key = element_rect(color = "white")
         )
 
+ggsave(here::here("slave-voyage", "02_layer2_unmasked.png"), fig02)
+
+## FIGURE 3: X AXIS UNMASKED
+
 # Disembarked #008080
 # Embarked #AFEEEE
 
-ggplot(voyages) + 
+fig03 <- ggplot(voyages) + 
   geom_col(aes(x = Year, y = Embarked, color = "Embarked", fill = "Embarked")) +
   geom_col(aes(x = Year, y = Disembarked, color = "Disembarked", fill = "Disembarked")) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)), breaks = seq(0, 130000, 20000),
@@ -118,10 +145,14 @@ ggplot(voyages) +
         legend.key = element_rect(color = "white")
         )
 
+ggsave(here::here("slave-voyage", "03_xaxis_unmasked.png"), fig03)
+
+## FIGURE 4: Y AXIS REVEALED
+
 # Disembarked #008080
 # Embarked #AFEEEE
 
-ggplot(voyages) + 
+fig04 <- ggplot(voyages) + 
   geom_col(aes(x = Year, y = Embarked, color = "Embarked", fill = "Embarked")) +
   geom_col(aes(x = Year, y = Disembarked, color = "Disembarked", fill = "Disembarked")) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)), breaks = seq(0, 130000, 20000),
@@ -153,10 +184,14 @@ ggplot(voyages) +
         legend.title = element_text(color = "white"),
         legend.key = element_rect(color = "white"))
 
+ggsave(here::here("slave-voyage", "04_yaxis_unmasked.png"), fig04)
+
+## FIGURE 5: LEGEND UNMASKED
+
 # Disembarked #008080
 # Embarked #AFEEEE
 
-ggplot(voyages) + 
+fig05 <- ggplot(voyages) + 
   geom_col(aes(x = Year, y = Embarked, color = "Embarked", fill = "Embarked")) +
   geom_col(aes(x = Year, y = Disembarked, color = "Disembarked", fill = "Disembarked")) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)), breaks = seq(0, 130000, 20000),
@@ -184,10 +219,14 @@ ggplot(voyages) +
         legend.key.width = unit(0.35, "cm"),
         legend.key.height = unit(0.25, "cm"))
 
+ggsave(here::here("slave-voyage", "05_legend_unmasked.png"), fig05)
+
+## FIGURE 6: FULLY UNMASKED
+
 # Disembarked #008080
 # Embarked #AFEEEE
 
-ggplot(voyages) + 
+fig06 <- ggplot(voyages) + 
   geom_col(aes(x = Year, y = Embarked, color = "Embarked", fill = "Embarked")) +
   geom_col(aes(x = Year, y = Disembarked, color = "Disembarked", fill = "Disembarked")) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)), breaks = seq(0, 130000, 20000),
@@ -214,4 +253,6 @@ ggplot(voyages) +
         legend.justification = "left",
         legend.key.width = unit(0.35, "cm"),
         legend.key.height = unit(0.25, "cm"))
+
+ggsave(here::here("slave-voyage", "06_full_unmasked.png"), fig06)
 

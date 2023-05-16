@@ -1,9 +1,26 @@
+#
+# FILE:
+#  march_to_moscow.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, code to save plots)
+
 library(tidyverse)
 library(ggrepel)
 
-troops <- read.table("~/Everything/March_to_Moscow_Graph/troops.txt", header=T)
-cities <- read.table("~/Everything/March_to_Moscow_Graph/cities.txt", header=T)
-temps <- read.table("~/Everything/March_to_Moscow_Graph/temps.txt", header=T)
+troops <- read.table("march-to-moscow/troops.txt", header=T)
+cities <- read.table("march-to-moscow/cities.txt", header=T)
+temps <- read.table("march-to-moscow/temps.txt", header=T)
 temps$date <- as.Date(strptime(temps$date,"%d%b%Y"))
 
 # library(maps)
@@ -12,7 +29,7 @@ temps$date <- as.Date(strptime(temps$date,"%d%b%Y"))
 xlim <- scale_x_continuous(limits = c(24, 39))
 
 ggplot(cities, aes(x = long, y = lat)) + 
-  geom_path(aes(size = survivors, colour = direction, group = group), 
+  geom_path(aes(linewidth = survivors, colour = direction, group = group), 
             data=troops, lineend = "round") + #lineend from https://www.andrewheiss.com/blog/2017/08/10/exploring-minards-1812-plot-with-ggplot2/
   geom_point() + 
   geom_text(aes(label = city), hjust=0, vjust=1, size=4) + 
