@@ -1,3 +1,20 @@
+#
+# FILE:
+#  redlining.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, code to save plots)
+
 library(tidyverse)
 library(readxl)
 library(scales)
@@ -5,7 +22,7 @@ library(grid)
 library(ggrepel)
 library(showtext)
 
-redlining <- read_xlsx(here::here("Everything","Redlining_Graph","RedliningData.xlsx"))
+redlining <- read_xlsx(here::here("redlining","redlining_data.xlsx"))
 
 font_add_google(name = "Merriweather", family = "Merriweather")
 
@@ -20,11 +37,11 @@ showtext_auto()
 
 #recreating whole graph
 
-ggplot(redlining, aes(x = Year, y = Percent, group = Group, color = Group)) + 
+fig06 <- ggplot(redlining, aes(x = Year, y = Percent, group = Group, color = Group)) + 
   geom_line(size = 0.6) + 
   geom_point(data = redlining %>% filter(Year == last(Year)), size = 1.6) +
   geom_text(data = redlining %>% filter(Year == last(Year)), aes(label = Group),
-            color = "black", hjust = -1.5, size = 3) +
+            color = "black", hjust = -1.5, size = 10) +
   scale_y_continuous(breaks = seq(0, 40, 10), limits = c(0, 46),
                      expand = c(0,0), labels = c("0", "10", "20", "30","40" = "40 % black")) + 
   scale_x_continuous(breaks = seq(1910, 2012, 10), expand = c(0,0)) + 
@@ -35,17 +52,20 @@ ggplot(redlining, aes(x = Year, y = Percent, group = Group, color = Group)) +
   theme_bw() + 
   theme(axis.ticks.y = element_blank(), 
         axis.ticks.length.x = unit(.20, "cm"), 
-        axis.line.x = element_line(color = "black", size = 0.3),
+        axis.line.x = element_line(color = "black", linewidth = 0.3),
         axis.title = element_blank(),
-        axis.text.y = element_text(hjust = 1),
+        axis.text.y = element_text(hjust = 1, size = 30),
+        axis.text.x = element_text(size = 25),
         panel.grid.minor = element_blank(),
         panel.grid.major.x = element_blank(),
         panel.border = element_blank(), 
         plot.margin = margin(30,30,20,10), 
-        plot.title = element_text(size = 18, vjust = 6, family = "Prompt", color = "#515151"),
-        plot.subtitle = element_text(family = "Merriweather", size = 11, 
-                                     color = "#616161", vjust = 8),
-        plot.caption = element_text(color = "#a3a3a3", hjust = 0, vjust = -3),
+        plot.title = element_text(size = 40, vjust = 6, family = "Prompt", color = "#515151", lineheight = 0.5),
+        plot.subtitle = element_text(family = "Merriweather", size = 30, 
+                                     color = "#616161", vjust = 5, lineheight = 0.5),
+        plot.caption = element_text(color = "#a3a3a3", hjust = 0, vjust = -3, size = 20, lineheight = 0.5),
         legend.position = "none") +
   coord_cartesian(clip = "off")
+
+ggsave(here::here("redlining", "06_full_unmasked.png"), fig06)
 
