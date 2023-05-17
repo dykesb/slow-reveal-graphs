@@ -1,18 +1,35 @@
+#
+# FILE:
+#  vote.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, code to save plots)
+
 library(tidyverse)
 library(readxl)
 library(scales)
 
 #reading data in
-vote <- read_xlsx(here::here("Everything","Vote","VoteData1.xlsx"))
+vote <- read_xlsx(here::here("vote","vote_data1.xlsx"))
 
 votew1 <- subset(vote, Gender != "Men") 
 
 votem1 <- subset(vote, Gender != "Women")
 
-################# Part 1 #################
+## FIGURE 1: FIRST RECREATED GRAPHIC
 
 #creating first, full graph
-ggplot(vote, aes(x = Year, y = Percent, Group = Gender)) + 
+fig01 <- ggplot(vote, aes(x = Year, y = Percent, Group = Gender)) + 
   geom_line(aes(color = Gender)) + 
   geom_point(aes(color = Gender)) + 
   labs(title = "Figure 1. Proportion of Eligble Adult Population Who Reported Voting",
@@ -35,17 +52,19 @@ ggplot(vote, aes(x = Year, y = Percent, Group = Gender)) +
   theme(legend.key.size = unit(2, "line")) +
   coord_fixed(ratio = 0.5) #changes the ratio of the x and y axis to create rectangular graph
 
+ggsave(here::here("vote", "01_prop_vote_full_unmasked.png"), fig01)
 
-################# Part 2 #################
 
-vote2 <- read_xlsx(here::here("Vote", "VoteData2.xlsx"))
+## FIGURE 1: SECOND RECREATED GRAPHIC
+
+vote2 <- read_xlsx(here::here("vote", "vote_data2.xlsx"))
 
 votew2 <- subset(vote2, Gender != "Men Who Reported Voting") 
 
 votem2 <- subset(vote2, Gender != "Women Who Reported Voting")
 
 #creating second, full graph
-ggplot(vote2, aes(x = Year, y = Number, Group = Gender)) + 
+fig02 <- ggplot(vote2, aes(x = Year, y = Number, Group = Gender)) + 
   geom_line(aes(color = Gender)) + 
   geom_point(aes(color = Gender)) + 
   labs(title = "Figure 2. Number Who Reported Voting",
@@ -68,4 +87,7 @@ ggplot(vote2, aes(x = Year, y = Number, Group = Gender)) +
   theme(legend.key.size = unit(2, "line")) +
   theme(axis.title.y = element_text(face = "bold", size = 10)) +
   coord_fixed(ratio = 0.2) #changes the ratio of the x and y axis to create rectangular graph
+
+ggsave(here::here("vote", "02_nvoters_full_unmasked.png"), fig02)
+
 
