@@ -1,15 +1,32 @@
+#
+# FILE:
+#  labor_force.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, code to save plots)
+
 library(tidyverse)
 library(readxl)
 library(scales)
 
 #reading data in
-labor <- read_xlsx(here::here("Everything","Labor Force Graph","Labor Force Data.xlsx"))
+labor <- read_xlsx(here::here("labor-force","labor_force_data.xlsx"))
 
-################# Part 1 #################
+## FIGURE 5: RECREATED GRAPHIC
 
 #creating original, full graph
 # color of line = #0F05A5
-ggplot(labor) + 
+fig05 <- ggplot(labor) + 
   
   #creates line and groups linetype by Projected Rate (values = rate & projected rate)
   geom_line(aes(x = Year, y = Percent/100, linetype = Proj), color = "#0F05A5") + 
@@ -53,11 +70,13 @@ ggplot(labor) +
   theme(plot.title = element_text(face = "bold")) + #makes title bold
   theme(plot.title.position = "plot") #positions the title to the left
 
-################# Part 2 #################
+ggsave(here::here("labor-force", "05_full_unmasked.png"), fig05, width = 8.81, height = 6.19, units = "in")
+
+## FIGURE 4: LABEL REVEALED
 
 #attempting to conceal title
 
-ggplot(labor) + 
+fig04 <- ggplot(labor) + 
   
   #creates line and groups linetype by Projected Rate (values = rate & projected rate)
   geom_line(aes(x = Year, y = Percent/100, linetype = Proj), color = "#0F05A5") + 
@@ -101,11 +120,13 @@ ggplot(labor) +
   theme(plot.title = element_text(face = "bold")) + #makes title bold
   theme(plot.title.position = "plot") #positions the title to the left
 
-################# Part 3 #################
+ggsave(here::here("labor-force", "04_label_unmasked.png"))
+
+## FIGURE 3: REVEAL Y AXIS
 
 #attempting to conceal linetype legend
 
-ggplot(labor) + 
+fig03 <- ggplot(labor) + 
   
   #creates line and groups linetype by Projected Rate (values = rate & projected rate)
   geom_line(aes(x = Year, y = Percent/100, linetype = Proj), color = "#0F05A5") + 
@@ -150,11 +171,13 @@ ggplot(labor) +
   theme(plot.title.position = "plot") + #positions the title to the left
   theme(legend.position = 'none') #conceals linetype legend
 
-################# Part 4 #################
+ggsave(here::here("labor-force", "03_yaxis_unmasked.png"))
+
+## FIGURE 2: REVEAL X AXIS
 
 #attempting to conceal y-axis values
 
-ggplot(labor) + 
+fig02 <- ggplot(labor) + 
   
   #creates line and groups linetype by Projected Rate (values = rate & projected rate)
   geom_line(aes(x = Year, y = Percent/100, linetype = Proj), color = "#0F05A5") + 
@@ -199,11 +222,13 @@ ggplot(labor) +
   theme(plot.title.position = "plot") + #positions the title to the left
   theme(legend.position = 'none') #conceals linetype legend
 
-################# Part 5 #################
+ggsave(here::here("labor-force", "02_xaxis_unmasked.png"))
 
-#attempting to conceal x-axis values, intial graph with nothing but line
+## FIGURE 1: FULLY MASKED
 
-ggplot(labor) + 
+#attempting to conceal x-axis values, initial graph with nothing but line
+
+fig01 <- ggplot(labor) + 
   
   #creates line and groups linetype by Projected Rate (values = rate & projected rate)
   geom_line(aes(x = Year, y = Percent/100, linetype = Proj), color = "#0F05A5") + 
@@ -247,4 +272,6 @@ ggplot(labor) +
   theme(plot.title = element_text(face = "bold")) + #makes title bold
   theme(plot.title.position = "plot") + #positions the title to the left
   theme(legend.position = 'none') #conceals linetype legend
+
+ggsave(here::here("labor-force", "01_full_masked.png"), fig01)
   

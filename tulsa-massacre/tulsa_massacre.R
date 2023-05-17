@@ -1,11 +1,30 @@
-devtools::install_github("associatedpress/aptheme")
-install.packages("magick")
+#
+# FILE:
+#  tulsa_massacre.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, code to save plots)
+
 library(magick)
 library(tidyverse)
 library(readxl)
 library(aptheme)
+library(scales)
+# library(extrafont)
+# font_import()
+# loadfonts()
 
-tulsa <- read_xlsx(here::here("Everything","Tulsa_Massacre", "Tulsa Massacre Data.xlsx"))
+tulsa <- read_xlsx(here::here("tulsa-massacre", "tulsa_massacre_data.xlsx"))
 
 tulsa_low <- filter(tulsa, Loss == 444000, Type == "PRESENT-DAY VALUE")
 
@@ -46,16 +65,16 @@ ggplot(tulsa, aes(x = Loss, y = reorder(Name, Loss))) +
   theme(panel.grid.major = element_blank()) + 
   theme(strip.background = element_blank()) + 
   theme(strip.text = element_text(size = 10, family = "URWGothic", color = "black", hjust = 0.02, vjust = 2)) + 
-  geom_hline(yintercept = 1.5, color = "#e5e5e5", size = 0.5, linetype = "dotted") + #all of these add dotted lines at the specified y values
-  geom_hline(yintercept = 2.5, color = "#e5e5e5", size = 0.5, linetype = "dotted") +
-  geom_hline(yintercept = 3.5, color = "#e5e5e5", size = 0.5, linetype = "dotted") + 
-  geom_hline(yintercept = 4.5, color = "#e5e5e5", size = 0.5, linetype = "dotted") +
-  geom_hline(yintercept = 5.5, color = "#e5e5e5", size = 0.5, linetype = "dotted") + 
-  geom_hline(yintercept = 6.5, color = "#e5e5e5", size = 0.5, linetype = "dotted") + 
-  geom_hline(yintercept = 7.5, color = "#e5e5e5", size = 0.5, linetype = "dotted") + 
-  geom_hline(yintercept = 8.5, color = "#e5e5e5", size = 0.5, linetype = "dotted") + 
-  geom_hline(yintercept = 9.5, color = "#e5e5e5", size = 0.5, linetype = "dotted") + 
-  geom_hline(yintercept = 10.5, color = "black", size = 0.3) + 
+  geom_hline(yintercept = 1.5, color = "#e5e5e5", linewidth = 0.5, linetype = "dotted") + #all of these add dotted lines at the specified y values
+  geom_hline(yintercept = 2.5, color = "#e5e5e5", linewidth = 0.5, linetype = "dotted") +
+  geom_hline(yintercept = 3.5, color = "#e5e5e5", linewidth = 0.5, linetype = "dotted") + 
+  geom_hline(yintercept = 4.5, color = "#e5e5e5", linewidth = 0.5, linetype = "dotted") +
+  geom_hline(yintercept = 5.5, color = "#e5e5e5", linewidth = 0.5, linetype = "dotted") + 
+  geom_hline(yintercept = 6.5, color = "#e5e5e5", linewidth = 0.5, linetype = "dotted") + 
+  geom_hline(yintercept = 7.5, color = "#e5e5e5", linewidth = 0.5, linetype = "dotted") + 
+  geom_hline(yintercept = 8.5, color = "#e5e5e5", linewidth = 0.5, linetype = "dotted") + 
+  geom_hline(yintercept = 9.5, color = "#e5e5e5", linewidth = 0.5, linetype = "dotted") + 
+  geom_hline(yintercept = 10.5, color = "black", linewidth = 0.3) + 
   coord_cartesian(clip = "off")
 
-ggsave("tulsa.png")
+ggsave("fig01_full_unmasked.png")

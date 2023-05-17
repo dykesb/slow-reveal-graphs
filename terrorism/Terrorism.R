@@ -1,19 +1,36 @@
+#
+# FILE:
+#  terrorism.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, code to save plots)
+
 library(tidyverse)
 library(readxl)
 library(scales)
 library(grid)
 
 #reading data in
-terror <- read_xlsx(here::here("Everything","Terrorism Graph","Terrorism Data.xlsx"))
+terror <- read_xlsx(here::here("terrorism","terrorism_data.xlsx"))
 
 df <- terror %>%
   slice(which.max(Year))
 
-################# Part 1 #################
+## FIGURE 5: RECREATED GRAPHIC
 
 #full graph
 
-ggplot(terror, aes(x = Year, y = Deaths)) + 
+fig05 <- ggplot(terror, aes(x = Year, y = Deaths)) + 
   geom_line(color = "#3c4e66") + 
   geom_point(color = "#3c4e66", size = 0.6) + 
   scale_x_continuous(breaks = c(1990, 1995, 2000, 2005, 2010, 2015, 2017), limits = c(1990, 2017), expand = c(0,0)) + #breaks format manually specifies break values
@@ -36,11 +53,13 @@ ggplot(terror, aes(x = Year, y = Deaths)) +
   theme(plot.margin = margin(10, 80, 10, 5)) + 
   coord_cartesian(clip = 'off') #stops points (and text) from being cropped by axes
 
-################# Part 2 #################
+ggsave(here::here("terrorism", "05_full_unmasked.png"), fig05)
+
+## FIGURE 1: FULLY MASKED
 
 #everything masked
 
-ggplot(terror, aes(x = Year, y = Deaths)) + 
+fig01 <- ggplot(terror, aes(x = Year, y = Deaths)) + 
   geom_line(color = "#3c4e66") + 
   geom_point(color = "#3c4e66", size = 0.6) + 
   scale_x_continuous(breaks = c(1990, 1995, 2000, 2005, 2010, 2015, 2017), limits = c(1990, 2017), expand = c(0,0)) + #breaks format manually specifies break values
@@ -63,11 +82,13 @@ ggplot(terror, aes(x = Year, y = Deaths)) +
   theme(plot.margin = margin(10, 80, 10, 5)) + 
   coord_cartesian(clip = 'off') #stops points (and text) from being cropped by axes
 
-################# Part 3 #################
+ggsave(here::here("terrorism", "01_full_masked.png"), fig01)
+
+## FIGURE 2: X AXIS REVEALED
 
 #x axis revealed
 
-ggplot(terror, aes(x = Year, y = Deaths)) + 
+fig02 <- ggplot(terror, aes(x = Year, y = Deaths)) + 
   geom_line(color = "#3c4e66") + 
   geom_point(color = "#3c4e66", size = 0.6) + 
   scale_x_continuous(breaks = c(1990, 1995, 2000, 2005, 2010, 2015, 2017), limits = c(1990, 2017), expand = c(0,0)) + #breaks format manually specifies break values
@@ -90,11 +111,13 @@ ggplot(terror, aes(x = Year, y = Deaths)) +
   theme(plot.margin = margin(10, 80, 10, 5)) + 
   coord_cartesian(clip = 'off') #stops points (and text) from being cropped by axes
 
-################# Part 4 #################
+ggsave(here::here("terrorism", "02_xaxis_unmasked.png"), fig02)
+
+## FIGURE 3: Y AXIS REVEALED
 
 #y and x axis revealed
 
-ggplot(terror, aes(x = Year, y = Deaths)) + 
+fig03 <- ggplot(terror, aes(x = Year, y = Deaths)) + 
   geom_line(color = "#3c4e66") + 
   geom_point(color = "#3c4e66", size = 0.6) + 
   scale_x_continuous(breaks = c(1990, 1995, 2000, 2005, 2010, 2015, 2017), limits = c(1990, 2017), expand = c(0,0)) + #breaks format manually specifies break values
@@ -116,11 +139,13 @@ ggplot(terror, aes(x = Year, y = Deaths)) +
   theme(plot.margin = margin(10, 80, 10, 5)) + 
   coord_cartesian(clip = 'off') #stops points (and text) from being cropped by axes
 
-################# Part 5 #################
+ggsave(here::here("terrorism", "03_yaxis_unmasked.png"), fig03)
+
+## FIGURE 4: POINTS AND TEXT REVEALED
 
 #x and y axes + points + united states text revealed
 
-ggplot(terror, aes(x = Year, y = Deaths)) + 
+fig04 <- ggplot(terror, aes(x = Year, y = Deaths)) + 
   geom_line(color = "#3c4e66") + 
   geom_point(color = "#3c4e66", size = 0.6) + 
   scale_x_continuous(breaks = c(1990, 1995, 2000, 2005, 2010, 2015, 2017), limits = c(1990, 2017), expand = c(0,0)) + #breaks format manually specifies break values
@@ -141,3 +166,5 @@ ggplot(terror, aes(x = Year, y = Deaths)) +
   theme(plot.subtitle = element_text(family = "Times New Roman", size = 12, color = "#555555")) +
   theme(plot.margin = margin(10, 80, 10, 5)) + 
   coord_cartesian(clip = 'off') #stops points (and text) from being cropped by axes
+
+ggsave(here::here("terrorism", "04_points_text_unmasked.png"), fig04)

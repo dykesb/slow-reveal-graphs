@@ -1,10 +1,27 @@
+#
+# FILE:
+#  may2020_unemployment_by_state.R
+#
+# DESCRIPTION:
+#  Brief description of the plot, including original source/citation
+#
+# SLOW REVEAL ORDER:
+#   1. List
+#   2. Out
+#   ...
+#   n. Order
+#
+# AUTHORS:
+#   Ellie (2021, main code)
+#   Ian Curtis (2023, code to save plots)
+
 library(tidyverse)
 library(readxl)
 library(scales)
 library(data.table)
 
 #reading data in
-unemploy <- read_xlsx(here::here("Everything","May 2020 Unemployment by State Graph","State Unemployment Rate.xlsx"))
+unemploy <- read_xlsx(here::here("may2020-unemployment-by-state","may2020_umemployment_by_state_data.xlsx"))
 
 ################# Part 1 #################
 
@@ -20,7 +37,7 @@ largest <- unemploy %>%
   slice(which.max(Rate)) #creating subset of data with largest rate
 
 #reorder function orders chart from smallest to greatest values
-ggplot(data = unemploy, aes(x = reorder(State, Rate), y = Rate/100,
+fig05 <- ggplot(data = unemploy, aes(x = reorder(State, Rate), y = Rate/100,
        fill = factor(ifelse(State %in% c("Nebraska", "Nevada"),"Highlighted","Normal")))) + #makes it possible to only highlight navada and nebraska
   geom_col(width = 0.6, show.legend = FALSE) + #show legend = false removes area legend
   geom_text(data = smallest, color = "#808080", aes(x = State, y = Rate/100 + 0.01, label = sprintf("%0.1f", round(Rate, digits = 3)))) + #Gets percentage over smallest bar
@@ -41,4 +58,6 @@ ggplot(data = unemploy, aes(x = reorder(State, Rate), y = Rate/100,
   theme(plot.title = element_text(face = "bold", size = 16, vjust = 3, hjust = 0.081)) + #hjust and vjust adjust title horizontally and vertically
   theme(plot.title.position = "plot") + 
   theme(plot.margin = margin(15, 10, 10, 10)) #makes the upper margin larger so title isn't cut off
+
+ggsave(here::here("may2020-unemployment-by-state", "05_full_unmasked.png"), fig05)
   
