@@ -3,16 +3,18 @@
 #  agricultural_revolution.R
 #
 # DESCRIPTION:
-#  Brief description of the plot, including original source/citation
-#
+# Agricultural Revolution: World Population'
+# Original source not specified by teacher. Assuming it's from LOC. 
+
 # SLOW REVEAL ORDER:
-#   1. List
-#   2. Out
-#   ...
-#   n. Order
+#   1. Completely masked 
+#   2. x-axis revealed
+#   3. y-axis and x-axis title revealed 
+#   4. Y-axis title revealed
+#   5. Title and caption revealed
 #
 # AUTHORS:
-#   Lauryn Davis (main code)
+#   Lauryn Davis (main code, last edit: 3/25/23)
 #   Ian Curtis (2023, code to save plots)
 
 library(ggtext)
