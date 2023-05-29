@@ -3,6 +3,7 @@
 library(tidyverse)
 library(gt)
 library(gtExtras)
+library(fontawesome)
 
 # arrows
 
@@ -22,20 +23,6 @@ stl_table <- tibble(
 
 # descriptive names
 measures <- c("Total\nPopulation", "Median\nHome Value", "Median Household\nIncome", "Owner Occupied\nHousing Units", "Bachelors Degree or\nHigher")
-
-gluing <- function(var1, var2, direction) {
-  if (direction == "up") {
-    str_glue("\U02191 {x}",
-               x = var1)
-  }
-  else if (direction == "down") {
-    str_glue("\U02193 {str_remove(x, '-')}",
-               x = var1)
-  }
-  else if (direction == "together") {
-    paste(var1, "\n", var2, sep = " ")
-  }
-}
 
 row_types <- c('num', 'dollar', 'dollar', 'pct', 'pct')
 
@@ -68,23 +55,24 @@ stl_table_format <- stl_table_rotated %>%
   pivot_longer(cols = num:pct, names_to = "type", values_to = "values") %>% 
   select(-type) %>% 
   na.omit() %>% 
-  pivot_wider(names_from = var, values_from = values) %>% 
-  mutate(
-    A_diff_B = if_else(str_starts(A_diff_B, "-"),
-                       gluing(A_diff_B, NULL,  "down"),
-                       gluing(A_diff_B, NULL, "up")),
-
-    A_diff_C = if_else(str_starts(A_diff_C, "-"),
-                       gluing(A_diff_C, NULL, "down"),
-                       gluing(A_diff_C, NULL, "up")),
-
-    A_diff_D = if_else(str_starts(A_diff_D, "-"),
-                       gluing(A_diff_D, NULL, "down"),
-                       gluing(A_diff_D, NULL, "up")),
+  pivot_wider(names_from = var, values_from = values) #%>% 
+  # mutate(
+  #   A_diff_B = if_else(str_starts(A_diff_B, "-"),
+  #                      gluing(A_diff_B, NULL,  "down"),
+  #                      gluing(A_diff_B, NULL, "up")),
+  # 
+  #   A_diff_C = if_else(str_starts(A_diff_C, "-"),
+  #                      gluing(A_diff_C, NULL, "down"),
+  #                      gluing(A_diff_C, NULL, "up")),
+  # 
+  #   A_diff_D = if_else(str_starts(A_diff_D, "-"),
+  #                      gluing(A_diff_D, NULL, "down"),
+  #                      gluing(A_diff_D, NULL, "up")),
     # B = gluing(B, A_diff_B, "together"),
     # C = gluing(C, A_diff_C, "together"),
     # D = gluing(D, A_diff_D, "together"),
-    )
+    #)
+
 
 stl_table_glued <- rbind(stl_table_format[1,], 
       c(measures[1], " ", unname(stl_table_format[1, 6]), unname(stl_table_format[1, 7]), unname(stl_table_format[1, 8]), " ", " ", " "), 
@@ -96,22 +84,42 @@ stl_table_glued <- rbind(stl_table_format[1,],
       c(measures[4], " ", unname(stl_table_format[4, 6]), unname(stl_table_format[4, 7]), unname(stl_table_format[4, 8]), " ", " ", " "),
       stl_table_format[5,],
       c(measures[5], " ", unname(stl_table_format[5, 6]), unname(stl_table_format[5, 7]), unname(stl_table_format[5, 8]), " ", " ", " ")) %>% 
-  select(measure:D)
-
+  select(measure:D) %>% 
+  add_column(names = c(rep("", 10)), .before = "A")
 
 
 
 colors <- c("#81A26B", "#86AEBA", "#CBC361", "#D77085")
 
+gluing <- function(x) {
+  lapply(x, function(x) {
+    if (grepl("^-", x)) {
+      x <- str_remove(x, "-")
+      html(
+        paste(fa("down-long"), "<span>", x, "</span>")
+      )
+    }
+    else if (grepl("^ ", x)){
+      x
+    }
+    else {
+      html(
+        paste(fa("up-long"), "<span>", x, "</span>")
+      )
+    }
+  }
+    )
+}
+
+test <- stl_table_glued %>% 
+  mutate(measure = c("measure one", "measure one", "measure two", "measure two", 'measure three with text for line breaks', "measure three with text for line breaks", 'measure four', "measure four", 'measure five with more text', "measure five with more text"))
 
 # Create a gt table based on preprocessed
-stl_table_glued %>%
-  gt(rowname_col = "measure") %>%
-  tab_stubhead(label = md("<span style='font-size:100%'>St Louis</span><br><span style='font-size:50%'>Missouri</span>")) %>% 
+table <- stl_table_glued %>%
+  gt(rowname_col = "names", groupname_col = "measure") %>%
+  tab_stubhead(label = md("<span style='font-size:100%'>St Louis</span><br><span style='font-size:50%'>Missouri</span>")) %>%
   cols_align(align = "left", columns = 1) %>% 
-  cols_align(align = "center", columns = 2:5) %>% 
-  cols_width(c(A, B, C, D) ~ px(130),
-             measure ~ px(170)) %>% 
+  cols_align(align = "center", columns = 2:6) %>% 
   gt_highlight_cols(A, 
                     fill =c("#81A26B"), 
                     font_color = "#ffffff", 
@@ -128,8 +136,9 @@ stl_table_glued %>%
                     fill = c("#D77085"), 
                     font_color = "#ffffff", 
                     font_weight = "bold") %>% 
-  tab_footnote(footnote = md("This infographics provides a set of Esri demographic indicators based on a snapshot for July 1, 2020<br>
-                             Adjustments have been made to current year models to reflect the impact of the COVID-19 pandemic.")) %>% 
+  cols_width(names ~ px(150), A ~ px(1)) %>%
+  tab_footnote(footnote = md("This infographics provides a set of Esri demographic indicators based on a snapshot for July 1, 2020.<br>
+  Adjustments have been made to current year models to reflect the impact of the COVID-19 pandemic.")) %>%
   tab_style(
     style = list(
       cell_borders(sides = c("left", "right"),
@@ -142,12 +151,22 @@ stl_table_glued %>%
   tab_style(
     style = list(
       cell_text(size = "small", color = "black", indent = pct(20)),
-      "padding-top:0px;margin-top:3px"
+      "padding-top:-10"
     ),
     locations = cells_body(
       rows = c(2, 4, 6, 8, 10)
     )
-  ) %>% 
+  ) %>%
+  tab_style(
+    style = list(
+      cell_borders(sides = c("left", "right"), color = "#F4F6F6", weight = NULL)
+    ),
+    locations = cells_row_groups()
+  ) %>%
+  text_transform(
+    locations = cells_body(rows = c(2, 4, 6, 8, 10)),
+    fn = gluing
+  ) %>%
   tab_options(
     table.background.color = "#F4F6F6",
     table.border.top.style = "hidden",
@@ -157,6 +176,10 @@ stl_table_glued %>%
     column_labels.font.size = "200%",
     column_labels.font.weight = "bold",
     footnotes.border.bottom.style = "hidden",
-    row_group.as_column = TRUE
+    column_labels.border.bottom.color = "#F4F6F6",
+    row_group.padding = px(0),
+    row_group.as_column = TRUE,
+  #   table.width = px(1000)
   )
 
+gtsave_extra(table, "St Louis Red Lining Table/table.png")
