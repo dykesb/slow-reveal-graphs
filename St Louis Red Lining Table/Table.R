@@ -111,8 +111,8 @@ gluing <- function(x) {
     )
 }
 
-test <- stl_table_glued %>% 
-  mutate(measure = c("measure one", "measure one", "measure two", "measure two", 'measure three with text for line breaks', "measure three with text for line breaks", 'measure four', "measure four", 'measure five with more text', "measure five with more text"))
+# Looks pretty good. I still want to move the black text (with arrows) higher up closer to the 
+# corresponding row above
 
 # Create a gt table based on preprocessed
 table <- stl_table_glued %>%
