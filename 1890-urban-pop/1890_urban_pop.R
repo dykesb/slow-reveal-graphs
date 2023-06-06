@@ -20,7 +20,7 @@ library(tidyverse)
 library(showtext)
 font_add_google("Puritan", "Puritan")
 showtext_auto()
-Total_Population <- read_csv(here::here("1890urban-pop", "1890urban_pop_data.csv"))
+Total_Population <- read_csv(here::here("1890-urban-pop", "1890_urban_pop_data.csv"))
 
 Censuses <- c("1790", "1800", "1810", "1820", "1830", "1840", "1850", "1860", "1870", "1880", "1890")
 Population <- c(3929214,5308483,7239881,9633822,12866020,17069453,23191876,31443321,38558371,50155783,62622250)
@@ -63,7 +63,7 @@ Ext_Pop_Graph <- Ext_Pop_Density %>%
 
 #### FIGURE 1: URBAN POPULATION FULL UNMASKED ####
 
-png(here::here("1890urban-pop", "01_pop_full_unmasked.png"),width=900,height=500)
+png(here::here("1890-urban-pop", "01_pop_full_unmasked.png"),width=900,height=500)
 ggplot(Urban_Pop_Graph) +
   # Total population
   geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
@@ -94,7 +94,7 @@ dev.off()
 #### FIGURE 2: URBAN POPULATION FULL UNMASKED EXTENDED ####
 
 # Creating graph extending through 1910
-png(here::here("1890urban-pop", "02_ext_pop_full_unmasked.png"),width=900,height=500)
+png(here::here("1890-urban-pop", "02_ext_pop_full_unmasked.png"),width=900,height=500)
 ggplot(Ext_Pop_Graph) +
   # Total population
   geom_col(aes(y = Censuses, x = Population), width = .6, color = "black", fill = "white", alpha = 0) +
@@ -142,7 +142,7 @@ New_Pop_Graph <- New_Urban_Pop %>%
 
 
 
-png(here::here("1890urban-pop", "03_20th_century_full_unmasked.png"),width=700,height=280)
+png(here::here("1890-urban-pop", "03_20th_century_full_unmasked.png"),width=700,height=280)
 ggplot(New_Pop_Graph) +
   # Total population
   geom_col(aes(y = Censuses, x = Population), width = .4, color = "black", fill = "white", alpha = 0) +
@@ -198,7 +198,7 @@ Mod_Total_Population <- Population_Density %>%
   select(New_censuses, Density)
 
 
-png(here::here("1890urban-pop", "04_density_full_unmasked.png"),width=500,height=550)
+png(here::here("1890-urban-pop", "04_density_full_unmasked.png"),width=500,height=550)
 ggplot(Mod_Total_Population) +
   annotate("segment", x = seq(0,20,2), xend = seq(0,20,2), y = 0, yend = 11.38) +
   annotate("segment", x = -2, xend = 22, y = 11.38, yend = 11.38) +
@@ -235,7 +235,7 @@ Ext_Density <- Ext_Pop_Density %>%
 
 # Extended Graph
 
-png(here::here("1890urban-pop", "05_ext_density_full_unmasked.png"),width=500,height=575)
+png(here::here("1890-urban-pop", "05_ext_density_full_unmasked.png"),width=500,height=575)
 ggplot(Ext_Density) +
   annotate("segment", x = seq(0,40,4), xend = seq(0,40,4), y = 0, yend = 15.4) +
   annotate("segment", x = -4, xend = 44, y = 15.4, yend = 15.4) +

@@ -1,6 +1,6 @@
 #
 # FILE:
-#  1890census.R
+#  1890_census.R
 #
 # DESCRIPTION:
 #  Population of urban to total population, by States and Territories - 
@@ -37,12 +37,12 @@ font_add(family = "Rokkitt", regular = "RobotoCondensed-Light.ttf")
 font_add_google(name = "Barlow Condensed", family = "Circle")
 
 showtext_auto()
-arrow <- image_read(here::here("1890census", "arrow.png"))
+arrow <- image_read(here::here("1890-census", "arrow.png"))
 plot(as.raster(arrow))
 type_levels= c("All")
 year_levels <- c('1790', '1800', '1810', '1820', '1830', '1840', '1850', '1860', '1870', '1880', '1890')
 
-firstbar <- read_csv(here::here("1890census", "1890census_data.csv"))
+firstbar <- read_csv(here::here("1890-census", "1890_census_data.csv"))
 
 ## FIGURE 1: FULLY MASKED
 
@@ -113,7 +113,7 @@ text(420,60, "60%", cex = 1.5, col = "white", family = 'Rokkitt')+
   text(433,20, "TERRITORIES-HISTORICAL : ", cex = .9, col = "white", family = 'Rokkitt1')+
   text(530,20, "1790 TO 1890", cex = .8, col = "white", family = 'Rokkitt1')
 dev.off()
-image_write(fig01, path = here::here('1890census', "01_full_masked.png"), format = "png")
+image_write(fig01, path = here::here('1890-census', "01_full_masked.png"), format = "png")
 
 
 ## FIGURE 2: YEARS UNMASKED
@@ -181,7 +181,7 @@ text(420,60, "60%", cex = 1.5, col = "white", family = 'Rokkitt')+
   text(530,20, "1790 TO 1890", cex = .8, col = "white", family = 'Rokkitt1')
 
 dev.off()
-image_write(fig02, path = here::here('1890census', "02_years_unmasked.png"), format = "png")
+image_write(fig02, path = here::here('1890-census', "02_years_unmasked.png"), format = "png")
 
 ## FIGURE 3: PERCENTS UNMASKED
 
@@ -248,7 +248,7 @@ grid.raster(arrow, .13, .43, height = .65)+
   text(530,20, "1790 TO 1890", cex = .8, col = "white", family = 'Rokkitt1')
 
 dev.off()
-image_write(fig03, path = here::here('1890census', "03_percents_unmasked.png"), format = "png")
+image_write(fig03, path = here::here('1890-census', "03_percents_unmasked.png"), format = "png")
 
 
 ## FIGURE 4: STATE UNMASKED
@@ -316,7 +316,7 @@ text(280,40, "[Colorado, Nevada, and Florida are not shown, because these States
   text(530,20, "1790 TO 1890", cex = .8, col = "white", family = 'Rokkitt1')
 
 dev.off()
-image_write(fig04, path = here::here("1890census", "04_state_unmasked.png"), format = "png")
+image_write(fig04, path = here::here("1890-census", "04_state_unmasked.png"), format = "png")
 
 ## FIGURE 5: TITLE UNMASKED
 
@@ -383,4 +383,4 @@ text(280,40, "[Colorado, Nevada, and Florida are not shown, because these States
   text(530,20, "1790 TO 1890", cex = .8, col = "black", family = 'Rokkitt1')
 
 dev.off()
-image_write(fig05, path = here::here('1890census', "05_full_unmasked.png"), format = "png")
+image_write(fig05, path = here::here('1890-census', "05_full_unmasked.png"), format = "png")
