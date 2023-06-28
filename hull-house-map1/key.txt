@@ -1,0 +1,9 @@
+white = white
+green = 77997e
+purple = 996f72
+red = c05a50
+blue = 1f5c87
+brown = 865e3a
+yellow = e8c55c
+orange = d58c47
+black = black
