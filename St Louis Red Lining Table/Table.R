@@ -6,11 +6,88 @@ library(gtExtras)
 # This would be flexible and I have a license for it: https://github.com/CaRdiffR/nounprojectR
 library(fontawesome)
 
-# arrows
+# Exploring shapes
+library(showtext)
+library(magick)
+library(ggimage)
+library(cowplot)
 
-# up_arrow <- magick::image_read_svg(here::here('St Louis Red Lining Table', 'noun-arrow-1389952.svg')) %>%
-#   image_scale("x15")
+font_add_google(name = "Quicksand", family = "Quicksand")
+showtext_auto()
 
+# users -> https://thenounproject.com/icon/users-305946/
+# home-value -> https://thenounproject.com/icon/house-2073531/
+# circle-dollar -> https://thenounproject.com/icon/dollar-coin-175492/
+# home -> https://thenounproject.com/icon/home-1145426/
+# grad-cap -> https://thenounproject.com/icon/graduation-3006064/
+
+users <- "https://thenounproject.com/api/private/icons/305946/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0"
+home_value <- "https://thenounproject.com/api/private/icons/2073531/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0"
+circle_dollar <- "https://thenounproject.com/api/private/icons/175492/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0"
+house <- "https://thenounproject.com/api/private/icons/1145426/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0"
+grad_cap <- "https://thenounproject.com/api/private/icons/3006064/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0"
+
+# https://stackoverflow.com/questions/62006992/how-to-add-image-to-a-ggplot
+
+pents <- function(url, text_line_1, text_line_2, fig_name){
+  
+  icon <- image_read(url)
+  
+  white_icon <- icon %>% 
+    image_colorize(100, "#ffffff") %>% 
+    image_scale("x100")
+
+  main_verts <- tibble(
+    x = c(0, 4, 4.5, 4, 0),
+    y = c(1, 1, 0.5, 0, 0)
+  )
+  border_verts <- tibble(
+    x = c(-0.02, 4.02, 4.52, 4.02, -0.02),
+    y = c(1.015, 1.015, 0.5, -0.015, -0.015)
+  )
+  shadow_verts <- tibble(
+    x = c(0, 4.05, 4.55, 4.05, 0),
+    y = c(1, 1, 0.48, -0.03, -0.03)
+  )
+  
+  pent <- ggplot() + 
+    geom_polygon(data = shadow_verts, 
+                 mapping = aes(x = x, y = y), 
+                 fill = "#ADADAD") + 
+    geom_polygon(data = border_verts, 
+                 mapping = aes(x = x, y = y), 
+                 fill = "#ffffff") + 
+    geom_polygon(data = main_verts, 
+                 mapping = aes(x = x, y = y), 
+                 fill = "#404040") + 
+    coord_fixed() +
+    annotate("text", x = 1.05, y = 0.65, label = text_line_1,
+              colour = "#ffffff", family = "Quicksand", size = 6, hjust = 0) +
+    annotate("text", x = 1.05, y = 0.35, label = text_line_2,
+              colour = "#ffffff", family = "Quicksand", size = 6, hjust = 0) +
+    theme_void()
+  
+  icon_pent <- ggdraw() +
+    draw_plot(pent, scale = 0.8) +
+    draw_image(white_icon, x = -0.28, y = 0, scale = 0.3)
+  
+  save_plot(plot = icon_pent, 
+            filename = here::here("St Louis Red Lining Table",paste0(fig_name,"_pent.png")),
+            base_height = 1)
+}
+
+output_info <- tibble(
+  urls = c(users, home_value, circle_dollar, house, grad_cap),
+  line_1 = c("Total", "Median", "Median Household", "Owner Occupied", "Bachelors Degree or"),
+  line_2 = c("Population", "Home Value", "Income", "Housing Units", "Higher"),
+  file_name = c("tot_population","med_home_value", "med_hshld_inc", "owner_occ_housing", "bach_or_higher")
+)
+
+pmap(list(output_info$urls,
+          output_info$line_1,
+          output_info$line_2,
+          output_info$file_name), 
+     pents)
 
 # tidy dataframe
 stl_table <- tibble(
@@ -23,7 +100,7 @@ stl_table <- tibble(
 ) 
 
 # descriptive names
-measures <- c("Total<br>Population", "Median<br>Home Value", "Median Household<br>Income", "Owner Occupied<br>Housing Units", "Bachelors Degree or<br>Higher")
+measures <- output_info$file_name
 
 row_types <- c('num', 'dollar', 'dollar', 'pct', 'pct')
 
@@ -56,16 +133,16 @@ gluing <- function(x) {
 stl_table_rotated <- stl_table %>% 
   pivot_longer(
     cols = tot_population:bach_or_higher,
-    names_to = "measure",
+    names_to = "measures",
     values_to = "values"
   ) %>% 
   pivot_wider(
-    id_cols = measure,
+    id_cols = measures,
     names_from = grade,
     values_from = values
   ) %>% 
   mutate(
-    measure = measures,
+    measures = here::here("St Louis Red Lining Table",paste0(measures,"_pent.png")),
     A_diff_A = NA_integer_,
     B_diff_A = B - A,
     C_diff_A = C - A,
@@ -74,7 +151,7 @@ stl_table_rotated <- stl_table %>%
   
 stl_table_format <- stl_table_rotated %>% 
   # https://stackoverflow.com/questions/29873293/dplyr-order-columns-alphabetically-in-r
-  select(measure, order(colnames(.)), type) %>% 
+  select(measures, order(colnames(.)), type) %>% 
   mutate(across(A:D_diff_A, 
                 ~case_when(
                   type == "num" ~ scales::comma(., accuracy = 1), 
@@ -89,13 +166,20 @@ colors <- c("#81A26B", "#86AEBA", "#CBC361", "#D77085")
 
 
 # Create a gt table based on preprocessed
-stl_table_format %>% 
-  gt(rowname_col = "measure") %>%
-  tab_stubhead(label = md("<span style='font-size:200%'>St Louis</span><br>
-                          <span style='font-size:100%'>Missouri</span>")) %>%
-  cols_align(align = "left", columns = 1) %>% 
-  # cols_align(align = "center", columns = 2:8) %>% 
-  cols_width(measure ~ px(200), everything() ~ px(175)) %>%
+table <- stl_table_format %>% 
+  gt() %>% #rowname_col = "measures"
+  # tab_stubhead(label = md("<span style='font-size:200%'>St Louis</span><br>
+  #                         <span style='font-size:100%'>Missouri</span>")) %>%
+  cols_width(measures ~ px(300), everything() ~ px(175)) %>%
+  text_transform(
+      locations = cells_body(columns = measures),
+      fn = function(x) {
+        local_image(
+          filename = x,
+          height = 200
+        )
+      }
+    ) %>%
   gt_highlight_cols(A, 
                     fill =c("#81A26B")) %>%
   gt_highlight_cols(B, 
@@ -104,7 +188,7 @@ stl_table_format %>%
                     fill = c("#CBC361")) %>%
   gt_highlight_cols(D, 
                     fill = c("#D77085")) %>% 
-    tab_footnote(footnote = md("<div style='width:200px; float:left; text-align:right; vertical-align:top;'>&nbsp;</div>
+    tab_footnote(footnote = md("<div style='width:300px; float:left; text-align:right; vertical-align:top;'>&nbsp;</div>
     <div style='width:50%; float:left;'>This infographics provides a set of Esri demographic indicators based on a snapshot for July 1, 2020.<br>
   Adjustments have been made to current year models to reflect the impact of the COVID-19 pandemic.<br></div>
                                 <div style='width:15%; float:right; text-align:right; vertical-align:top;'>&copy; 2020 Esri<br></div>")) %>%
@@ -138,11 +222,13 @@ stl_table_format %>%
                  <div style='width:50%; float:left;'></div><div style='width:50%; float:right; color:#000000; font-size:75%; text-align:left;'>{2}</div>"
   ) %>%
   cols_label(
+    measures = md("<div><span style='font-size:200%'>St Louis</span><br>
+                    <span style='font-size:100%'>Missouri</span></div>"),
     A = md("<div style='text-align:center; font-size:200%;'>A</div>"),
     B = md("<div style='text-align:center; font-size:200%;'>B</div>"),
     C = md("<div style='text-align:center; font-size:200%;'>C</div>"),
     D = md("<div style='text-align:center; font-size:200%;'>D</div>")
-  
+  ) %>% 
   tab_options(
     table.background.color = "#F4F6F6",
     table.border.top.style = "hidden",
@@ -154,79 +240,15 @@ stl_table_format %>%
     footnotes.border.bottom.style = "hidden",
     # footnotes.padding.horizontal = px(205), # Find more efficient way to handle - px(#) isn't what I want either
     column_labels.border.bottom.color = "#F4F6F6",
-    row_group.padding = px(0),
-    row_group.as_column = TRUE,
-    #   table.width = px(1000)
-  )
-
-
-table <- stl_table_glued %>%
-  gt(rowname_col = "names", groupname_col = "measure") %>%
-  tab_stubhead(label = md("<span style='font-size:100%'>St Louis</span><br><span style='font-size:50%'>Missouri</span>")) %>%
-  cols_align(align = "left", columns = 1) %>% 
-  cols_align(align = "center", columns = 2:6) %>% 
-  gt_highlight_cols(A, 
-                    fill =c("#81A26B"), 
-                    font_color = "#ffffff", 
-                    font_weight = "bold") %>%
-  gt_highlight_cols(B, 
-                    fill = c("#86AEBA"), 
-                    font_color = "#ffffff", 
-                    font_weight = "bold") %>%
-  gt_highlight_cols(C, 
-                    fill = c("#CBC361"), 
-                    font_color = "#ffffff", 
-                    font_weight = "bold") %>%
-  gt_highlight_cols(D, 
-                    fill = c("#D77085"), 
-                    font_color = "#ffffff", 
-                    font_weight = "bold") %>% 
-  cols_width(names ~ px(150), A ~ px(1)) %>%
-  tab_footnote(footnote = md("This infographics provides a set of Esri demographic indicators based on a snapshot for July 1, 2020.<br>
-  Adjustments have been made to current year models to reflect the impact of the COVID-19 pandemic.")) %>%
-  tab_style(
-    style = list(
-      cell_borders(sides = c("left", "right"),
-                 color = "#F4F6F6",
-                 weight = px(4)),
-      cell_text(size = "large")
-    ),
-    locations = cells_body()
-  ) %>%
-  tab_style(
-    style = list(
-      cell_text(size = "small", color = "black", indent = pct(20)),
-      "padding-top:-10"
-    ),
-    locations = cells_body(
-      rows = c(2, 4, 6, 8, 10)
+    # row_group.padding = px(0),
+    # row_group.as_column = TRUE,
+    data_row.padding = px(0)
+  ) %>% 
+  opt_table_font(
+    font = list(
+      google_font(name = "Quicksand"),
+      "Sans Serif"
     )
-  ) %>%
-  tab_style(
-    style = list(
-      cell_borders(sides = c("left", "right"), color = "#F4F6F6", weight = NULL)
-    ),
-    locations = cells_row_groups()
-  ) %>%
-  text_transform(
-    locations = cells_body(rows = c(2, 4, 6, 8, 10)),
-    fn = gluing
-  ) %>%
-  tab_options(
-    table.background.color = "#F4F6F6",
-    table.border.top.style = "hidden",
-    table.border.bottom.style = "hidden",
-    table_body.border.bottom.style = "hidden",
-    table_body.hlines.style = "hidden",
-    column_labels.font.size = "200%",
-    column_labels.font.weight = "bold",
-    footnotes.font.size = 10,
-    footnotes.border.bottom.style = "hidden",
-    footnotes.padding.horizontal = 163, # Find more efficient way to handle - px(#) isn't what I want either
-    column_labels.border.bottom.color = "#F4F6F6",
-    row_group.padding = px(0),
-    row_group.as_column = TRUE,
-  #   table.width = px(1000)
   )
 
 table
