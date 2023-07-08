@@ -254,5 +254,5 @@ table <- stl_table_format %>%
 
 table
 
-gtsave(table, here::here("St Louis Red Lining Table","table.png"))
+# This isn't working for me so I used RStudio's GUI Export
 gtsave_extra(table, here::here("St Louis Red Lining Table","table.png"))
