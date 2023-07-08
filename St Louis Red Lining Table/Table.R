@@ -61,19 +61,27 @@ pents <- function(url, text_line_1, text_line_2, fig_name){
                  mapping = aes(x = x, y = y), 
                  fill = "#404040") + 
     coord_fixed() +
-    annotate("text", x = 1.05, y = 0.65, label = text_line_1,
-              colour = "#ffffff", family = "Quicksand", size = 6, hjust = 0) +
-    annotate("text", x = 1.05, y = 0.35, label = text_line_2,
-              colour = "#ffffff", family = "Quicksand", size = 6, hjust = 0) +
-    theme_void()
+    annotate("text", x = 1.05, y = 0.65, label = paste0("bold('",text_line_1,"')"),
+              colour = "#ffffff", family = "Quicksand", size = 6, hjust = 0, parse = TRUE) +
+    annotate("text", x = 1.05, y = 0.35, label = paste0("bold('",text_line_2,"')"),
+              colour = "#ffffff", family = "Quicksand", size = 6, hjust = 0, parse = TRUE) +
+    theme_void() +
+    theme(plot.margin=grid::unit(c(0,0,0,0), "mm"))
   
-  icon_pent <- ggdraw() +
-    draw_plot(pent, scale = 0.8) +
-    draw_image(white_icon, x = -0.28, y = 0, scale = 0.3)
+  icon_pent <- ggdraw(pent) +
+    draw_image(white_icon, x = -0.35, y = 0, scale = 0.35)
   
   save_plot(plot = icon_pent, 
             filename = here::here("St Louis Red Lining Table",paste0(fig_name,"_pent.png")),
             base_height = 1)
+  
+  #upload, trim, and save again
+  tmp <- image_read(here::here("St Louis Red Lining Table",paste0(fig_name,"_pent.png")))
+  
+  trim_pent <- tmp %>% 
+    image_trim()
+  
+  image_write(trim_pent, path = here::here("St Louis Red Lining Table",paste0(fig_name,"_pent.png")))
 }
 
 output_info <- tibble(
@@ -170,28 +178,24 @@ table <- stl_table_format %>%
   gt() %>% #rowname_col = "measures"
   # tab_stubhead(label = md("<span style='font-size:200%'>St Louis</span><br>
   #                         <span style='font-size:100%'>Missouri</span>")) %>%
-  cols_width(measures ~ px(300), everything() ~ px(175)) %>%
+  cols_width(measures ~ px(230), everything() ~ px(175)) %>%
   text_transform(
       locations = cells_body(columns = measures),
       fn = function(x) {
         local_image(
           filename = x,
-          height = 200
+          height = 50
         )
       }
     ) %>%
-  gt_highlight_cols(A, 
-                    fill =c("#81A26B")) %>%
-  gt_highlight_cols(B, 
-                    fill = c("#86AEBA")) %>%
-  gt_highlight_cols(C, 
-                    fill = c("#CBC361")) %>%
-  gt_highlight_cols(D, 
-                    fill = c("#D77085")) %>% 
-    tab_footnote(footnote = md("<div style='width:300px; float:left; text-align:right; vertical-align:top;'>&nbsp;</div>
-    <div style='width:50%; float:left;'>This infographics provides a set of Esri demographic indicators based on a snapshot for July 1, 2020.<br>
-  Adjustments have been made to current year models to reflect the impact of the COVID-19 pandemic.<br></div>
-                                <div style='width:15%; float:right; text-align:right; vertical-align:top;'>&copy; 2020 Esri<br></div>")) %>%
+  gt_highlight_cols(A, fill =c("#81A26B")) %>%
+  gt_highlight_cols(B, fill = c("#86AEBA")) %>%
+  gt_highlight_cols(C, fill = c("#CBC361")) %>%
+  gt_highlight_cols(D, fill = c("#D77085")) %>%
+  tab_footnote(footnote = md("<div style='width:25%; float:left; text-align:right; vertical-align:top;'>&nbsp;</div>
+                              <div style='width:50%; float:left;'>This infographics provides a set of Esri demographic indicators based on a snapshot for July 1, 2020.<br>
+                                Adjustments have been made to current year models to reflect the impact of the COVID-19 pandemic.<br></div>
+                              <div style='width:25%; float:right; text-align:right; vertical-align:top;'>&copy; 2020 Esri<br></div>")) %>%
   tab_style(
     style = list(
       cell_borders(sides = c("left", "right"),
@@ -222,12 +226,12 @@ table <- stl_table_format %>%
                  <div style='width:50%; float:left;'></div><div style='width:50%; float:right; color:#000000; font-size:75%; text-align:left;'>{2}</div>"
   ) %>%
   cols_label(
-    measures = md("<div><span style='font-size:200%'>St Louis</span><br>
-                    <span style='font-size:100%'>Missouri</span></div>"),
-    A = md("<div style='text-align:center; font-size:200%;'>A</div>"),
-    B = md("<div style='text-align:center; font-size:200%;'>B</div>"),
-    C = md("<div style='text-align:center; font-size:200%;'>C</div>"),
-    D = md("<div style='text-align:center; font-size:200%;'>D</div>")
+    measures = md("<p style='font-size:250%; text-indent: 5px'>St Louis</p>
+                    <p style='font-size:125%; text-indent: 5px'>Missouri</p>"),
+    A = md("<div style='text-align:center; font-size:250%;'>A</div>"),
+    B = md("<div style='text-align:center; font-size:250%;'>B</div>"),
+    C = md("<div style='text-align:center; font-size:250%;'>C</div>"),
+    D = md("<div style='text-align:center; font-size:250%;'>D</div>")
   ) %>% 
   tab_options(
     table.background.color = "#F4F6F6",
@@ -238,11 +242,8 @@ table <- stl_table_format %>%
     column_labels.font.weight = "bold",
     footnotes.font.size = "55%",
     footnotes.border.bottom.style = "hidden",
-    # footnotes.padding.horizontal = px(205), # Find more efficient way to handle - px(#) isn't what I want either
     column_labels.border.bottom.color = "#F4F6F6",
-    # row_group.padding = px(0),
-    # row_group.as_column = TRUE,
-    data_row.padding = px(0)
+    data_row.padding = px(15)
   ) %>% 
   opt_table_font(
     font = list(
