@@ -1,0 +1,781 @@
+vote_type,pop_group,amount,fill
+Army,1870,30.96,#aea596
+Navy,1870,26.34,#777367
+Pensions,1870,3.38,#292323
+Civil,1870,4.06,#eac85c
+Indians,1870,0.1,#fee6a9
+Foreign,1870,0.66,#d69083
+Miscellaneous,1870,8.83,#787734
+Premium on Pub. Debt.,1870,6.89,#886a6d
+Principle of Pub.,1870,5.38,#a1aba6
+Debt Interest on Pub. Debt.,1870,13.4,#ddd9cb
+Army,1869,37.83,#aea596
+Navy,1869,6.87,#777367
+Pensions,1869,0.25,#292323
+Civil,1869,7.88,#eac85c
+Indians,1869,0.14,#fee6a9
+Foreign,1869,1.93,#d69083
+Miscellaneous,1869,8.55,#787734
+Premium on Pub. Debt.,1869,8.13,#886a6d
+Principle of Pub.,1869,5.93,#a1aba6
+Debt Interest on Pub. Debt.,1869,22.49,#ddd9cb
+Army,1868,31.97,#aea596
+Navy,1868,15.1,#777367
+Pensions,1868,1.38,#292323
+Civil,1868,3.01,#eac85c
+Indians,1868,0.14,#fee6a9
+Foreign,1868,1.1,#d69083
+Miscellaneous,1868,8.55,#787734
+Premium on Pub. Debt.,1868,5.38,#886a6d
+Principle of Pub.,1868,5.37,#a1aba6
+Debt Interest on Pub. Debt.,1868,28,#ddd9cb
+Army,1867,31.72,#aea596
+Navy,1867,21.1,#777367
+Pensions,1867,2.12,#292323
+Civil,1867,3.31,#eac85c
+Indians,1867,0.52,#fee6a9
+Foreign,1867,1.11,#d69083
+Miscellaneous,1867,7.44,#787734
+Premium on Pub. Debt.,1867,4.55,#886a6d
+Principle of Pub.,1867,6.48,#a1aba6
+Debt Interest on Pub. Debt.,1867,21.65,#ddd9cb
+Army,1866,25.98,#aea596
+Navy,1866,0,#777367
+Pensions,1866,0,#292323
+Civil,1866,2.15,#eac85c
+Indians,1866,0,#fee6a9
+Foreign,1866,0.87,#d69083
+Miscellaneous,1866,2,#787734
+Premium on Pub. Debt.,1866,6.69,#886a6d
+Principle of Pub.,1866,8.27,#a1aba6
+Debt Interest on Pub. Debt.,1866,54.04,#ddd9cb
+Army,1865,6.01,#aea596
+Navy,1865,0,#777367
+Pensions,1865,0,#292323
+Civil,1865,1.38,#eac85c
+Indians,1865,0,#fee6a9
+Foreign,1865,0,#d69083
+Miscellaneous,1865,2.32,#787734
+Premium on Pub. Debt.,1865,1.38,#886a6d
+Principle of Pub.,1865,9.51,#a1aba6
+Debt Interest on Pub. Debt.,1865,79.4,#ddd9cb
+Army,1864,6.26,#aea596
+Navy,1864,0,#777367
+Pensions,1864,0,#292323
+Civil,1864,1.21,#eac85c
+Indians,1864,0,#fee6a9
+Foreign,1864,0,#d69083
+Miscellaneous,1864,2.39,#787734
+Premium on Pub. Debt.,1864,0.55,#886a6d
+Principle of Pub.,1864,9.51,#a1aba6
+Debt Interest on Pub. Debt.,1864,80.08,#ddd9cb
+Army,1863,3.52,#aea596
+Navy,1863,0,#777367
+Pensions,1863,0,#292323
+Civil,1863,1.06,#eac85c
+Indians,1863,0,#fee6a9
+Foreign,1863,0.58,#d69083
+Miscellaneous,1863,4,#787734
+Premium on Pub. Debt.,1863,3,#886a6d
+Principle of Pub.,1863,4.05,#a1aba6
+Debt Interest on Pub. Debt.,1863,83.79,#ddd9cb
+Army,1862,2.9,#aea596
+Navy,1862,0,#777367
+Pensions,1862,0,#292323
+Civil,1862,1.25,#eac85c
+Indians,1862,0,#fee6a9
+Foreign,1862,0.9,#d69083
+Miscellaneous,1862,1,#787734
+Premium on Pub. Debt.,1862,2.44,#886a6d
+Principle of Pub.,1862,9.1,#a1aba6
+Debt Interest on Pub. Debt.,1862,82.41,#ddd9cb
+Army,1861,6.4,#aea596
+Navy,1861,0,#777367
+Pensions,1861,0,#292323
+Civil,1861,8.81,#eac85c
+Indians,1861,1.7,#fee6a9
+Foreign,1861,4.42,#d69083
+Miscellaneous,1861,23.85,#787734
+Premium on Pub. Debt.,1861,2.06,#886a6d
+Principle of Pub.,1861,18.61,#a1aba6
+Debt Interest on Pub. Debt.,1861,34.15,#ddd9cb
+Army,1860,5.4,#aea596
+Navy,1860,0,#777367
+Pensions,1860,0,#292323
+Civil,1860,9.31,#eac85c
+Indians,1860,1.52,#fee6a9
+Foreign,1860,4.96,#d69083
+Miscellaneous,1860,32.68,#787734
+Premium on Pub. Debt.,1860,2.2,#886a6d
+Principle of Pub.,1860,18.48,#a1aba6
+Debt Interest on Pub. Debt.,1860,25.45,#ddd9cb
+Army,1859,4.03,#aea596
+Navy,1859,0,#777367
+Pensions,1859,0,#292323
+Civil,1859,8.37,#eac85c
+Indians,1859,1.36,#fee6a9
+Foreign,1859,5.1,#d69083
+Miscellaneous,1859,24.54,#787734
+Premium on Pub. Debt.,1859,1.93,#886a6d
+Principle of Pub.,1859,21.51,#a1aba6
+Debt Interest on Pub. Debt.,1859,33.16,#ddd9cb
+Army,1858,2.53,#aea596
+Navy,1858,0,#777367
+Pensions,1858,0.62,#292323
+Civil,1858,9.61,#eac85c
+Indians,1858,1.42,#fee6a9
+Foreign,1858,7.03,#d69083
+Miscellaneous,1858,23.71,#787734
+Premium on Pub. Debt.,1858,2.21,#886a6d
+Principle of Pub.,1858,18.61,#a1aba6
+Debt Interest on Pub. Debt.,1858,34.26,#ddd9cb
+Army,1857,2.29,#aea596
+Navy,1857,4.99,#777367
+Pensions,1857,0.28,#292323
+Civil,1857,10.55,#eac85c
+Indians,1857,1.32,#fee6a9
+Foreign,1857,6.48,#d69083
+Miscellaneous,1857,26.88,#787734
+Premium on Pub. Debt.,1857,1.93,#886a6d
+Principle of Pub.,1857,17.79,#a1aba6
+Debt Interest on Pub. Debt.,1857,27.49,#ddd9cb
+Army,1856,2.91,#aea596
+Navy,1856,5.5,#777367
+Pensions,1856,0.46,#292323
+Civil,1856,9.89,#eac85c
+Indians,1856,5.36,#fee6a9
+Foreign,1856,4.14,#d69083
+Miscellaneous,1856,23.02,#787734
+Premium on Pub. Debt.,1856,2.07,#886a6d
+Principle of Pub.,1856,21.65,#a1aba6
+Debt Interest on Pub. Debt.,1856,25,#ddd9cb
+Army,1855,3.67,#aea596
+Navy,1855,9.86,#777367
+Pensions,1855,1.55,#292323
+Civil,1855,9.61,#eac85c
+Indians,1855,1.51,#fee6a9
+Foreign,1855,4,#d69083
+Miscellaneous,1855,25.09,#787734
+Premium on Pub. Debt.,1855,2.76,#886a6d
+Principle of Pub.,1855,19.99,#a1aba6
+Debt Interest on Pub. Debt.,1855,21.96,#ddd9cb
+Army,1854,4.29,#aea596
+Navy,1854,23.48,#777367
+Pensions,1854,3.86,#292323
+Civil,1854,6.14,#eac85c
+Indians,1854,10.36,#fee6a9
+Foreign,1854,2.07,#d69083
+Miscellaneous,1854,18.06,#787734
+Premium on Pub. Debt.,1854,2.07,#886a6d
+Principle of Pub.,1854,13.92,#a1aba6
+Debt Interest on Pub. Debt.,1854,15.75,#ddd9cb
+Army,1853,6.79,#aea596
+Navy,1853,11.74,#777367
+Pensions,1853,0.68,#292323
+Civil,1853,8.02,#eac85c
+Indians,1853,1.19,#fee6a9
+Foreign,1853,7.45,#d69083
+Miscellaneous,1853,22.61,#787734
+Premium on Pub. Debt.,1853,3.03,#886a6d
+Principle of Pub.,1853,20.4,#a1aba6
+Debt Interest on Pub. Debt.,1853,18.09,#ddd9cb
+Army,1852,8.79,#aea596
+Navy,1852,4.5,#777367
+Pensions,1852,0.21,#292323
+Civil,1852,7.73,#eac85c
+Indians,1852,8.58,#fee6a9
+Foreign,1852,6.76,#d69083
+Miscellaneous,1852,20.95,#787734
+Premium on Pub. Debt.,1852,4.55,#886a6d
+Principle of Pub.,1852,19.72,#a1aba6
+Debt Interest on Pub. Debt.,1852,18.21,#ddd9cb
+Army,1851,7.8,#aea596
+Navy,1851,0,#777367
+Pensions,1851,0.29,#292323
+Civil,1851,7.44,#eac85c
+Indians,1851,12.64,#fee6a9
+Foreign,1851,6.06,#d69083
+Miscellaneous,1851,16.54,#787734
+Premium on Pub. Debt.,1851,5.1,#886a6d
+Principle of Pub.,1851,18.48,#a1aba6
+Debt Interest on Pub. Debt.,1851,25.65,#ddd9cb
+Army,1850,9.3,#aea596
+Navy,1850,0,#777367
+Pensions,1850,0,#292323
+Civil,1850,7.6,#eac85c
+Indians,1850,14.72,#fee6a9
+Foreign,1850,4,#d69083
+Miscellaneous,1850,16.82,#787734
+Premium on Pub. Debt.,1850,5.24,#886a6d
+Principle of Pub.,1850,18.88,#a1aba6
+Debt Interest on Pub. Debt.,1850,23.44,#ddd9cb
+Army,1849,8.43,#aea596
+Navy,1849,0,#777367
+Pensions,1849,0,#292323
+Civil,1849,7.03,#eac85c
+Indians,1849,15.61,#fee6a9
+Foreign,1849,3.04,#d69083
+Miscellaneous,1849,7.03,#787734
+Premium on Pub. Debt.,1849,3.31,#886a6d
+Principle of Pub.,1849,22.33,#a1aba6
+Debt Interest on Pub. Debt.,1849,33.22,#ddd9cb
+Army,1848,5.31,#aea596
+Navy,1848,0,#777367
+Pensions,1848,0,#292323
+Civil,1848,5.75,#eac85c
+Indians,1848,0.86,#fee6a9
+Foreign,1848,2.34,#d69083
+Miscellaneous,1848,5.11,#787734
+Premium on Pub. Debt.,1848,2.75,#886a6d
+Principle of Pub.,1848,19.86,#a1aba6
+Debt Interest on Pub. Debt.,1848,58.02,#ddd9cb
+Army,1847,2.07,#aea596
+Navy,1847,0,#777367
+Pensions,1847,0,#292323
+Civil,1847,5.38,#eac85c
+Indians,1847,0.1,#fee6a9
+Foreign,1847,2.59,#d69083
+Miscellaneous,1847,7.17,#787734
+Premium on Pub. Debt.,1847,3.17,#886a6d
+Principle of Pub.,1847,14.47,#a1aba6
+Debt Interest on Pub. Debt.,1847,65.05,#ddd9cb
+Army,1846,2.7,#aea596
+Navy,1846,1.87,#777367
+Pensions,1846,0,#292323
+Civil,1846,9.24,#eac85c
+Indians,1846,1.57,#fee6a9
+Foreign,1846,3.45,#d69083
+Miscellaneous,1846,13.65,#787734
+Premium on Pub. Debt.,1846,6.62,#886a6d
+Principle of Pub.,1846,23.57,#a1aba6
+Debt Interest on Pub. Debt.,1846,37.33,#ddd9cb
+Army,1845,3.2,#aea596
+Navy,1845,25.09,#777367
+Pensions,1845,0,#292323
+Civil,1845,7.99,#eac85c
+Indians,1845,2,#fee6a9
+Foreign,1845,5.52,#d69083
+Miscellaneous,1845,8.82,#787734
+Premium on Pub. Debt.,1845,8.27,#886a6d
+Principle of Pub.,1845,20.95,#a1aba6
+Debt Interest on Pub. Debt.,1845,18.16,#ddd9cb
+Army,1844,6.2,#aea596
+Navy,1844,13.11,#777367
+Pensions,1844,0,#292323
+Civil,1844,9.32,#eac85c
+Indians,1844,2.63,#fee6a9
+Foreign,1844,4.69,#d69083
+Miscellaneous,1844,10.47,#787734
+Premium on Pub. Debt.,1844,7.04,#886a6d
+Principle of Pub.,1844,26.47,#a1aba6
+Debt Interest on Pub. Debt.,1844,20.07,#ddd9cb
+Army,1842,3.33,#aea596
+Navy,1842,0,#777367
+Pensions,1842,0,#292323
+Civil,1842,11.58,#eac85c
+Indians,1842,2.02,#fee6a9
+Foreign,1842,4.69,#d69083
+Miscellaneous,1842,12.96,#787734
+Premium on Pub. Debt.,1842,6.2,#886a6d
+Principle of Pub.,1842,33.36,#a1aba6
+Debt Interest on Pub. Debt.,1842,25.86,#ddd9cb
+Army,1841,1.34,#aea596
+Navy,1841,0,#777367
+Pensions,1841,0,#292323
+Civil,1841,9.45,#eac85c
+Indians,1841,1.74,#fee6a9
+Foreign,1841,9.23,#d69083
+Miscellaneous,1841,13.38,#787734
+Premium on Pub. Debt.,1841,8.82,#886a6d
+Principle of Pub.,1841,23.16,#a1aba6
+Debt Interest on Pub. Debt.,1841,32.88,#ddd9cb
+Army,1840,1.09,#aea596
+Navy,1840,0,#777367
+Pensions,1840,0,#292323
+Civil,1840,11.08,#eac85c
+Indians,1840,2.98,#fee6a9
+Foreign,1840,9.66,#d69083
+Miscellaneous,1840,10.2,#787734
+Premium on Pub. Debt.,1840,11.16,#886a6d
+Principle of Pub.,1840,25.51,#a1aba6
+Debt Interest on Pub. Debt.,1840,28.32,#ddd9cb
+Army,1839,2.09,#aea596
+Navy,1839,0,#777367
+Pensions,1839,0,#292323
+Civil,1839,7.48,#eac85c
+Indians,1839,3.53,#fee6a9
+Foreign,1839,9.51,#d69083
+Miscellaneous,1839,9.93,#787734
+Premium on Pub. Debt.,1839,11.3,#886a6d
+Principle of Pub.,1839,22.89,#a1aba6
+Debt Interest on Pub. Debt.,1839,33.27,#ddd9cb
+Army,1838,0,#aea596
+Navy,1838,17.08,#777367
+Pensions,1838,0,#292323
+Civil,1838,6.87,#eac85c
+Indians,1838,2.94,#fee6a9
+Foreign,1838,13.24,#d69083
+Miscellaneous,1838,7.86,#787734
+Premium on Pub. Debt.,1838,6.47,#886a6d
+Principle of Pub.,1838,14.48,#a1aba6
+Debt Interest on Pub. Debt.,1838,31.06,#ddd9cb
+Army,1837,0,#aea596
+Navy,1837,0.23,#777367
+Pensions,1837,0,#292323
+Civil,1837,6.31,#eac85c
+Indians,1837,12.36,#fee6a9
+Foreign,1837,11.72,#d69083
+Miscellaneous,1837,7.72,#787734
+Premium on Pub. Debt.,1837,7.04,#886a6d
+Principle of Pub.,1837,18.47,#a1aba6
+Debt Interest on Pub. Debt.,1837,36.15,#ddd9cb
+Army,1836,0,#aea596
+Navy,1836,0.23,#777367
+Pensions,1836,0,#292323
+Civil,1836,6.82,#eac85c
+Indians,1836,1.66,#fee6a9
+Foreign,1836,14.75,#d69083
+Miscellaneous,1836,8.96,#787734
+Premium on Pub. Debt.,1836,9.51,#886a6d
+Principle of Pub.,1836,19.03,#a1aba6
+Debt Interest on Pub. Debt.,1836,39.04,#ddd9cb
+Army,1835,0.48,#aea596
+Navy,1835,0,#777367
+Pensions,1835,0,#292323
+Civil,1835,11.05,#eac85c
+Indians,1835,4.5,#fee6a9
+Foreign,1835,9.65,#d69083
+Miscellaneous,1835,8.27,#787734
+Premium on Pub. Debt.,1835,11.72,#886a6d
+Principle of Pub.,1835,22.06,#a1aba6
+Debt Interest on Pub. Debt.,1835,32.27,#ddd9cb
+Army,1834,1.11,#aea596
+Navy,1834,20.22,#777367
+Pensions,1834,0,#292323
+Civil,1834,9.06,#eac85c
+Indians,1834,1.77,#fee6a9
+Foreign,1834,3.73,#d69083
+Miscellaneous,1834,8.54,#787734
+Premium on Pub. Debt.,1834,15.17,#886a6d
+Principle of Pub.,1834,16.54,#a1aba6
+Debt Interest on Pub. Debt.,1834,23.86,#ddd9cb
+Army,1833,1.49,#aea596
+Navy,1833,8.98,#777367
+Pensions,1833,0,#292323
+Civil,1833,6.34,#eac85c
+Indians,1833,3.51,#fee6a9
+Foreign,1833,7.17,#d69083
+Miscellaneous,1833,12.4,#787734
+Premium on Pub. Debt.,1833,17.93,#886a6d
+Principle of Pub.,1833,16.26,#a1aba6
+Debt Interest on Pub. Debt.,1833,25.92,#ddd9cb
+Army,1832,2.49,#aea596
+Navy,1832,49.94,#777367
+Pensions,1832,0,#292323
+Civil,1832,5.42,#eac85c
+Indians,1832,0.94,#fee6a9
+Foreign,1832,3.86,#d69083
+Miscellaneous,1832,7.17,#787734
+Premium on Pub. Debt.,1832,3.58,#886a6d
+Principle of Pub.,1832,11.31,#a1aba6
+Debt Interest on Pub. Debt.,1832,15.29,#ddd9cb
+Army,1831,4.86,#aea596
+Navy,1831,49.32,#777367
+Pensions,1831,0,#292323
+Civil,1831,4.61,#eac85c
+Indians,1831,1.25,#fee6a9
+Foreign,1831,3.45,#d69083
+Miscellaneous,1831,4,#787734
+Premium on Pub. Debt.,1831,3.86,#886a6d
+Principle of Pub.,1831,13.36,#a1aba6
+Debt Interest on Pub. Debt.,1831,15.29,#ddd9cb
+Army,1830,7.99,#aea596
+Navy,1830,38.57,#777367
+Pensions,1830,0,#292323
+Civil,1830,6.39,#eac85c
+Indians,1830,1.31,#fee6a9
+Foreign,1830,2.75,#d69083
+Miscellaneous,1830,5.11,#787734
+Premium on Pub. Debt.,1830,5.51,#886a6d
+Principle of Pub.,1830,13.51,#a1aba6
+Debt Interest on Pub. Debt.,1830,18.86,#ddd9cb
+Army,1829,10.49,#aea596
+Navy,1829,39.45,#777367
+Pensions,1829,0,#292323
+Civil,1829,5.18,#eac85c
+Indians,1829,0.8,#fee6a9
+Foreign,1829,2.76,#d69083
+Miscellaneous,1829,5.37,#787734
+Premium on Pub. Debt.,1829,3.59,#886a6d
+Principle of Pub.,1829,14.2,#a1aba6
+Debt Interest on Pub. Debt.,1829,18.16,#ddd9cb
+Army,1828,12.49,#aea596
+Navy,1828,35.95,#777367
+Pensions,1828,0,#292323
+Civil,1828,5.38,#eac85c
+Indians,1828,4.04,#fee6a9
+Foreign,1828,2.89,#d69083
+Miscellaneous,1828,4.69,#787734
+Premium on Pub. Debt.,1828,3.45,#886a6d
+Principle of Pub.,1828,15.3,#a1aba6
+Debt Interest on Pub. Debt.,1828,15.81,#ddd9cb
+Army,1827,15.86,#aea596
+Navy,1827,28.84,#777367
+Pensions,1827,0,#292323
+Civil,1827,5.51,#eac85c
+Indians,1827,2.56,#fee6a9
+Foreign,1827,3.99,#d69083
+Miscellaneous,1827,3.18,#787734
+Premium on Pub. Debt.,1827,4,#886a6d
+Principle of Pub.,1827,19.57,#a1aba6
+Debt Interest on Pub. Debt.,1827,16.49,#ddd9cb
+Army,1826,16.61,#aea596
+Navy,1826,29.72,#777367
+Pensions,1826,0,#292323
+Civil,1826,4.89,#eac85c
+Indians,1826,1.28,#fee6a9
+Foreign,1826,3.03,#d69083
+Miscellaneous,1826,4.28,#787734
+Premium on Pub. Debt.,1826,6.48,#886a6d
+Principle of Pub.,1826,17.51,#a1aba6
+Debt Interest on Pub. Debt.,1826,16.2,#ddd9cb
+Army,1825,23.61,#aea596
+Navy,1825,14.73,#777367
+Pensions,1825,0,#292323
+Civil,1825,7.4,#eac85c
+Indians,1825,2.08,#fee6a9
+Foreign,1825,4,#d69083
+Miscellaneous,1825,5.24,#787734
+Premium on Pub. Debt.,1825,7.17,#886a6d
+Principle of Pub.,1825,16.4,#a1aba6
+Debt Interest on Pub. Debt.,1825,19.37,#ddd9cb
+Army,1824,18.74,#aea596
+Navy,1824,24.35,#777367
+Pensions,1824,0,#292323
+Civil,1824,5.32,#eac85c
+Indians,1824,18.86,#fee6a9
+Foreign,1824,1.52,#d69083
+Miscellaneous,1824,2.75,#787734
+Premium on Pub. Debt.,1824,5.24,#886a6d
+Principle of Pub.,1824,11.44,#a1aba6
+Debt Interest on Pub. Debt.,1824,11.78,#ddd9cb
+Army,1823,32.35,#aea596
+Navy,1823,4.25,#777367
+Pensions,1823,0,#292323
+Civil,1823,6.61,#eac85c
+Indians,1823,2.01,#fee6a9
+Foreign,1823,2.76,#d69083
+Miscellaneous,1823,4,#787734
+Premium on Pub. Debt.,1823,11.58,#886a6d
+Principle of Pub.,1823,16.68,#a1aba6
+Debt Interest on Pub. Debt.,1823,19.76,#ddd9cb
+Army,1822,29.61,#aea596
+Navy,1822,15.23,#777367
+Pensions,1822,0,#292323
+Civil,1822,6.54,#eac85c
+Indians,1822,0.88,#fee6a9
+Foreign,1822,3.17,#d69083
+Miscellaneous,1822,4,#787734
+Premium on Pub. Debt.,1822,11.3,#886a6d
+Principle of Pub.,1822,11.99,#a1aba6
+Debt Interest on Pub. Debt.,1822,17.28,#ddd9cb
+Army,1821,32.86,#aea596
+Navy,1821,0,#777367
+Pensions,1821,0,#292323
+Civil,1821,6.39,#eac85c
+Indians,1821,1.71,#fee6a9
+Foreign,1821,3.17,#d69083
+Miscellaneous,1821,5.38,#787734
+Premium on Pub. Debt.,1821,1.93,#886a6d
+Principle of Pub.,1821,21.23,#a1aba6
+Debt Interest on Pub. Debt.,1821,27.33,#ddd9cb
+Army,1820,27.12,#aea596
+Navy,1820,5.12,#777367
+Pensions,1820,0,#292323
+Civil,1820,6.43,#eac85c
+Indians,1820,1.47,#fee6a9
+Foreign,1820,1.25,#d69083
+Miscellaneous,1820,5.78,#787734
+Premium on Pub. Debt.,1820,16.96,#886a6d
+Principle of Pub.,1820,22.88,#a1aba6
+Debt Interest on Pub. Debt.,1820,12.99,#ddd9cb
+Army,1819,20.13,#aea596
+Navy,1819,17.35,#777367
+Pensions,1819,0,#292323
+Civil,1819,4.08,#eac85c
+Indians,1819,1.49,#fee6a9
+Foreign,1819,2.34,#d69083
+Miscellaneous,1819,5.1,#787734
+Premium on Pub. Debt.,1819,9.93,#886a6d
+Principle of Pub.,1819,15.02,#a1aba6
+Debt Interest on Pub. Debt.,1819,24.56,#ddd9cb
+Army,1818,22.63,#aea596
+Navy,1818,28.22,#777367
+Pensions,1818,0,#292323
+Civil,1818,3.94,#eac85c
+Indians,1818,1.64,#fee6a9
+Foreign,1818,1.51,#d69083
+Miscellaneous,1818,8.83,#787734
+Premium on Pub. Debt.,1818,2.76,#886a6d
+Principle of Pub.,1818,10.06,#a1aba6
+Debt Interest on Pub. Debt.,1818,20.41,#ddd9cb
+Army,1817,11.4,#aea596
+Navy,1817,50.19,#777367
+Pensions,1817,0,#292323
+Civil,1817,2.38,#eac85c
+Indians,1817,0.88,#fee6a9
+Foreign,1817,1.1,#d69083
+Miscellaneous,1817,5.79,#787734
+Premium on Pub. Debt.,1817,0.97,#886a6d
+Principle of Pub.,1817,7.58,#a1aba6
+Debt Interest on Pub. Debt.,1817,19.71,#ddd9cb
+Army,1816,22.39,#aea596
+Navy,1816,10.99,#777367
+Pensions,1816,0,#292323
+Civil,1816,3.5,#eac85c
+Indians,1816,0.95,#fee6a9
+Foreign,1816,1.11,#d69083
+Miscellaneous,1816,3.72,#787734
+Premium on Pub. Debt.,1816,0.69,#886a6d
+Principle of Pub.,1816,10.89,#a1aba6
+Debt Interest on Pub. Debt.,1816,45.76,#ddd9cb
+Army,1815,18.02,#aea596
+Navy,1815,0,#777367
+Pensions,1815,0,#292323
+Civil,1815,2.53,#eac85c
+Indians,1815,1.16,#fee6a9
+Foreign,1815,2.07,#d69083
+Miscellaneous,1815,4.82,#787734
+Premium on Pub. Debt.,1815,0.83,#886a6d
+Principle of Pub.,1815,26.75,#a1aba6
+Debt Interest on Pub. Debt.,1815,43.82,#ddd9cb
+Army,1814,13.28,#aea596
+Navy,1814,0,#777367
+Pensions,1814,0,#292323
+Civil,1814,2.51,#eac85c
+Indians,1814,0.69,#fee6a9
+Foreign,1814,0.69,#d69083
+Miscellaneous,1814,3.03,#787734
+Premium on Pub. Debt.,1814,0.69,#886a6d
+Principle of Pub.,1814,20.82,#a1aba6
+Debt Interest on Pub. Debt.,1814,58.29,#ddd9cb
+Army,1813,11.29,#aea596
+Navy,1813,0,#777367
+Pensions,1813,0,#292323
+Civil,1813,2.48,#eac85c
+Indians,1813,0.79,#fee6a9
+Foreign,1813,0.69,#d69083
+Miscellaneous,1813,2.34,#787734
+Premium on Pub. Debt.,1813,0.14,#886a6d
+Principle of Pub.,1813,20.54,#a1aba6
+Debt Interest on Pub. Debt.,1813,61.73,#ddd9cb
+Army,1812,12.04,#aea596
+Navy,1812,0,#777367
+Pensions,1812,0,#292323
+Civil,1812,4.33,#eac85c
+Indians,1812,1.37,#fee6a9
+Foreign,1812,1.51,#d69083
+Miscellaneous,1812,3.04,#787734
+Premium on Pub. Debt.,1812,0.41,#886a6d
+Principle of Pub.,1812,19.3,#a1aba6
+Debt Interest on Pub. Debt.,1812,58,#ddd9cb
+Army,1811,23.65,#aea596
+Navy,1811,25.47,#777367
+Pensions,1811,0,#292323
+Civil,1811,5.76,#eac85c
+Indians,1811,2.43,#fee6a9
+Foreign,1811,1.79,#d69083
+Miscellaneous,1811,4,#787734
+Premium on Pub. Debt.,1811,0.83,#886a6d
+Principle of Pub.,1811,18.06,#a1aba6
+Debt Interest on Pub. Debt.,1811,18.01,#ddd9cb
+Army,1810,22.91,#aea596
+Navy,1810,38.2,#777367
+Pensions,1810,0,#292323
+Civil,1810,5.26,#eac85c
+Indians,1810,0.46,#fee6a9
+Foreign,1810,1.94,#d69083
+Miscellaneous,1810,1.79,#787734
+Premium on Pub. Debt.,1810,1.1,#886a6d
+Principle of Pub.,1810,12.41,#a1aba6
+Debt Interest on Pub. Debt.,1810,15.93,#ddd9cb
+Army,1809,20.29,#aea596
+Navy,1809,27.09,#777367
+Pensions,1809,0,#292323
+Civil,1809,4.83,#eac85c
+Indians,1809,1.4,#fee6a9
+Foreign,1809,2.89,#d69083
+Miscellaneous,1809,1.93,#787734
+Premium on Pub. Debt.,1809,0.83,#886a6d
+Principle of Pub.,1809,17.37,#a1aba6
+Debt Interest on Pub. Debt.,1809,23.37,#ddd9cb
+Army,1808,14.55,#aea596
+Navy,1808,47.56,#777367
+Pensions,1808,0,#292323
+Civil,1808,4.2,#eac85c
+Indians,1808,1.64,#fee6a9
+Foreign,1808,1.38,#d69083
+Miscellaneous,1808,2.48,#787734
+Premium on Pub. Debt.,1808,0.56,#886a6d
+Principle of Pub.,1808,11.02,#a1aba6
+Debt Interest on Pub. Debt.,1808,16.61,#ddd9cb
+Army,1807,27.28,#aea596
+Navy,1807,32.09,#777367
+Pensions,1807,0,#292323
+Civil,1807,5.64,#eac85c
+Indians,1807,4.61,#fee6a9
+Foreign,1807,2.07,#d69083
+Miscellaneous,1807,3.72,#787734
+Premium on Pub. Debt.,1807,0.69,#886a6d
+Principle of Pub.,1807,13.65,#a1aba6
+Debt Interest on Pub. Debt.,1807,10.25,#ddd9cb
+Army,1806,21.05,#aea596
+Navy,1806,40.7,#777367
+Pensions,1806,0,#292323
+Civil,1806,4.49,#eac85c
+Indians,1806,11.11,#fee6a9
+Foreign,1806,1.65,#d69083
+Miscellaneous,1806,2.76,#787734
+Premium on Pub. Debt.,1806,0.41,#886a6d
+Principle of Pub.,1806,10.07,#a1aba6
+Debt Interest on Pub. Debt.,1806,7.76,#ddd9cb
+Army,1805,16.93,#aea596
+Navy,1805,42.2,#777367
+Pensions,1805,0,#292323
+Civil,1805,3.72,#eac85c
+Indians,1805,18.23,#fee6a9
+Foreign,1805,1.24,#d69083
+Miscellaneous,1805,2.34,#787734
+Premium on Pub. Debt.,1805,0.83,#886a6d
+Principle of Pub.,1805,9.93,#a1aba6
+Debt Interest on Pub. Debt.,1805,4.58,#ddd9cb
+Army,1804,32.41,#aea596
+Navy,1804,32.84,#777367
+Pensions,1804,0,#292323
+Civil,1804,4.61,#eac85c
+Indians,1804,9.3,#fee6a9
+Foreign,1804,1.24,#d69083
+Miscellaneous,1804,2.62,#787734
+Premium on Pub. Debt.,1804,1.38,#886a6d
+Principle of Pub.,1804,8.82,#a1aba6
+Debt Interest on Pub. Debt.,1804,6.78,#ddd9cb
+Army,1803,49.27,#aea596
+Navy,1803,0,#777367
+Pensions,1803,0,#292323
+Civil,1803,6.86,#eac85c
+Indians,1803,13.94,#fee6a9
+Foreign,1803,0.82,#d69083
+Miscellaneous,1803,2.9,#787734
+Premium on Pub. Debt.,1803,1.1,#886a6d
+Principle of Pub.,1803,14.2,#a1aba6
+Debt Interest on Pub. Debt.,1803,10.91,#ddd9cb
+Army,1802,36.16,#aea596
+Navy,1802,32.34,#777367
+Pensions,1802,0,#292323
+Civil,1802,4.69,#eac85c
+Indians,1802,4.61,#fee6a9
+Foreign,1802,1.24,#d69083
+Miscellaneous,1802,2.2,#787734
+Premium on Pub. Debt.,1802,1.1,#886a6d
+Principle of Pub.,1802,7.86,#a1aba6
+Debt Interest on Pub. Debt.,1802,9.8,#ddd9cb
+Army,1801,37.42,#aea596
+Navy,1801,19.85,#777367
+Pensions,1801,0,#292323
+Civil,1801,4.94,#eac85c
+Indians,1801,2.49,#fee6a9
+Foreign,1801,0.42,#d69083
+Miscellaneous,1801,2.07,#787734
+Premium on Pub. Debt.,1801,0.96,#886a6d
+Principle of Pub.,1801,17.79,#a1aba6
+Debt Interest on Pub. Debt.,1801,14.06,#ddd9cb
+Army,1800,31.43,#aea596
+Navy,1800,0,#777367
+Pensions,1800,0,#292323
+Civil,1800,6.65,#eac85c
+Indians,1800,3.75,#fee6a9
+Foreign,1800,0,#d69083
+Miscellaneous,1800,1.93,#787734
+Premium on Pub. Debt.,1800,1.1,#886a6d
+Principle of Pub.,1800,31.44,#a1aba6
+Debt Interest on Pub. Debt.,1800,23.7,#ddd9cb
+Army,1799,29.81,#aea596
+Navy,1799,0,#777367
+Pensions,1799,0,#292323
+Civil,1799,6.47,#eac85c
+Indians,1799,3.21,#fee6a9
+Foreign,1799,0,#d69083
+Miscellaneous,1799,2.35,#787734
+Premium on Pub. Debt.,1799,1.1,#886a6d
+Principle of Pub.,1799,30.88,#a1aba6
+Debt Interest on Pub. Debt.,1799,26.18,#ddd9cb
+Army,1798,34.93,#aea596
+Navy,1798,9.74,#777367
+Pensions,1798,0,#292323
+Civil,1798,6.21,#eac85c
+Indians,1798,5.44,#fee6a9
+Foreign,1798,0,#d69083
+Miscellaneous,1798,1.52,#787734
+Premium on Pub. Debt.,1798,2.48,#886a6d
+Principle of Pub.,1798,15.72,#a1aba6
+Debt Interest on Pub. Debt.,1798,23.96,#ddd9cb
+Army,1797,35.68,#aea596
+Navy,1797,32.09,#777367
+Pensions,1797,0,#292323
+Civil,1797,5.8,#eac85c
+Indians,1797,7.44,#fee6a9
+Foreign,1797,0,#d69083
+Miscellaneous,1797,1.93,#787734
+Premium on Pub. Debt.,1797,1.1,#886a6d
+Principle of Pub.,1797,4,#a1aba6
+Debt Interest on Pub. Debt.,1797,11.96,#ddd9cb
+Army,1796,43.05,#aea596
+Navy,1796,22.85,#777367
+Pensions,1796,0,#292323
+Civil,1796,6.15,#eac85c
+Indians,1796,2.76,#fee6a9
+Foreign,1796,1.38,#d69083
+Miscellaneous,1796,1.93,#787734
+Premium on Pub. Debt.,1796,1.52,#886a6d
+Principle of Pub.,1796,3.58,#a1aba6
+Debt Interest on Pub. Debt.,1796,16.78,#ddd9cb
+Army,1795,40.18,#aea596
+Navy,1795,0,#777367
+Pensions,1795,0,#292323
+Civil,1795,5.14,#eac85c
+Indians,1795,12.4,#fee6a9
+Foreign,1795,0.28,#d69083
+Miscellaneous,1795,1.11,#787734
+Premium on Pub. Debt.,1795,1.37,#886a6d
+Principle of Pub.,1795,5.8,#a1aba6
+Debt Interest on Pub. Debt.,1795,33.72,#ddd9cb
+Army,1794,42.06,#aea596
+Navy,1794,0,#777367
+Pensions,1794,0,#292323
+Civil,1794,7.17,#eac85c
+Indians,1794,2.71,#fee6a9
+Foreign,1794,0.28,#d69083
+Miscellaneous,1794,1.79,#787734
+Premium on Pub. Debt.,1794,1.24,#886a6d
+Principle of Pub.,1794,1.11,#a1aba6
+Debt Interest on Pub. Debt.,1794,43.64,#ddd9cb
+Army,1793,36.07,#aea596
+Navy,1793,33.95,#777367
+Pensions,1793,0,#292323
+Civil,1793,6.01,#eac85c
+Indians,1793,1.84,#fee6a9
+Foreign,1793,0.42,#d69083
+Miscellaneous,1793,0.55,#787734
+Premium on Pub. Debt.,1793,1.65,#886a6d
+Principle of Pub.,1793,0,#a1aba6
+Debt Interest on Pub. Debt.,1793,19.51,#ddd9cb
+Army,1792,55.55,#aea596
+Navy,1792,0,#777367
+Pensions,1792,0,#292323
+Civil,1792,9,#eac85c
+Indians,1792,2.02,#fee6a9
+Foreign,1792,0.69,#d69083
+Miscellaneous,1792,4.28,#787734
+Premium on Pub. Debt.,1792,2.34,#886a6d
+Principle of Pub.,1792,0,#a1aba6
+Debt Interest on Pub. Debt.,1792,26.12,#ddd9cb

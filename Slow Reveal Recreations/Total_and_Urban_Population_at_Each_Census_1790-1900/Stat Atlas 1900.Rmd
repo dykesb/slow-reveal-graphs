@@ -1,0 +1,129 @@
+---
+title: "Stat Atlas 1900"
+author: "Louis Cousino"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Loading Libraries
+```{r}
+library(tidyverse)
+library(cowplot)
+library(ggtext)
+library(showtext)
+```
+
+#Loading fonts
+```{r}
+*font_add_google(name = "Morticia NF ", family = "Morticia NF")
+```
+
+
+#Setting themes
+```{r}
+theme <- theme(axis.line.x = element_line(color = "black"),
+               axis.ticks = element_blank(),
+               legend.position = "none",
+               panel.background = element_rect(fill = "transparent", color = "transparent"),
+               panel.grid.major.x = element_line(color = "black"),
+               panel.grid.minor.x = element_blank(),
+               panel.grid.major.y = element_blank(),
+               panel.grid.minor.y = element_blank(),
+               plot.background = element_rect(fill = "transparent", color = "transparent"),
+               plot.title = element_text(hjust = 0.5),
+               plot.subtitle = element_text(hjust = 0.5))
+```
+
+
+#Importing Data
+```{r}
+atlas <- readxl::read_xlsx("~/RStudio/Work/Data Literacy/Data Literacy/Datasets/Statistics_Atlas_17.xlsx")
+```
+
+Manipulating data to match proportions
+```{r}
+atlas2 <- atlas |> 
+  mutate(Urban_Pop = case_when(is.na(Urban_Pop) == TRUE ~ 0,
+                               TRUE ~ Urban_Pop),
+         Urban_Pop = (Urban_Pop/8.86)*80,
+         Pop_Density = (Pop_Density/2.875)*26,
+         Urban_Pop_Prop = (Urban_Pop_Prop/3.89)*35,
+         Year = as.character(Year))
+
+atlas3 <- atlas2 |> 
+  mutate(Total_Pop = ((Total_Pop/8.86)*80)-Urban_Pop)
+```
+
+Creating top graph
+```{r}
+top <- atlas3 |> 
+  pivot_longer(cols = c("Total_Pop","Urban_Pop"), names_to = "Pop_Type") |> 
+  ggplot(aes(y = fct_reorder(Year, as.numeric(Year), .desc = TRUE), x = value, fill = Pop_Type)) +
+  geom_col(color = "black",
+           width = 0.5) +
+  scale_fill_manual(values = c("transparent","black")) +
+  scale_x_continuous(breaks = seq(0,80,5), expand = expansion(mult = c(0,0)),
+                     limits = c(0,80),
+                     position = "top") +
+  scale_y_discrete(expand = expansion(mult = c(0,0))) +
+  labs(title = "1. TOTAL AND URBAN POPULATION AT EACH CENSUS.", subtitle = "THE BLACK PORTION IS URBAN",
+       x = "MILLIONS", y = "") +
+  theme
+```
+
+Creating bottom left graph
+```{r}
+bottoml <- atlas3 |> 
+  ggplot(aes(y = fct_reorder(Year, as.numeric(Year), .desc = TRUE), x = Pop_Density)) +
+  geom_col(color = "black", fill = "black",
+           width = 0.5) +
+  scale_x_continuous(breaks = seq(0,26,2), expand = expansion(mult = c(0,0)),
+                     limits = c(0,26),
+                     position = "top") +
+  scale_y_discrete(expand = expansion(mult = c(0,0))) +
+  labs(title = "2. DENSITY OF POPULATION AT EACH CENSUS.", subtitle = "EXCLUDING ALASKA AND HAWAII",
+       x = "", y = "") +
+  theme
+```
+
+Creating bottom right graph
+
+```{r}
+bottomr <- atlas3 |> 
+  ggplot(aes(y = fct_reorder(Year, as.numeric(Year), .desc = TRUE), x = Urban_Pop_Prop)) +
+  geom_col(color = "black", fill = "black",
+           width = 0.5) +
+  scale_x_continuous(breaks = seq(0,35,5), expand = expansion(mult = c(0,0)),
+                     limits = c(0,35),
+                     position = "top") +
+  scale_y_discrete(expand = expansion(mult = c(0,0))) +
+  labs(title = "3. PROPORTION OF URBAN TO TOTAL POPULATION AT EACH CENSUS", subtitle = " ",
+       x = "", y = "") +
+  theme +
+  theme(axis.ticks.y = element_blank(),
+        axis.text.y = element_blank())
+
+bottomr
+```
+
+Combining plots
+```{r}
+bottom <- plot_grid(bottoml, bottomr) +
+  theme(plot.margin = margin(20,0,0,0))
+
+plot_grid(top, bottom,
+          ncol = 1) +
+  theme(plot.margin = margin(10,10,10,10),
+        plot.background = element_rect(fill = "#ede0c1"))
+```
+
+Saving plot
+```{r}
+ggsave(here::here("~/RStudio/Work/Data Literacy/Data Literacy/R Script Files/Stat Atlas 1900/stat_atlas_.png"), width = 1934/150, height = 1470/150,
+       units = "in")
+```
+

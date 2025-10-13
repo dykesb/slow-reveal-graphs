@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <!-- <link rel="stylesheet" href="/D3 Files/stylesheet_v1.css?v=" + new Date().getTime();> -->
+</head>
+
+<script>
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = "/D3 Files/stylesheet_v1.css?v=" + new Date().getTime(); // cache-busting
+    document.head.appendChild(link);
+</script>
+
+<!-- Load libraries -->
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="dataplot"></div>
+
+<!-- Creating tooltip div for later reveal. -->
+<div id="tooltip" class="tooltip"></div>
+
+<div id="line-container" class="text">
+
+    <script>
+
+        // Getting the dimensions of the client's browser
+        const viewerWidth = window.innerWidth
+        const viewerHeight = window.innerHeight * 1.25
+        const viewerRatio = viewerWidth / viewerHeight
+
+        console.log(viewerWidth, viewerHeight)
+
+        // Setting the dimensions and margins of the graph
+        var margin = {top: 50, right: 30, bottom: -100, left: 30},
+            width = viewerWidth - margin.left - margin.right,
+            height = viewerHeight - margin.top - margin.bottom;
+
+        // Setting scale factor from the original dimensions
+        const scaleWidth = viewerWidth / 9468;
+        const scaleHeight = viewerHeight / 6262;
+
+
+        // var margin = {top: 10, right: 30, bottom: 30, left: 60},
+        //         width = 9468 - margin.left - margin.right,
+        //         height = 6262 - margin.top - margin.bottom;
+
+        // append the svg object to the body of the page
+        var svg = d3.select("#dataplot")
+            .append("svg")
+            .attr("width", width + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        // Defining file path
+        var plotting_data = "/D3 Files/processed_data_v1.csv?v=" + new Date().getTime();
+
+        //Read the data
+        d3.csv(plotting_data).then(function (data) {
+
+            // Grouping the data by City
+
+            var cityGroup = Array.from(
+                d3.group(data, d => d.raster_name),
+                ([key, values]) => ({key, values})
+            )
+
+
+            // Add X axis
+            var x = d3.scaleLinear()
+                .domain([-24, 0])
+                .range([0, width]);
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")");
+
+            // Add Y axis
+            var y = d3.scaleLinear()
+                .domain([-60, 0])
+                .range([height, 0]);
+            svg.append("g");
+
+            // Defining Mouseover Functions
+
+            function handleMouseOver(event, d) {
+
+                // Selecting tooltip and setting parameters
+
+                d3.select("#tooltip")
+                    .html(d.tooltext)
+                    .transition()
+                    .duration(200)
+                    .style("opacity", 0.9)
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY - 20) + "px");
+
+                // Setting properties for revealing the mask
+
+                selected_city = d.key
+
+                console.log(selected_city)
+
+                d3.selectAll(".line." + selected_city)
+                    .attr("stroke", "#0f00db")
+
+                d3.selectAll(".mask." + selected_city)
+                    .attr("opacity", "0")
+
+                d3.selectAll(".line")
+                    .filter(function () {
+                        return !this.classList.contains(selected_city);
+                    })
+                    .attr("opacity", "0.2")
+                    .lower()
+
+                d3.selectAll("rect")
+                    .lower()
+            }
+
+            function handleMouseOut(event, d) {
+
+                // Setting tooltip opacity to zero on mouseout
+                d3.select("#tooltip")
+                    .transition()
+                    .duration(200)
+                    .style("opacity", 0);
+
+                // Setting properties for placing masks back on.
+
+                selected_city = d.key
+
+                d3.selectAll(".mask." + selected_city)
+                    .attr("stroke", "black")
+                    .attr("opacity", "0.5")
+
+                d3.selectAll(".line." + selected_city)
+                    .attr("stroke", "black")
+
+                d3.selectAll(".line")
+                    .filter(function () {
+                        return !this.classList.contains(selected_city);
+                    })
+                    .attr("opacity", "1")
+                    .lower()
+
+                d3.selectAll("rect")
+                    .lower()
+            }
+
+            // Drawing connecting lines
+            svg.selectAll(".line")
+                .data(cityGroup)
+                .enter()
+                .append("path")
+                .attr("class", function (d) {return "line " + d.key})
+                .attr("fill", "none")
+                .attr("stroke", "black")
+                .attr("stroke-width", "2")
+                .attr("d", function (d) {
+                    return d3.line()
+                        .x(function (d) {return x(d.limits_val * -1);})
+                        .y(function (d) {return y(d.Rank * -1);})
+                        (d.values)
+
+                })
+                .on("mouseover", handleMouseOver)
+                .on("mouseout", handleMouseOut)
+
+            svg.selectAll(".lineMask")
+                .data(cityGroup)
+                .enter()
+                .append("path")
+                .attr("class", function (d) {return "line " + d.key})
+                .attr("fill", "none")
+                .attr("stroke", "black")
+                .attr("stroke-width", "2")
+                .attr("opacity", "0")
+                .attr("d", function (d) {
+                    return d3.line()
+                        .x(function (d) {return x(d.limits_val * -1);})
+                        .y(function (d) {return y(d.Rank * -1);})
+                        (d.values)
+
+                })
+
+            // Defining emblem dimensions
+            var emblemDimensions = {height: 65 * scaleHeight, width: 428 * scaleWidth}
+
+            // Eliminating duplicate rows for the purpose of plotting emblems
+            let widerData = data.filter((row, index) => index % 2 === 0);
+
+            // Adding the key variable to widerData for the highlight function
+
+            widerData.forEach(d => {
+                d.key = d.raster_name
+            });
+
+            console.log(widerData);
+            console.log(data);
+
+
+            // Plotting emblems
+            svg.selectAll(".emblem")
+                .data(widerData)
+                .enter()
+                .append("image")
+                .attr("href", d => "/state-emblems/" + d.raster_name + ".png")
+                .attr("x", d => x(d.x_place * -1) - (emblemDimensions.width / 2))
+                .attr("y", d => y(d.Rank * -1) - (emblemDimensions.height / 2))
+                .attr("width", emblemDimensions.width)
+
+
+            // Plotting masks
+            svg.selectAll(".mask")
+                .data(widerData)
+                .enter()
+                .append("image")
+                .attr("id", "emblemTooltips")
+                .attr("class", function (d) {return "mask " + d.raster_name})
+                .attr("href", d => "/state-emblems/mask.png")
+                .attr("x", d => x(d.x_place * -1) - (emblemDimensions.width / 2))
+                .attr("y", d => y(d.Rank * -1) - (emblemDimensions.height / 2))
+                .attr("width", emblemDimensions.width)
+                .attr("opacity", "0.5")
+                .on("mouseover", handleMouseOver)
+                .on("mouseout", handleMouseOut)
+
+            // Adding Labels and Title
+
+            // Creating dataframe specifying labels and coordinates
+
+            var uniqueXCoord = d3.sort(d3.union(data.map(d => +d.x_place)));
+
+            var uniqueXCoord2 = uniqueXCoord.push(...uniqueXCoord)
+
+            console.log(uniqueXCoord)
+            console.log(uniqueXCoord2)
+
+            var textLabels = {
+                "Label": [
+                    "1st Census", "2nd Census", "3rd Census", "4th Census", "5th Census", "6th Census", "7th Census", "8th Census", "9th Census", "10th Census", "11th Census", "1790", "1800", "1810", "1820", "1830", "1840", "1850", "1860", "1870", "1880", "1890"
+                ],
+                "x": [
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+                ],
+                "y": [
+                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+                ]
+            };
+
+            var textData = textLabels.Label.map((label, i) => {
+                return {
+                    label: label,
+                    x: uniqueXCoord[i],
+                    y: textLabels.y[i]
+                };
+            });
+
+            console.log(textData);
+
+
+            svg.selectAll("text.label")
+                .data(textData.slice(0, 11))
+                .enter()
+                .append("text")
+                .attr("class", "label")
+                .attr("x", d => x((d.x * -1)) - (emblemDimensions.width / 2.2))
+                .attr("y", d => y(d.y))
+                .text(d => d.label)
+                .attr("fill", "black");
+
+            svg.selectAll("text.year")
+                .data(textData.slice(-11))
+                .enter()
+                .append("text")
+                .attr("class", "label")
+                .attr("x", d => x((d.x * -1)) - (emblemDimensions.width / 5))
+                .attr("y", d => y(d.y))
+                .text(d => d.label)
+                .attr("fill", "black");
+
+            // Setting text for States.
+
+            var rightText = widerData.filter(widerData =>
+                widerData.offset === "right"
+            )
+
+            var leftText = widerData.filter(widerData =>
+                widerData.offset === "left"
+            )
+
+            var centerText = widerData.filter(widerData =>
+                widerData.label === "1"
+            )
+
+            svg.selectAll("State.right")
+                .data(rightText)
+                .enter()
+                .append("text")
+                .attr("class", "State right")
+                .attr("x", d => x((d.x_place * -1) + 0.6))
+                .attr("y", d => y((d.Rank * -1) - 0.25))
+                .text(d => d.toolState)
+                .on("mouseover", handleMouseOver)
+                .on("mouseout", handleMouseOut);
+
+            svg.selectAll("State.left")
+                .data(leftText)
+                .enter()
+                .append("text")
+                .attr("class", "State left")
+                .attr("x", d => x((d.x_place * -1) - 2.3))
+                .attr("y", d => y((d.Rank * -1) - 0.25))
+                .text(d => d.toolState)
+                .on("mouseover", handleMouseOver)
+                .on("mouseout", handleMouseOut);
+
+            svg.selectAll("State.center")
+                .data(centerText)
+                .enter()
+                .append("text")
+                .attr("class", "State center")
+                .attr("text-anchor", "middle")
+                .attr("x", d => x((d.x_place * -1)))
+                .attr("y", d => y((d.Rank * -1) - 0.25))
+                .text(d => d.toolState)
+                .on("mouseover", handleMouseOver)
+                .on("mouseout", handleMouseOut);
+
+
+            if (viewerWidth < 1200) {
+                d3.select("svg")
+                    .selectAll("*")
+                    .remove()
+
+                const svg = d3.select("svg");
+
+
+                svg.append("text")
+                    .attr("class", "warning")
+                    .attr("x", viewerWidth / 2)
+                    .attr("y", viewerHeight / 2)
+                    .attr("text-anchor", "middle")           // centers horizontally
+                    .attr("dominant-baseline", "middle")     // centers vertically
+                    .html("Window dimensions are too small!")
+                    .attr("fill", "black")
+
+                svg.append("text")
+                    .attr("class", "warning")
+                    .attr("x", viewerWidth / 2)
+                    .attr("y", (viewerHeight + 50) / 2)
+                    .attr("text-anchor", "middle")           // centers horizontally
+                    .attr("dominant-baseline", "middle")     // centers vertically
+                    .html(" This graph will be too difficult to read. Please resize your browser window.")
+            } else if (viewerWidth < 900) {
+                d3.select("svg")
+                    .selectAll("*")
+                    .remove()
+
+                const svg = d3.select("svg");
+
+
+                svg.append("text")
+                    .attr("class", "warning")
+                    .attr("x", viewerWidth / 2)
+                    .attr("y", viewerHeight / 2)
+                    .attr("text-anchor", "middle")           // centers horizontally
+                    .attr("dominant-baseline", "middle")     // centers vertically
+                    .html("Window dimensions are too small!")
+                    .attr("fill", "black")
+
+                svg.append("text")
+                    .attr("class", "warning")
+                    .attr("x", viewerWidth / 2)
+                    .attr("y", (viewerHeight + 50) / 2)
+                    .attr("text-anchor", "middle")           // centers horizontally
+                    .attr("dominant-baseline", "middle")     // centers vertically
+                    .html(" This graph will be too difficult to read. Please resize your browser window.")
+            }
+
+        })
+
+    </script>
+</div>
