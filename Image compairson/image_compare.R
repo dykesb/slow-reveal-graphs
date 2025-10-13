@@ -19,10 +19,10 @@ library(opencv)
 
 
 # Enumerating images from the previous re-creations
-previous <- list.files(here::here("Image compairson", "previous"), full.names = TRUE, recursive = TRUE) |> 
+previous <- list.files(here::here("previous-recreations"), full.names = TRUE, recursive = TRUE) |> 
   as_tibble() |> 
   # filter(str_detect(value, "\\.png|\\.jpg")) |> 
-  mutate(folder_path = str_replace(value, ".*previous", ""),
+  mutate(folder_path = str_replace(value, ".*previous-recreations", ""),
          parsed_path = str_extract_all(folder_path, "(?<=/)[^/]+(?=/?)"),
          no_of_child_levels = map(parsed_path, ~ length(.x)),
          folder = map(parsed_path, ~ .x[1]),
