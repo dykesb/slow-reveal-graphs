@@ -1,0 +1,909 @@
+"","City","Census","Rank","label","offset","Rank2","xmin_grob","xmax_grob","ymin_grob","ymax_grob","raster_name","limit","limits_val"
+"1","NEW YORK",2,1,0,"right",1,-2.7,-1.3,-0.6,-1.4,"new_york","right_lim",1.325
+"2","NEW YORK",2,1,0,"right",1,-2.7,-1.3,-0.6,-1.4,"new_york","left_lim",2.675
+"3","PHILADELPHIA",2,2,0,"right",2,-2.7,-1.3,-1.6,-2.4,"philadelphia","right_lim",1.325
+"4","PHILADELPHIA",2,2,0,"right",2,-2.7,-1.3,-1.6,-2.4,"philadelphia","left_lim",2.675
+"5","BOSTON",2,3,0,"right",3,-2.7,-1.3,-2.6,-3.4,"boston","right_lim",1.325
+"6","BOSTON",2,3,0,"right",3,-2.7,-1.3,-2.6,-3.4,"boston","left_lim",2.675
+"7","CHARLESTON",2,4,0,"right",4,-2.7,-1.3,-3.6,-4.4,"charleston","right_lim",1.325
+"8","CHARLESTON",2,4,0,"right",4,-2.7,-1.3,-3.6,-4.4,"charleston","left_lim",2.675
+"9","BALTIMORE",2,5,0,"right",5,-2.7,-1.3,-4.6,-5.4,"baltimore","right_lim",1.325
+"10","BALTIMORE",2,5,0,"right",5,-2.7,-1.3,-4.6,-5.4,"baltimore","left_lim",2.675
+"11","NORTHERN LIBERTIES",2,6,0,"right",6,-2.7,-1.3,-5.6,-6.4,"northern_liberties","right_lim",1.325
+"12","NORTHERN LIBERTIES",2,6,0,"right",6,-2.7,-1.3,-5.6,-6.4,"northern_liberties","left_lim",2.675
+"13","SALEM",2,7,0,"right",7,-2.7,-1.3,-6.6,-7.4,"salem","right_lim",1.325
+"14","SALEM",2,7,0,"right",7,-2.7,-1.3,-6.6,-7.4,"salem","left_lim",2.675
+"15","NEWPORT",2,8,0,"right",8,-2.7,-1.3,-7.6,-8.4,"newport","right_lim",1.325
+"16","NEWPORT",2,8,0,"right",8,-2.7,-1.3,-7.6,-8.4,"newport","left_lim",2.675
+"17","PROVIDENCE",2,9,0,"right",9,-2.7,-1.3,-8.6,-9.4,"providence","right_lim",1.325
+"18","PROVIDENCE",2,9,0,"right",9,-2.7,-1.3,-8.6,-9.4,"providence","left_lim",2.675
+"19","SOUTHWARK",2,10,0,"right",10,-2.7,-1.3,-9.6,-10.4,"southwark","right_lim",1.325
+"20","SOUTHWARK",2,10,0,"right",10,-2.7,-1.3,-9.6,-10.4,"southwark","left_lim",2.675
+"21","MARBLEHEAD",2,11,0,"right",11,-2.7,-1.3,-10.6,-11.4,"marblehead","right_lim",1.325
+"22","MARBLEHEAD",2,11,0,"right",11,-2.7,-1.3,-10.6,-11.4,"marblehead","left_lim",2.675
+"23","NEW ORLEANS",2,12,0,"right",12,-2.7,-1.3,-11.6,-12.4,"new_orleans","right_lim",1.325
+"24","NEW ORLEANS",2,12,0,"right",12,-2.7,-1.3,-11.6,-12.4,"new_orleans","left_lim",2.675
+"25","GLOUCESTER",2,13,0,"right",13,-2.7,-1.3,-12.6,-13.4,"gloucester","right_lim",1.325
+"26","GLOUCESTER",2,13,0,"right",13,-2.7,-1.3,-12.6,-13.4,"gloucester","left_lim",2.675
+"27","NEW YORK",4,1,0,NA,1,-4.7,-3.3,-0.6,-1.4,"new_york","right_lim",3.325
+"28","NEW YORK",4,1,0,NA,1,-4.7,-3.3,-0.6,-1.4,"new_york","left_lim",4.675
+"29","PHILADELPHIA",4,2,0,NA,2,-4.7,-3.3,-1.6,-2.4,"philadelphia","right_lim",3.325
+"30","PHILADELPHIA",4,2,0,NA,2,-4.7,-3.3,-1.6,-2.4,"philadelphia","left_lim",4.675
+"31","BALTIMORE",4,3,0,NA,3,-4.7,-3.3,-2.6,-3.4,"baltimore","right_lim",3.325
+"32","BALTIMORE",4,3,0,NA,3,-4.7,-3.3,-2.6,-3.4,"baltimore","left_lim",4.675
+"33","BOSTON",4,4,0,NA,4,-4.7,-3.3,-3.6,-4.4,"boston","right_lim",3.325
+"34","BOSTON",4,4,0,NA,4,-4.7,-3.3,-3.6,-4.4,"boston","left_lim",4.675
+"35","CHARLESTON",4,5,0,NA,5,-4.7,-3.3,-4.6,-5.4,"charleston","right_lim",3.325
+"36","CHARLESTON",4,5,0,NA,5,-4.7,-3.3,-4.6,-5.4,"charleston","left_lim",4.675
+"37","NORTHERN LIBERTIES",4,6,0,NA,6,-4.7,-3.3,-5.6,-6.4,"northern_liberties","right_lim",3.325
+"38","NORTHERN LIBERTIES",4,6,0,NA,6,-4.7,-3.3,-5.6,-6.4,"northern_liberties","left_lim",4.675
+"39","SOUTHWARK",4,7,0,NA,7,-4.7,-3.3,-6.6,-7.4,"southwark","right_lim",3.325
+"40","SOUTHWARK",4,7,0,NA,7,-4.7,-3.3,-6.6,-7.4,"southwark","left_lim",4.675
+"41","SALEM",4,8,0,NA,8,-4.7,-3.3,-7.6,-8.4,"salem","right_lim",3.325
+"42","SALEM",4,8,0,NA,8,-4.7,-3.3,-7.6,-8.4,"salem","left_lim",4.675
+"43","NEW ORLEANS",4,9,0,NA,9,-4.7,-3.3,-8.6,-9.4,"new_orleans","right_lim",3.325
+"44","NEW ORLEANS",4,9,0,NA,9,-4.7,-3.3,-8.6,-9.4,"new_orleans","left_lim",4.675
+"45","PROVIDENCE",4,10,0,NA,10,-4.7,-3.3,-9.6,-10.4,"providence","right_lim",3.325
+"46","PROVIDENCE",4,10,0,NA,10,-4.7,-3.3,-9.6,-10.4,"providence","left_lim",4.675
+"47","NORFOLK",4,11,1,NA,11,-4.7,-3.3,-10.6,-11.4,"norfolk","right_lim",3.325
+"48","NORFOLK",4,11,1,NA,11,-4.7,-3.3,-10.6,-11.4,"norfolk","left_lim",4.675
+"49","NEWPORT",4,12,0,NA,12,-4.7,-3.3,-11.6,-12.4,"newport","right_lim",3.325
+"50","NEWPORT",4,12,0,NA,12,-4.7,-3.3,-11.6,-12.4,"newport","left_lim",4.675
+"51","NEWBURYPORT",4,13,1,NA,13,-4.7,-3.3,-12.6,-13.4,"newburyport","right_lim",3.325
+"52","NEWBURYPORT",4,13,1,NA,13,-4.7,-3.3,-12.6,-13.4,"newburyport","left_lim",4.675
+"53","RICHMOND",4,14,0,"right",14,-4.7,-3.3,-13.6,-14.4,"richmond","right_lim",3.325
+"54","RICHMOND",4,14,0,"right",14,-4.7,-3.3,-13.6,-14.4,"richmond","left_lim",4.675
+"55","NANTUCKET",4,15,0,"right",15,-4.7,-3.3,-14.6,-15.4,"nantucket","right_lim",3.325
+"56","NANTUCKET",4,15,0,"right",15,-4.7,-3.3,-14.6,-15.4,"nantucket","left_lim",4.675
+"57","PORTSMOUTH",4,16,0,"right",16,-4.7,-3.3,-15.6,-16.4,"portsmouth","right_lim",3.325
+"58","PORTSMOUTH",4,16,0,"right",16,-4.7,-3.3,-15.6,-16.4,"portsmouth","left_lim",4.675
+"59","GLOUCESTER",4,17,0,"right",17,-4.7,-3.3,-16.6,-17.4,"gloucester","right_lim",3.325
+"60","GLOUCESTER",4,17,0,"right",17,-4.7,-3.3,-16.6,-17.4,"gloucester","left_lim",4.675
+"61","ALBANY",4,18,0,"right",18,-4.7,-3.3,-17.6,-18.4,"albany","right_lim",3.325
+"62","ALBANY",4,18,0,"right",18,-4.7,-3.3,-17.6,-18.4,"albany","left_lim",4.675
+"63","SCHENECTADY",4,19,0,"right",19,-4.7,-3.3,-18.6,-19.4,"schenectady","right_lim",3.325
+"64","SCHENECTADY",4,19,0,"right",19,-4.7,-3.3,-18.6,-19.4,"schenectady","left_lim",4.675
+"65","MARBLEHEAD",4,20,0,"right",20,-4.7,-3.3,-19.6,-20.4,"marblehead","right_lim",3.325
+"66","MARBLEHEAD",4,20,0,"right",20,-4.7,-3.3,-19.6,-20.4,"marblehead","left_lim",4.675
+"67","BRIDGEWATER",4,21,0,"right",21,-4.7,-3.3,-20.6,-21.4,"bridgewater","right_lim",3.325
+"68","BRIDGEWATER",4,21,0,"right",21,-4.7,-3.3,-20.6,-21.4,"bridgewater","left_lim",4.675
+"69","SAVANNAH",4,22,0,"right",22,-4.7,-3.3,-21.6,-22.4,"savannah","right_lim",3.325
+"70","SAVANNAH",4,22,0,"right",22,-4.7,-3.3,-21.6,-22.4,"savannah","left_lim",4.675
+"71","NEW YORK",6,1,0,NA,1,-6.7,-5.3,-0.6,-1.4,"new_york","right_lim",5.325
+"72","NEW YORK",6,1,0,NA,1,-6.7,-5.3,-0.6,-1.4,"new_york","left_lim",6.675
+"73","PHILADELPHIA",6,2,0,NA,2,-6.7,-5.3,-1.6,-2.4,"philadelphia","right_lim",5.325
+"74","PHILADELPHIA",6,2,0,NA,2,-6.7,-5.3,-1.6,-2.4,"philadelphia","left_lim",6.675
+"75","BALTIMORE",6,3,0,NA,3,-6.7,-5.3,-2.6,-3.4,"baltimore","right_lim",5.325
+"76","BALTIMORE",6,3,0,NA,3,-6.7,-5.3,-2.6,-3.4,"baltimore","left_lim",6.675
+"77","BOSTON",6,4,0,NA,4,-6.7,-5.3,-3.6,-4.4,"boston","right_lim",5.325
+"78","BOSTON",6,4,0,NA,4,-6.7,-5.3,-3.6,-4.4,"boston","left_lim",6.675
+"79","CHARLESTON",6,5,0,NA,5,-6.7,-5.3,-4.6,-5.4,"charleston","right_lim",5.325
+"80","CHARLESTON",6,5,0,NA,5,-6.7,-5.3,-4.6,-5.4,"charleston","left_lim",6.675
+"81","NORTHERN LIBERTIES",6,6,0,NA,6,-6.7,-5.3,-5.6,-6.4,"northern_liberties","right_lim",5.325
+"82","NORTHERN LIBERTIES",6,6,0,NA,6,-6.7,-5.3,-5.6,-6.4,"northern_liberties","left_lim",6.675
+"83","NEW ORLEANS",6,7,0,NA,7,-6.7,-5.3,-6.6,-7.4,"new_orleans","right_lim",5.325
+"84","NEW ORLEANS",6,7,0,NA,7,-6.7,-5.3,-6.6,-7.4,"new_orleans","left_lim",6.675
+"85","SOUTHWARK",6,8,0,NA,8,-6.7,-5.3,-7.6,-8.4,"southwark","right_lim",5.325
+"86","SOUTHWARK",6,8,0,NA,8,-6.7,-5.3,-7.6,-8.4,"southwark","left_lim",6.675
+"87","SALEM",6,9,0,NA,9,-6.7,-5.3,-8.6,-9.4,"salem","right_lim",5.325
+"88","SALEM",6,9,0,NA,9,-6.7,-5.3,-8.6,-9.4,"salem","left_lim",6.675
+"89","ALBANY",6,10,0,NA,10,-6.7,-5.3,-9.6,-10.4,"albany","right_lim",5.325
+"90","ALBANY",6,10,0,NA,10,-6.7,-5.3,-9.6,-10.4,"albany","left_lim",6.675
+"91","PROVIDENCE",6,11,0,NA,11,-6.7,-5.3,-10.6,-11.4,"providence","right_lim",5.325
+"92","PROVIDENCE",6,11,0,NA,11,-6.7,-5.3,-10.6,-11.4,"providence","left_lim",6.675
+"93","RICHMOND",6,12,0,NA,12,-6.7,-5.3,-11.6,-12.4,"richmond","right_lim",5.325
+"94","RICHMOND",6,12,0,NA,12,-6.7,-5.3,-11.6,-12.4,"richmond","left_lim",6.675
+"95","NORFOLK",6,13,0,NA,13,-6.7,-5.3,-12.6,-13.4,"norfolk","right_lim",5.325
+"96","NORFOLK",6,13,0,NA,13,-6.7,-5.3,-12.6,-13.4,"norfolk","left_lim",6.675
+"97","WASHINGTON",6,14,1,NA,14,-6.7,-5.3,-13.6,-14.4,"washington","right_lim",5.325
+"98","WASHINGTON",6,14,1,NA,14,-6.7,-5.3,-13.6,-14.4,"washington","left_lim",6.675
+"99","NEWPORT",6,15,0,NA,15,-6.7,-5.3,-14.6,-15.4,"newport","right_lim",5.325
+"100","NEWPORT",6,15,0,NA,15,-6.7,-5.3,-14.6,-15.4,"newport","left_lim",6.675
+"101","NEWBURYPORT",6,16,0,NA,16,-6.7,-5.3,-15.6,-16.4,"newburyport","right_lim",5.325
+"102","NEWBURYPORT",6,16,0,NA,16,-6.7,-5.3,-15.6,-16.4,"newburyport","left_lim",6.675
+"103","ALEXANDRIA",6,17,1,NA,17,-6.7,-5.3,-16.6,-17.4,"alexandria","right_lim",5.325
+"104","ALEXANDRIA",6,17,1,NA,17,-6.7,-5.3,-16.6,-17.4,"alexandria","left_lim",6.675
+"105","PORTLAND",6,18,1,NA,18,-6.7,-5.3,-17.6,-18.4,"portland","right_lim",5.325
+"106","PORTLAND",6,18,1,NA,18,-6.7,-5.3,-17.6,-18.4,"portland","left_lim",6.675
+"107","PORTSMOUTH",6,19,0,NA,19,-6.7,-5.3,-18.6,-19.4,"portsmouth","right_lim",5.325
+"108","PORTSMOUTH",6,19,0,NA,19,-6.7,-5.3,-18.6,-19.4,"portsmouth","left_lim",6.675
+"109","NANTUCKET",6,20,0,NA,20,-6.7,-5.3,-19.6,-20.4,"nantucket","right_lim",5.325
+"110","NANTUCKET",6,20,0,NA,20,-6.7,-5.3,-19.6,-20.4,"nantucket","left_lim",6.675
+"111","GLOUCESTER",6,21,0,NA,21,-6.7,-5.3,-20.6,-21.4,"gloucester","right_lim",5.325
+"112","GLOUCESTER",6,21,0,NA,21,-6.7,-5.3,-20.6,-21.4,"gloucester","left_lim",6.675
+"113","SCHENECTADY",6,22,0,NA,22,-6.7,-5.3,-21.6,-22.4,"schenectady","right_lim",5.325
+"114","SCHENECTADY",6,22,0,NA,22,-6.7,-5.3,-21.6,-22.4,"schenectady","left_lim",6.675
+"115","MARBLEHEAD",6,23,0,"right",23,-6.7,-5.3,-22.6,-23.4,"marblehead","right_lim",5.325
+"116","MARBLEHEAD",6,23,0,"right",23,-6.7,-5.3,-22.6,-23.4,"marblehead","left_lim",6.675
+"117","NEW HAVEN",6,24,0,"right",24,-6.7,-5.3,-23.6,-24.4,"new_haven","right_lim",5.325
+"118","NEW HAVEN",6,24,0,"right",24,-6.7,-5.3,-23.6,-24.4,"new_haven","left_lim",6.675
+"119","PETERSBURG",6,25,0,"right",25,-6.7,-5.3,-24.6,-25.4,"petersburg","right_lim",5.325
+"120","PETERSBURG",6,25,0,"right",25,-6.7,-5.3,-24.6,-25.4,"petersburg","left_lim",6.675
+"121","NEW BEDFORD",6,26,0,"right",26,-6.7,-5.3,-25.6,-26.4,"new_bedford","right_lim",5.325
+"122","NEW BEDFORD",6,26,0,"right",26,-6.7,-5.3,-25.6,-26.4,"new_bedford","left_lim",6.675
+"123","LANCASTER",6,27,0,"right",27,-6.7,-5.3,-26.6,-27.4,"lancaster","right_lim",5.325
+"124","LANCASTER",6,27,0,"right",27,-6.7,-5.3,-26.6,-27.4,"lancaster","left_lim",6.675
+"125","SAVANNAH",6,28,0,"right",28,-6.7,-5.3,-27.6,-28.4,"savannah","right_lim",5.325
+"126","SAVANNAH",6,28,0,"right",28,-6.7,-5.3,-27.6,-28.4,"savannah","left_lim",6.675
+"127","BRIDGEWATER",6,29,0,"right",29,-6.7,-5.3,-28.6,-29.4,"bridgewater","right_lim",5.325
+"128","BRIDGEWATER",6,29,0,"right",29,-6.7,-5.3,-28.6,-29.4,"bridgewater","left_lim",6.675
+"129","NEW YORK",8,1,0,NA,1,-8.7,-7.3,-0.6,-1.4,"new_york","right_lim",7.325
+"130","NEW YORK",8,1,0,NA,1,-8.7,-7.3,-0.6,-1.4,"new_york","left_lim",8.675
+"131","PHILADELPHIA",8,2,0,NA,2,-8.7,-7.3,-1.6,-2.4,"philadelphia","right_lim",7.325
+"132","PHILADELPHIA",8,2,0,NA,2,-8.7,-7.3,-1.6,-2.4,"philadelphia","left_lim",8.675
+"133","BALTIMORE",8,3,0,NA,3,-8.7,-7.3,-2.6,-3.4,"baltimore","right_lim",7.325
+"134","BALTIMORE",8,3,0,NA,3,-8.7,-7.3,-2.6,-3.4,"baltimore","left_lim",8.675
+"135","BOSTON",8,4,0,NA,4,-8.7,-7.3,-3.6,-4.4,"boston","right_lim",7.325
+"136","BOSTON",8,4,0,NA,4,-8.7,-7.3,-3.6,-4.4,"boston","left_lim",8.675
+"137","NEW ORLEANS",8,5,0,NA,5,-8.7,-7.3,-4.6,-5.4,"new_orleans","right_lim",7.325
+"138","NEW ORLEANS",8,5,0,NA,5,-8.7,-7.3,-4.6,-5.4,"new_orleans","left_lim",8.675
+"139","CHARLESTON",8,6,0,NA,6,-8.7,-7.3,-5.6,-6.4,"charleston","right_lim",7.325
+"140","CHARLESTON",8,6,0,NA,6,-8.7,-7.3,-5.6,-6.4,"charleston","left_lim",8.675
+"141","NORTHERN LIBERTIES",8,7,0,NA,7,-8.7,-7.3,-6.6,-7.4,"northern_liberties","right_lim",7.325
+"142","NORTHERN LIBERTIES",8,7,0,NA,7,-8.7,-7.3,-6.6,-7.4,"northern_liberties","left_lim",8.675
+"143","SOUTHWARK",8,8,0,NA,8,-8.7,-7.3,-7.6,-8.4,"southwark","right_lim",7.325
+"144","SOUTHWARK",8,8,0,NA,8,-8.7,-7.3,-7.6,-8.4,"southwark","left_lim",8.675
+"145","WASHINGTON",8,9,0,NA,9,-8.7,-7.3,-8.6,-9.4,"washington","right_lim",7.325
+"146","WASHINGTON",8,9,0,NA,9,-8.7,-7.3,-8.6,-9.4,"washington","left_lim",8.675
+"147","SALEM",8,10,0,NA,10,-8.7,-7.3,-9.6,-10.4,"salem","right_lim",7.325
+"148","SALEM",8,10,0,NA,10,-8.7,-7.3,-9.6,-10.4,"salem","left_lim",8.675
+"149","ALBANY",8,11,0,NA,11,-8.7,-7.3,-10.6,-11.4,"albany","right_lim",7.325
+"150","ALBANY",8,11,0,NA,11,-8.7,-7.3,-10.6,-11.4,"albany","left_lim",8.675
+"151","RICHMOND",8,12,0,NA,12,-8.7,-7.3,-11.6,-12.4,"richmond","right_lim",7.325
+"152","RICHMOND",8,12,0,NA,12,-8.7,-7.3,-11.6,-12.4,"richmond","left_lim",8.675
+"153","PROVIDENCE",8,13,0,NA,13,-8.7,-7.3,-12.6,-13.4,"providence","right_lim",7.325
+"154","PROVIDENCE",8,13,0,NA,13,-8.7,-7.3,-12.6,-13.4,"providence","left_lim",8.675
+"155","CINCINNATI",8,14,1,NA,14,-8.7,-7.3,-13.6,-14.4,"cincinnati","right_lim",7.325
+"156","CINCINNATI",8,14,1,NA,14,-8.7,-7.3,-13.6,-14.4,"cincinnati","left_lim",8.675
+"157","PORTLAND",8,15,0,NA,15,-8.7,-7.3,-14.6,-15.4,"portland","right_lim",7.325
+"158","PORTLAND",8,15,0,NA,15,-8.7,-7.3,-14.6,-15.4,"portland","left_lim",8.675
+"159","NORFOLK",8,16,0,NA,16,-8.7,-7.3,-15.6,-16.4,"norfolk","right_lim",7.325
+"160","NORFOLK",8,16,0,NA,16,-8.7,-7.3,-15.6,-16.4,"norfolk","left_lim",8.675
+"161","ALEXANDRIA",8,17,0,NA,17,-8.7,-7.3,-16.6,-17.4,"alexandria","right_lim",7.325
+"162","ALEXANDRIA",8,17,0,NA,17,-8.7,-7.3,-16.6,-17.4,"alexandria","left_lim",8.675
+"163","SAVANNAH",8,18,0,NA,18,-8.7,-7.3,-17.6,-18.4,"savannah","right_lim",7.325
+"164","SAVANNAH",8,18,0,NA,18,-8.7,-7.3,-17.6,-18.4,"savannah","left_lim",8.675
+"165","GEORGETOWN",8,19,1,NA,19,-8.7,-7.3,-18.6,-19.4,"georgetown","right_lim",7.325
+"166","GEORGETOWN",8,19,1,NA,19,-8.7,-7.3,-18.6,-19.4,"georgetown","left_lim",8.675
+"167","PORTSMOUTH",8,20,0,NA,20,-8.7,-7.3,-19.6,-20.4,"portsmouth","right_lim",7.325
+"168","PORTSMOUTH",8,20,0,NA,20,-8.7,-7.3,-19.6,-20.4,"portsmouth","left_lim",8.675
+"169","NEWPORT",8,21,0,NA,21,-8.7,-7.3,-20.6,-21.4,"newport","right_lim",7.325
+"170","NEWPORT",8,21,0,NA,21,-8.7,-7.3,-20.6,-21.4,"newport","left_lim",8.675
+"171","NANTUCKET",8,22,0,NA,22,-8.7,-7.3,-21.6,-22.4,"nantucket","right_lim",7.325
+"172","NANTUCKET",8,22,0,NA,22,-8.7,-7.3,-21.6,-22.4,"nantucket","left_lim",8.675
+"173","PITTSBURG",8,23,1,NA,23,-8.7,-7.3,-22.6,-23.4,"pittsburg","right_lim",7.325
+"174","PITTSBURG",8,23,1,NA,23,-8.7,-7.3,-22.6,-23.4,"pittsburg","left_lim",8.675
+"175","BROOKLYN",8,24,1,NA,24,-8.7,-7.3,-23.6,-24.4,"brooklyn","right_lim",7.325
+"176","BROOKLYN",8,24,1,NA,24,-8.7,-7.3,-23.6,-24.4,"brooklyn","left_lim",8.675
+"177","NEW HAVEN",8,25,0,NA,25,-8.7,-7.3,-24.6,-25.4,"new_haven","right_lim",7.325
+"178","NEW HAVEN",8,25,0,NA,25,-8.7,-7.3,-24.6,-25.4,"new_haven","left_lim",8.675
+"179","KENSINGTON",8,26,1,NA,26,-8.7,-7.3,-25.6,-26.4,"kensington","right_lim",7.325
+"180","KENSINGTON",8,26,1,NA,26,-8.7,-7.3,-25.6,-26.4,"kensington","left_lim",8.675
+"181","NEWBURYPORT",8,27,0,NA,27,-8.7,-7.3,-26.6,-27.4,"newburyport","right_lim",7.325
+"182","NEWBURYPORT",8,27,0,NA,27,-8.7,-7.3,-26.6,-27.4,"newburyport","left_lim",8.675
+"183","PETERSBURG",8,28,0,NA,28,-8.7,-7.3,-27.6,-28.4,"petersburg","right_lim",7.325
+"184","PETERSBURG",8,28,0,NA,28,-8.7,-7.3,-27.6,-28.4,"petersburg","left_lim",8.675
+"185","LANCASTER",8,29,0,NA,29,-8.7,-7.3,-28.6,-29.4,"lancaster","right_lim",7.325
+"186","LANCASTER",8,29,0,NA,29,-8.7,-7.3,-28.6,-29.4,"lancaster","left_lim",8.675
+"187","CHARLESTOWN",8,30,0,"right",30,-8.7,-7.3,-29.6,-30.4,"charlestown","right_lim",7.325
+"188","CHARLESTOWN",8,30,0,"right",30,-8.7,-7.3,-29.6,-30.4,"charlestown","left_lim",8.675
+"189","NEWARK",8,31,0,"right",31,-8.7,-7.3,-30.6,-31.4,"newark","right_lim",7.325
+"190","NEWARK",8,31,0,"right",31,-8.7,-7.3,-30.6,-31.4,"newark","left_lim",8.675
+"191","GLOUCESTER",8,32,0,"right",32,-8.7,-7.3,-31.6,-32.4,"gloucester","right_lim",7.325
+"192","GLOUCESTER",8,32,0,"right",32,-8.7,-7.3,-31.6,-32.4,"gloucester","left_lim",8.675
+"193","PLOUGHKEEPSIE",8,33,0,"right",33,-8.7,-7.3,-32.6,-33.4,"ploughkeepsie","right_lim",7.325
+"194","PLOUGHKEEPSIE",8,33,0,"right",33,-8.7,-7.3,-32.6,-33.4,"ploughkeepsie","left_lim",8.675
+"195","MARBLEHEAD",8,34,0,"right",34,-8.7,-7.3,-33.6,-34.4,"marblehead","right_lim",7.325
+"196","MARBLEHEAD",8,34,0,"right",34,-8.7,-7.3,-33.6,-34.4,"marblehead","left_lim",8.675
+"197","HUDSON",8,35,0,"right",35,-8.7,-7.3,-34.6,-35.4,"hudson","right_lim",7.325
+"198","HUDSON",8,35,0,"right",35,-8.7,-7.3,-34.6,-35.4,"hudson","left_lim",8.675
+"199","LEXINGTON",8,36,0,"right",36,-8.7,-7.3,-35.6,-36.4,"lexington","right_lim",7.325
+"200","LEXINGTON",8,36,0,"right",36,-8.7,-7.3,-35.6,-36.4,"lexington","left_lim",8.675
+"201","TROY",8,37,0,"right",37,-8.7,-7.3,-36.6,-37.4,"troy","right_lim",7.325
+"202","TROY",8,37,0,"right",37,-8.7,-7.3,-36.6,-37.4,"troy","left_lim",8.675
+"203","HARTFORD",8,38,0,"right",38,-8.7,-7.3,-37.6,-38.4,"hartford","right_lim",7.325
+"204","HARTFORD",8,38,0,"right",38,-8.7,-7.3,-37.6,-38.4,"hartford","left_lim",8.675
+"205","TAUNTON",8,39,0,"right",39,-8.7,-7.3,-38.6,-39.4,"taunton","right_lim",7.325
+"206","TAUNTON",8,39,0,"right",39,-8.7,-7.3,-38.6,-39.4,"taunton","left_lim",8.675
+"207","LYNN",8,40,0,"right",40,-8.7,-7.3,-39.6,-40.4,"lynn","right_lim",7.325
+"208","LYNN",8,40,0,"right",40,-8.7,-7.3,-39.6,-40.4,"lynn","left_lim",8.675
+"209","READING",8,41,0,"right",41,-8.7,-7.3,-40.6,-41.4,"reading","right_lim",7.325
+"210","READING",8,41,0,"right",41,-8.7,-7.3,-40.6,-41.4,"reading","left_lim",8.675
+"211","NEW YORK",10,1,0,NA,1,-10.7,-9.3,-0.6,-1.4,"new_york","right_lim",9.325
+"212","NEW YORK",10,1,0,NA,1,-10.7,-9.3,-0.6,-1.4,"new_york","left_lim",10.675
+"213","BALTIMORE",10,2,0,NA,2,-10.7,-9.3,-1.6,-2.4,"baltimore","right_lim",9.325
+"214","BALTIMORE",10,2,0,NA,2,-10.7,-9.3,-1.6,-2.4,"baltimore","left_lim",10.675
+"215","PHILADELPHIA",10,3,0,NA,3,-10.7,-9.3,-2.6,-3.4,"philadelphia","right_lim",9.325
+"216","PHILADELPHIA",10,3,0,NA,3,-10.7,-9.3,-2.6,-3.4,"philadelphia","left_lim",10.675
+"217","BOSTON",10,4,0,NA,4,-10.7,-9.3,-3.6,-4.4,"boston","right_lim",9.325
+"218","BOSTON",10,4,0,NA,4,-10.7,-9.3,-3.6,-4.4,"boston","left_lim",10.675
+"219","NEW ORLEANS",10,5,0,NA,5,-10.7,-9.3,-4.6,-5.4,"new_orleans","right_lim",9.325
+"220","NEW ORLEANS",10,5,0,NA,5,-10.7,-9.3,-4.6,-5.4,"new_orleans","left_lim",10.675
+"221","CHARLESTON",10,6,0,NA,6,-10.7,-9.3,-5.6,-6.4,"charleston","right_lim",9.325
+"222","CHARLESTON",10,6,0,NA,6,-10.7,-9.3,-5.6,-6.4,"charleston","left_lim",10.675
+"223","NORTHERN LIBERTIES",10,7,0,NA,7,-10.7,-9.3,-6.6,-7.4,"northern_liberties","right_lim",9.325
+"224","NORTHERN LIBERTIES",10,7,0,NA,7,-10.7,-9.3,-6.6,-7.4,"northern_liberties","left_lim",10.675
+"225","CINCINNATI",10,8,0,NA,8,-10.7,-9.3,-7.6,-8.4,"cincinnati","right_lim",9.325
+"226","CINCINNATI",10,8,0,NA,8,-10.7,-9.3,-7.6,-8.4,"cincinnati","left_lim",10.675
+"227","ALBANY",10,9,0,NA,9,-10.7,-9.3,-8.6,-9.4,"albany","right_lim",9.325
+"228","ALBANY",10,9,0,NA,9,-10.7,-9.3,-8.6,-9.4,"albany","left_lim",10.675
+"229","SOUTHWARK",10,10,0,NA,10,-10.7,-9.3,-9.6,-10.4,"southwark","right_lim",9.325
+"230","SOUTHWARK",10,10,0,NA,10,-10.7,-9.3,-9.6,-10.4,"southwark","left_lim",10.675
+"231","WASHINGTON",10,11,0,NA,11,-10.7,-9.3,-10.6,-11.4,"washington","right_lim",9.325
+"232","WASHINGTON",10,11,0,NA,11,-10.7,-9.3,-10.6,-11.4,"washington","left_lim",10.675
+"233","PROVIDENCE",10,12,0,NA,12,-10.7,-9.3,-11.6,-12.4,"providence","right_lim",9.325
+"234","PROVIDENCE",10,12,0,NA,12,-10.7,-9.3,-11.6,-12.4,"providence","left_lim",10.675
+"235","RICHMOND",10,13,0,NA,13,-10.7,-9.3,-12.6,-13.4,"richmond","right_lim",9.325
+"236","RICHMOND",10,13,0,NA,13,-10.7,-9.3,-12.6,-13.4,"richmond","left_lim",10.675
+"237","SALEM",10,14,0,NA,14,-10.7,-9.3,-13.6,-14.4,"salem","right_lim",9.325
+"238","SALEM",10,14,0,NA,14,-10.7,-9.3,-13.6,-14.4,"salem","left_lim",10.675
+"239","KENSINGTON",10,15,0,NA,15,-10.7,-9.3,-14.6,-15.4,"kensington","right_lim",9.325
+"240","KENSINGTON",10,15,0,NA,15,-10.7,-9.3,-14.6,-15.4,"kensington","left_lim",10.675
+"241","PORTLAND",10,16,0,NA,16,-10.7,-9.3,-15.6,-16.4,"portland","right_lim",9.325
+"242","PORTLAND",10,16,0,NA,16,-10.7,-9.3,-15.6,-16.4,"portland","left_lim",10.675
+"243","PITTSBURG",10,17,0,NA,17,-10.7,-9.3,-16.6,-17.4,"pittsburg","right_lim",9.325
+"244","PITTSBURG",10,17,0,NA,17,-10.7,-9.3,-16.6,-17.4,"pittsburg","left_lim",10.675
+"245","BROOKLYN",10,18,0,NA,18,-10.7,-9.3,-17.6,-18.4,"brooklyn","right_lim",9.325
+"246","BROOKLYN",10,18,0,NA,18,-10.7,-9.3,-17.6,-18.4,"brooklyn","left_lim",10.675
+"247","TROY",10,19,0,NA,19,-10.7,-9.3,-18.6,-19.4,"troy","right_lim",9.325
+"248","TROY",10,19,0,NA,19,-10.7,-9.3,-18.6,-19.4,"troy","left_lim",10.675
+"249","SPRING GARDEN",10,20,1,NA,20,-10.7,-9.3,-19.6,-20.4,"spring_garden","right_lim",9.325
+"250","SPRING GARDEN",10,20,1,NA,20,-10.7,-9.3,-19.6,-20.4,"spring_garden","left_lim",10.675
+"251","NEWARK",10,21,0,NA,21,-10.7,-9.3,-20.6,-21.4,"newark","right_lim",9.325
+"252","NEWARK",10,21,0,NA,21,-10.7,-9.3,-20.6,-21.4,"newark","left_lim",10.675
+"253","LOUISVILLE",10,22,1,NA,22,-10.7,-9.3,-21.6,-22.4,"louisville","right_lim",9.325
+"254","LOUISVILLE",10,22,1,NA,22,-10.7,-9.3,-21.6,-22.4,"louisville","left_lim",10.675
+"255","NEW HAVEN",10,23,0,NA,23,-10.7,-9.3,-22.6,-23.4,"new_haven","right_lim",9.325
+"256","NEW HAVEN",10,23,0,NA,23,-10.7,-9.3,-22.6,-23.4,"new_haven","left_lim",10.675
+"257","NORFOLK",10,24,0,NA,24,-10.7,-9.3,-23.6,-24.4,"norfolk","right_lim",9.325
+"258","NORFOLK",10,24,0,NA,24,-10.7,-9.3,-23.6,-24.4,"norfolk","left_lim",10.675
+"259","ROCHESTER",10,25,1,NA,25,-10.7,-9.3,-24.6,-25.4,"rochester","right_lim",9.325
+"260","ROCHESTER",10,25,1,NA,25,-10.7,-9.3,-24.6,-25.4,"rochester","left_lim",10.675
+"261","CHARLESTOWN",10,26,0,NA,26,-10.7,-9.3,-25.6,-26.4,"charlestown","right_lim",9.325
+"262","CHARLESTOWN",10,26,0,NA,26,-10.7,-9.3,-25.6,-26.4,"charlestown","left_lim",10.675
+"263","BUFFALO",10,27,1,NA,27,-10.7,-9.3,-26.6,-27.4,"buffalo","right_lim",9.325
+"264","BUFFALO",10,27,1,NA,27,-10.7,-9.3,-26.6,-27.4,"buffalo","left_lim",10.675
+"265","GEORGETOWN",10,28,1,NA,28,-10.7,-9.3,-27.6,-28.4,"georgetown","right_lim",9.325
+"266","GEORGETOWN",10,28,1,NA,28,-10.7,-9.3,-27.6,-28.4,"georgetown","left_lim",10.675
+"267","UTICA",10,29,1,NA,29,-10.7,-9.3,-28.6,-29.4,"utica","right_lim",9.325
+"268","UTICA",10,29,1,NA,29,-10.7,-9.3,-28.6,-29.4,"utica","left_lim",10.675
+"269","PETERSBURG",10,30,0,NA,30,-10.7,-9.3,-29.6,-30.4,"petersburg","right_lim",9.325
+"270","PETERSBURG",10,30,0,NA,30,-10.7,-9.3,-29.6,-30.4,"petersburg","left_lim",10.675
+"271","ALEXANDRIA",10,31,0,NA,31,-10.7,-9.3,-30.6,-31.4,"alexandria","right_lim",9.325
+"272","ALEXANDRIA",10,31,0,NA,31,-10.7,-9.3,-30.6,-31.4,"alexandria","left_lim",10.675
+"273","PORTSMOUTH",10,32,1,NA,32,-10.7,-9.3,-31.6,-32.4,"portsmouth","right_lim",9.325
+"274","PORTSMOUTH",10,32,1,NA,32,-10.7,-9.3,-31.6,-32.4,"portsmouth","left_lim",10.675
+"275","NEWPORT",10,33,1,NA,33,-10.7,-9.3,-32.6,-33.4,"newport","right_lim",9.325
+"276","NEWPORT",10,33,1,NA,33,-10.7,-9.3,-32.6,-33.4,"newport","left_lim",10.675
+"277","SAVANNAH",10,34,0,NA,34,-10.7,-9.3,-33.6,-34.4,"savannah","right_lim",9.325
+"278","SAVANNAH",10,34,0,NA,34,-10.7,-9.3,-33.6,-34.4,"savannah","left_lim",10.675
+"279","LANCASTER",10,35,0,NA,35,-10.7,-9.3,-34.6,-35.4,"lancaster","right_lim",9.325
+"280","LANCASTER",10,35,0,NA,35,-10.7,-9.3,-34.6,-35.4,"lancaster","left_lim",10.675
+"281","NEW BEDFORD",10,36,1,NA,36,-10.7,-9.3,-35.6,-36.4,"new_bedford","right_lim",9.325
+"282","NEW BEDFORD",10,36,1,NA,36,-10.7,-9.3,-35.6,-36.4,"new_bedford","left_lim",10.675
+"283","GLOUCESTER",10,37,1,NA,37,-10.7,-9.3,-36.6,-37.4,"gloucester","right_lim",9.325
+"284","GLOUCESTER",10,37,1,NA,37,-10.7,-9.3,-36.6,-37.4,"gloucester","left_lim",10.675
+"285","PLOUGHKEEPSIE",10,38,0,NA,38,-10.7,-9.3,-37.6,-38.4,"ploughkeepsie","right_lim",9.325
+"286","PLOUGHKEEPSIE",10,38,0,NA,38,-10.7,-9.3,-37.6,-38.4,"ploughkeepsie","left_lim",10.675
+"287","NANTUCKET",10,39,0,NA,39,-10.7,-9.3,-38.6,-39.4,"nantucket","right_lim",9.325
+"288","NANTUCKET",10,39,0,NA,39,-10.7,-9.3,-38.6,-39.4,"nantucket","left_lim",10.675
+"289","HARTFORD",10,40,0,NA,40,-10.7,-9.3,-39.6,-40.4,"hartford","right_lim",9.325
+"290","HARTFORD",10,40,0,NA,40,-10.7,-9.3,-39.6,-40.4,"hartford","left_lim",10.675
+"291","MOYAMENSING",10,41,1,NA,41,-10.7,-9.3,-40.6,-41.4,"moyamensing","right_lim",9.325
+"292","MOYAMENSING",10,41,1,NA,41,-10.7,-9.3,-40.6,-41.4,"moyamensing","left_lim",10.675
+"293","SPRINGFIELD",10,42,0,"right",42,-10.7,-9.3,-41.6,-42.4,"springfield","right_lim",9.325
+"294","SPRINGFIELD",10,42,0,"right",42,-10.7,-9.3,-41.6,-42.4,"springfield","left_lim",10.675
+"295","LOWELL",10,43,0,"right",43,-10.7,-9.3,-42.6,-43.4,"lowell","right_lim",9.325
+"296","LOWELL",10,43,0,"right",43,-10.7,-9.3,-42.6,-43.4,"lowell","left_lim",10.675
+"297","NEWBURYPORT",10,44,0,"right",44,-10.7,-9.3,-43.6,-44.4,"newburyport","right_lim",9.325
+"298","NEWBURYPORT",10,44,0,"right",44,-10.7,-9.3,-43.6,-44.4,"newburyport","left_lim",10.675
+"299","LYNN",10,45,0,"right",45,-10.7,-9.3,-44.6,-45.4,"lynn","right_lim",9.325
+"300","LYNN",10,45,0,"right",45,-10.7,-9.3,-44.6,-45.4,"lynn","left_lim",10.675
+"301","LEXINGTON",10,46,0,"right",46,-10.7,-9.3,-45.6,-46.4,"lexington","right_lim",9.325
+"302","LEXINGTON",10,46,0,"right",46,-10.7,-9.3,-45.6,-46.4,"lexington","left_lim",10.675
+"303","CAMBRIDGE",10,47,0,"right",47,-10.7,-9.3,-46.6,-47.4,"cambridge","right_lim",9.325
+"304","CAMBRIDGE",10,47,0,"right",47,-10.7,-9.3,-46.6,-47.4,"cambridge","left_lim",10.675
+"305","TAUNTON",10,48,0,"right",48,-10.7,-9.3,-47.6,-48.4,"taunton","right_lim",9.325
+"306","TAUNTON",10,48,0,"right",48,-10.7,-9.3,-47.6,-48.4,"taunton","left_lim",10.675
+"307","READING",10,49,0,"right",49,-10.7,-9.3,-48.6,-49.4,"reading","right_lim",9.325
+"308","READING",10,49,0,"right",49,-10.7,-9.3,-48.6,-49.4,"reading","left_lim",10.675
+"309","NEW YORK",12,1,0,NA,1,-12.7,-11.3,-0.6,-1.4,"new_york","right_lim",11.325
+"310","NEW YORK",12,1,0,NA,1,-12.7,-11.3,-0.6,-1.4,"new_york","left_lim",12.675
+"311","BALTIMORE",12,2,0,NA,2,-12.7,-11.3,-1.6,-2.4,"baltimore","right_lim",11.325
+"312","BALTIMORE",12,2,0,NA,2,-12.7,-11.3,-1.6,-2.4,"baltimore","left_lim",12.675
+"313","NEW ORLEANS",12,3,0,NA,3,-12.7,-11.3,-2.6,-3.4,"new_orleans","right_lim",11.325
+"314","NEW ORLEANS",12,3,0,NA,3,-12.7,-11.3,-2.6,-3.4,"new_orleans","left_lim",12.675
+"315","PHILADELPHIA",12,4,0,NA,4,-12.7,-11.3,-3.6,-4.4,"philadelphia","right_lim",11.325
+"316","PHILADELPHIA",12,4,0,NA,4,-12.7,-11.3,-3.6,-4.4,"philadelphia","left_lim",12.675
+"317","BOSTON",12,5,0,NA,5,-12.7,-11.3,-4.6,-5.4,"boston","right_lim",11.325
+"318","BOSTON",12,5,0,NA,5,-12.7,-11.3,-4.6,-5.4,"boston","left_lim",12.675
+"319","CINCINNATI",12,6,0,NA,6,-12.7,-11.3,-5.6,-6.4,"cincinnati","right_lim",11.325
+"320","CINCINNATI",12,6,0,NA,6,-12.7,-11.3,-5.6,-6.4,"cincinnati","left_lim",12.675
+"321","BROOKLYN",12,7,0,NA,7,-12.7,-11.3,-6.6,-7.4,"brooklyn","right_lim",11.325
+"322","BROOKLYN",12,7,0,NA,7,-12.7,-11.3,-6.6,-7.4,"brooklyn","left_lim",12.675
+"323","NORTHERN LIBERTIES",12,8,0,NA,8,-12.7,-11.3,-7.6,-8.4,"northern_liberties","right_lim",11.325
+"324","NORTHERN LIBERTIES",12,8,0,NA,8,-12.7,-11.3,-7.6,-8.4,"northern_liberties","left_lim",12.675
+"325","ALBANY",12,9,0,NA,9,-12.7,-11.3,-8.6,-9.4,"albany","right_lim",11.325
+"326","ALBANY",12,9,0,NA,9,-12.7,-11.3,-8.6,-9.4,"albany","left_lim",12.675
+"327","CHARLESTON",12,10,0,NA,10,-12.7,-11.3,-9.6,-10.4,"charleston","right_lim",11.325
+"328","CHARLESTON",12,10,0,NA,10,-12.7,-11.3,-9.6,-10.4,"charleston","left_lim",12.675
+"329","SPRING GARDEN",12,11,0,NA,11,-12.7,-11.3,-10.6,-11.4,"spring_garden","right_lim",11.325
+"330","SPRING GARDEN",12,11,0,NA,11,-12.7,-11.3,-10.6,-11.4,"spring_garden","left_lim",12.675
+"331","SOUTHWARK",12,12,0,NA,12,-12.7,-11.3,-11.6,-12.4,"southwark","right_lim",11.325
+"332","SOUTHWARK",12,12,0,NA,12,-12.7,-11.3,-11.6,-12.4,"southwark","left_lim",12.675
+"333","WASHINGTON",12,13,0,NA,13,-12.7,-11.3,-12.6,-13.4,"washington","right_lim",11.325
+"334","WASHINGTON",12,13,0,NA,13,-12.7,-11.3,-12.6,-13.4,"washington","left_lim",12.675
+"335","PROVIDENCE",12,14,0,NA,14,-12.7,-11.3,-13.6,-14.4,"providence","right_lim",11.325
+"336","PROVIDENCE",12,14,0,NA,14,-12.7,-11.3,-13.6,-14.4,"providence","left_lim",12.675
+"337","KENSINGTON",12,15,0,NA,15,-12.7,-11.3,-14.6,-15.4,"kensington","right_lim",11.325
+"338","KENSINGTON",12,15,0,NA,15,-12.7,-11.3,-14.6,-15.4,"kensington","left_lim",12.675
+"339","LOUISVILLE",12,16,0,NA,16,-12.7,-11.3,-15.6,-16.4,"louisville","right_lim",11.325
+"340","LOUISVILLE",12,16,0,NA,16,-12.7,-11.3,-15.6,-16.4,"louisville","left_lim",12.675
+"341","PITTSBURG",12,17,0,NA,17,-12.7,-11.3,-16.6,-17.4,"pittsburg","right_lim",11.325
+"342","PITTSBURG",12,17,0,NA,17,-12.7,-11.3,-16.6,-17.4,"pittsburg","left_lim",12.675
+"343","LOWELL",12,18,0,NA,18,-12.7,-11.3,-17.6,-18.4,"lowell","right_lim",11.325
+"344","LOWELL",12,18,0,NA,18,-12.7,-11.3,-17.6,-18.4,"lowell","left_lim",12.675
+"345","ROCHESTER",12,19,0,NA,19,-12.7,-11.3,-18.6,-19.4,"rochester","right_lim",11.325
+"346","ROCHESTER",12,19,0,NA,19,-12.7,-11.3,-18.6,-19.4,"rochester","left_lim",12.675
+"347","RICHMOND",12,20,0,NA,20,-12.7,-11.3,-19.6,-20.4,"richmond","right_lim",11.325
+"348","RICHMOND",12,20,0,NA,20,-12.7,-11.3,-19.6,-20.4,"richmond","left_lim",12.675
+"349","TROY",12,21,0,NA,21,-12.7,-11.3,-20.6,-21.4,"troy","right_lim",11.325
+"350","TROY",12,21,0,NA,21,-12.7,-11.3,-20.6,-21.4,"troy","left_lim",12.675
+"351","BUFFALO",12,22,0,NA,22,-12.7,-11.3,-21.6,-22.4,"buffalo","right_lim",11.325
+"352","BUFFALO",12,22,0,NA,22,-12.7,-11.3,-21.6,-22.4,"buffalo","left_lim",12.675
+"353","NEWARK",12,23,0,NA,23,-12.7,-11.3,-22.6,-23.4,"newark","right_lim",11.325
+"354","NEWARK",12,23,0,NA,23,-12.7,-11.3,-22.6,-23.4,"newark","left_lim",12.675
+"355","ST. LOUIS",12,24,1,NA,24,-12.7,-11.3,-23.6,-24.4,"st_louis","right_lim",11.325
+"356","ST. LOUIS",12,24,1,NA,24,-12.7,-11.3,-23.6,-24.4,"st_louis","left_lim",12.675
+"357","PORTLAND",12,25,0,NA,25,-12.7,-11.3,-24.6,-25.4,"portland","right_lim",11.325
+"358","PORTLAND",12,25,0,NA,25,-12.7,-11.3,-24.6,-25.4,"portland","left_lim",12.675
+"359","SALEM",12,26,0,NA,26,-12.7,-11.3,-25.6,-26.4,"salem","right_lim",11.325
+"360","SALEM",12,26,0,NA,26,-12.7,-11.3,-25.6,-26.4,"salem","left_lim",12.675
+"361","PORTSMOUTH",12,27,0,NA,27,-12.7,-11.3,-26.6,-27.4,"portsmouth","right_lim",11.325
+"362","PORTSMOUTH",12,27,0,NA,27,-12.7,-11.3,-26.6,-27.4,"portsmouth","left_lim",12.675
+"363","NEW HAVEN",12,28,0,NA,28,-12.7,-11.3,-27.6,-28.4,"new_haven","right_lim",11.325
+"364","NEW HAVEN",12,28,0,NA,28,-12.7,-11.3,-27.6,-28.4,"new_haven","left_lim",12.675
+"365","UTICA",12,29,0,NA,29,-12.7,-11.3,-28.6,-29.4,"utica","right_lim",11.325
+"366","UTICA",12,29,0,NA,29,-12.7,-11.3,-28.6,-29.4,"utica","left_lim",12.675
+"367","MOBILE",12,30,1,NA,30,-12.7,-11.3,-29.6,-30.4,"mobile","right_lim",11.325
+"368","MOBILE",12,30,1,NA,30,-12.7,-11.3,-29.6,-30.4,"mobile","left_lim",12.675
+"369","NEW BEDFORD",12,31,0,NA,31,-12.7,-11.3,-30.6,-31.4,"new_bedford","right_lim",11.325
+"370","NEW BEDFORD",12,31,0,NA,31,-12.7,-11.3,-30.6,-31.4,"new_bedford","left_lim",12.675
+"371","CHARLESTOWN",12,32,0,NA,32,-12.7,-11.3,-31.6,-32.4,"charlestown","right_lim",11.325
+"372","CHARLESTOWN",12,32,0,NA,32,-12.7,-11.3,-31.6,-32.4,"charlestown","left_lim",12.675
+"373","SAVANNAH",12,33,0,NA,33,-12.7,-11.3,-32.6,-33.4,"savannah","right_lim",11.325
+"374","SAVANNAH",12,33,0,NA,33,-12.7,-11.3,-32.6,-33.4,"savannah","left_lim",12.675
+"375","PETERSBURG",12,34,1,NA,34,-12.7,-11.3,-33.6,-34.4,"petersburg","right_lim",11.325
+"376","PETERSBURG",12,34,1,NA,34,-12.7,-11.3,-33.6,-34.4,"petersburg","left_lim",12.675
+"377","SYRACUSE",12,35,1,NA,35,-12.7,-11.3,-34.6,-35.4,"syracuse","right_lim",11.325
+"378","SYRACUSE",12,35,1,NA,35,-12.7,-11.3,-34.6,-35.4,"syracuse","left_lim",12.675
+"379","SPRINGFIELD",12,36,1,NA,36,-12.7,-11.3,-35.6,-36.4,"springfield","right_lim",11.325
+"380","SPRINGFIELD",12,36,1,NA,36,-12.7,-11.3,-35.6,-36.4,"springfield","left_lim",12.675
+"381","NORFOLK",12,37,0,NA,37,-12.7,-11.3,-36.6,-37.4,"norfolk","right_lim",11.325
+"382","NORFOLK",12,37,0,NA,37,-12.7,-11.3,-36.6,-37.4,"norfolk","left_lim",12.675
+"383","ALLEGHENY",12,38,1,NA,38,-12.7,-11.3,-37.6,-38.4,"allegheny","right_lim",11.325
+"384","ALLEGHENY",12,38,1,NA,38,-12.7,-11.3,-37.6,-38.4,"allegheny","left_lim",12.675
+"385","PLOUGHKEEPSIE",12,39,1,NA,39,-12.7,-11.3,-38.6,-39.4,"ploughkeepsie","right_lim",11.325
+"386","PLOUGHKEEPSIE",12,39,1,NA,39,-12.7,-11.3,-38.6,-39.4,"ploughkeepsie","left_lim",12.675
+"387","HARTFORD",12,40,0,NA,40,-12.7,-11.3,-39.6,-40.4,"hartford","right_lim",11.325
+"388","HARTFORD",12,40,0,NA,40,-12.7,-11.3,-39.6,-40.4,"hartford","left_lim",12.675
+"389","LYNN",12,41,0,NA,41,-12.7,-11.3,-40.6,-41.4,"lynn","right_lim",11.325
+"390","LYNN",12,41,0,NA,41,-12.7,-11.3,-40.6,-41.4,"lynn","left_lim",12.675
+"391","DETROIT",12,42,1,NA,42,-12.7,-11.3,-41.6,-42.4,"detroit","right_lim",11.325
+"392","DETROIT",12,42,1,NA,42,-12.7,-11.3,-41.6,-42.4,"detroit","left_lim",12.675
+"393","ROXBURY",12,43,1,NA,43,-12.7,-11.3,-42.6,-43.4,"roxbury","right_lim",11.325
+"394","ROXBURY",12,43,1,NA,43,-12.7,-11.3,-42.6,-43.4,"roxbury","left_lim",12.675
+"395","NANTUCKET",12,44,1,NA,44,-12.7,-11.3,-43.6,-44.4,"nantucket","right_lim",11.325
+"396","NANTUCKET",12,44,1,NA,44,-12.7,-11.3,-43.6,-44.4,"nantucket","left_lim",12.675
+"397","BANGOR",12,45,1,NA,45,-12.7,-11.3,-44.6,-45.4,"bangor","right_lim",11.325
+"398","BANGOR",12,45,1,NA,45,-12.7,-11.3,-44.6,-45.4,"bangor","left_lim",12.675
+"399","ALEXANDRIA",12,46,1,NA,46,-12.7,-11.3,-45.6,-46.4,"alexandria","right_lim",11.325
+"400","ALEXANDRIA",12,46,1,NA,46,-12.7,-11.3,-45.6,-46.4,"alexandria","left_lim",12.675
+"401","LANCASTER",12,47,1,NA,47,-12.7,-11.3,-46.6,-47.4,"lancaster","right_lim",11.325
+"402","LANCASTER",12,47,1,NA,47,-12.7,-11.3,-46.6,-47.4,"lancaster","left_lim",12.675
+"403","READING",12,48,0,NA,48,-12.7,-11.3,-47.6,-48.4,"reading","right_lim",11.325
+"404","READING",12,48,0,NA,48,-12.7,-11.3,-47.6,-48.4,"reading","left_lim",12.675
+"405","CAMBRIDGE",12,49,0,NA,49,-12.7,-11.3,-48.6,-49.4,"cambridge","right_lim",11.325
+"406","CAMBRIDGE",12,49,0,NA,49,-12.7,-11.3,-48.6,-49.4,"cambridge","left_lim",12.675
+"407","WILMINGTON",12,50,0,"right",50,-12.7,-11.3,-49.6,-50.4,"wilmington","right_lim",11.325
+"408","WILMINGTON",12,50,0,"right",50,-12.7,-11.3,-49.6,-50.4,"wilmington","left_lim",12.675
+"409","NEW YORK",14,1,0,NA,1,-14.7,-13.3,-0.6,-1.4,"new_york","right_lim",13.325
+"410","NEW YORK",14,1,0,NA,1,-14.7,-13.3,-0.6,-1.4,"new_york","left_lim",14.675
+"411","BALTIMORE",14,2,0,NA,2,-14.7,-13.3,-1.6,-2.4,"baltimore","right_lim",13.325
+"412","BALTIMORE",14,2,0,NA,2,-14.7,-13.3,-1.6,-2.4,"baltimore","left_lim",14.675
+"413","BOSTON",14,3,0,NA,3,-14.7,-13.3,-2.6,-3.4,"boston","right_lim",13.325
+"414","BOSTON",14,3,0,NA,3,-14.7,-13.3,-2.6,-3.4,"boston","left_lim",14.675
+"415","PHILADELPHIA",14,4,0,NA,4,-14.7,-13.3,-3.6,-4.4,"philadelphia","right_lim",13.325
+"416","PHILADELPHIA",14,4,0,NA,4,-14.7,-13.3,-3.6,-4.4,"philadelphia","left_lim",14.675
+"417","NEW ORLEANS",14,5,0,NA,5,-14.7,-13.3,-4.6,-5.4,"new_orleans","right_lim",13.325
+"418","NEW ORLEANS",14,5,0,NA,5,-14.7,-13.3,-4.6,-5.4,"new_orleans","left_lim",14.675
+"419","CINCINNATI",14,6,0,NA,6,-14.7,-13.3,-5.6,-6.4,"cincinnati","right_lim",13.325
+"420","CINCINNATI",14,6,0,NA,6,-14.7,-13.3,-5.6,-6.4,"cincinnati","left_lim",14.675
+"421","BROOKLYN",14,7,0,NA,7,-14.7,-13.3,-6.6,-7.4,"brooklyn","right_lim",13.325
+"422","BROOKLYN",14,7,0,NA,7,-14.7,-13.3,-6.6,-7.4,"brooklyn","left_lim",14.675
+"423","ST. LOUIS",14,8,0,NA,8,-14.7,-13.3,-7.6,-8.4,"st_louis","right_lim",13.325
+"424","ST. LOUIS",14,8,0,NA,8,-14.7,-13.3,-7.6,-8.4,"st_louis","left_lim",14.675
+"425","SPRING GARDEN",14,9,1,NA,9,-14.7,-13.3,-8.6,-9.4,"spring_garden","right_lim",13.325
+"426","SPRING GARDEN",14,9,1,NA,9,-14.7,-13.3,-8.6,-9.4,"spring_garden","left_lim",14.675
+"427","ALBANY",14,10,0,NA,10,-14.7,-13.3,-9.6,-10.4,"albany","right_lim",13.325
+"428","ALBANY",14,10,0,NA,10,-14.7,-13.3,-9.6,-10.4,"albany","left_lim",14.675
+"429","NORTHERN LIBERTIES",14,11,1,NA,11,-14.7,-13.3,-10.6,-11.4,"northern_liberties","right_lim",13.325
+"430","NORTHERN LIBERTIES",14,11,1,NA,11,-14.7,-13.3,-10.6,-11.4,"northern_liberties","left_lim",14.675
+"431","KENSINGTON",14,12,1,NA,12,-14.7,-13.3,-11.6,-12.4,"kensington","right_lim",13.325
+"432","KENSINGTON",14,12,1,NA,12,-14.7,-13.3,-11.6,-12.4,"kensington","left_lim",14.675
+"433","PITTSBURG",14,13,0,NA,13,-14.7,-13.3,-12.6,-13.4,"pittsburg","right_lim",13.325
+"434","PITTSBURG",14,13,0,NA,13,-14.7,-13.3,-12.6,-13.4,"pittsburg","left_lim",14.675
+"435","LOUISVILLE",14,14,0,NA,14,-14.7,-13.3,-13.6,-14.4,"louisville","right_lim",13.325
+"436","LOUISVILLE",14,14,0,NA,14,-14.7,-13.3,-13.6,-14.4,"louisville","left_lim",14.675
+"437","CHARLESTON",14,15,0,NA,15,-14.7,-13.3,-14.6,-15.4,"charleston","right_lim",13.325
+"438","CHARLESTON",14,15,0,NA,15,-14.7,-13.3,-14.6,-15.4,"charleston","left_lim",14.675
+"439","BUFFALO",14,16,0,NA,16,-14.7,-13.3,-15.6,-16.4,"buffalo","right_lim",13.325
+"440","BUFFALO",14,16,0,NA,16,-14.7,-13.3,-15.6,-16.4,"buffalo","left_lim",14.675
+"441","PROVIDENCE",14,17,0,NA,17,-14.7,-13.3,-16.6,-17.4,"providence","right_lim",13.325
+"442","PROVIDENCE",14,17,0,NA,17,-14.7,-13.3,-16.6,-17.4,"providence","left_lim",14.675
+"443","WASHINGTON",14,18,0,NA,18,-14.7,-13.3,-17.6,-18.4,"washington","right_lim",13.325
+"444","WASHINGTON",14,18,0,NA,18,-14.7,-13.3,-17.6,-18.4,"washington","left_lim",14.675
+"445","NEWARK",14,19,0,NA,19,-14.7,-13.3,-18.6,-19.4,"newark","right_lim",13.325
+"446","NEWARK",14,19,0,NA,19,-14.7,-13.3,-18.6,-19.4,"newark","left_lim",14.675
+"447","SOUTHWARK",14,20,1,NA,20,-14.7,-13.3,-19.6,-20.4,"southwark","right_lim",13.325
+"448","SOUTHWARK",14,20,1,NA,20,-14.7,-13.3,-19.6,-20.4,"southwark","left_lim",14.675
+"449","ROCHESTER",14,21,0,NA,21,-14.7,-13.3,-20.6,-21.4,"rochester","right_lim",13.325
+"450","ROCHESTER",14,21,0,NA,21,-14.7,-13.3,-20.6,-21.4,"rochester","left_lim",14.675
+"451","LOWELL",14,22,0,NA,22,-14.7,-13.3,-21.6,-22.4,"lowell","right_lim",13.325
+"452","LOWELL",14,22,0,NA,22,-14.7,-13.3,-21.6,-22.4,"lowell","left_lim",14.675
+"453","WILLIAMSBURG",14,23,1,NA,23,-14.7,-13.3,-22.6,-23.4,"williamsburg","right_lim",13.325
+"454","WILLIAMSBURG",14,23,1,NA,23,-14.7,-13.3,-22.6,-23.4,"williamsburg","left_lim",14.675
+"455","SAN FRANCISCO",14,24,1,NA,24,-14.7,-13.3,-23.6,-24.4,"san_francisco","right_lim",13.325
+"456","SAN FRANCISCO",14,24,1,NA,24,-14.7,-13.3,-23.6,-24.4,"san_francisco","left_lim",14.675
+"457","CHICAGO",14,25,1,NA,25,-14.7,-13.3,-24.6,-25.4,"chicago","right_lim",13.325
+"458","CHICAGO",14,25,1,NA,25,-14.7,-13.3,-24.6,-25.4,"chicago","left_lim",14.675
+"459","TROY",14,26,0,NA,26,-14.7,-13.3,-25.6,-26.4,"troy","right_lim",13.325
+"460","TROY",14,26,0,NA,26,-14.7,-13.3,-25.6,-26.4,"troy","left_lim",14.675
+"461","RICHMOND",14,27,0,NA,27,-14.7,-13.3,-26.6,-27.4,"richmond","right_lim",13.325
+"462","RICHMOND",14,27,0,NA,27,-14.7,-13.3,-26.6,-27.4,"richmond","left_lim",14.675
+"463","MOYAMENSING",14,28,1,NA,28,-14.7,-13.3,-27.6,-28.4,"moyamensing","right_lim",13.325
+"464","MOYAMENSING",14,28,1,NA,28,-14.7,-13.3,-27.6,-28.4,"moyamensing","left_lim",14.675
+"465","SYRACUSE",14,29,0,NA,29,-14.7,-13.3,-28.6,-29.4,"syracuse","right_lim",13.325
+"466","SYRACUSE",14,29,0,NA,29,-14.7,-13.3,-28.6,-29.4,"syracuse","left_lim",14.675
+"467","ALLEGHENY",14,30,0,NA,30,-14.7,-13.3,-29.6,-30.4,"allegheny","right_lim",13.325
+"468","ALLEGHENY",14,30,0,NA,30,-14.7,-13.3,-29.6,-30.4,"allegheny","left_lim",14.675
+"469","DETROIT",14,31,0,NA,31,-14.7,-13.3,-30.6,-31.4,"detroit","right_lim",13.325
+"470","DETROIT",14,31,0,NA,31,-14.7,-13.3,-30.6,-31.4,"detroit","left_lim",14.675
+"471","PORTLAND",14,32,0,NA,32,-14.7,-13.3,-31.6,-32.4,"portland","right_lim",13.325
+"472","PORTLAND",14,32,0,NA,32,-14.7,-13.3,-31.6,-32.4,"portland","left_lim",14.675
+"473","MOBILE",14,33,0,NA,33,-14.7,-13.3,-32.6,-33.4,"mobile","right_lim",13.325
+"474","MOBILE",14,33,0,NA,33,-14.7,-13.3,-32.6,-33.4,"mobile","left_lim",14.675
+"475","NEW HAVEN",14,34,0,NA,34,-14.7,-13.3,-33.6,-34.4,"new_haven","right_lim",13.325
+"476","NEW HAVEN",14,34,0,NA,34,-14.7,-13.3,-33.6,-34.4,"new_haven","left_lim",14.675
+"477","SALEM",14,35,0,NA,35,-14.7,-13.3,-34.6,-35.4,"salem","right_lim",13.325
+"478","SALEM",14,35,0,NA,35,-14.7,-13.3,-34.6,-35.4,"salem","left_lim",14.675
+"479","MILWAUKEE",14,36,1,NA,36,-14.7,-13.3,-35.6,-36.4,"milwaukee","right_lim",13.325
+"480","MILWAUKEE",14,36,1,NA,36,-14.7,-13.3,-35.6,-36.4,"milwaukee","left_lim",14.675
+"481","ROXBURY",14,37,0,NA,37,-14.7,-13.3,-36.6,-37.4,"roxbury","right_lim",13.325
+"482","ROXBURY",14,37,0,NA,37,-14.7,-13.3,-36.6,-37.4,"roxbury","left_lim",14.675
+"483","HARTFORD",14,38,0,NA,38,-14.7,-13.3,-37.6,-38.4,"hartford","right_lim",13.325
+"484","HARTFORD",14,38,0,NA,38,-14.7,-13.3,-37.6,-38.4,"hartford","left_lim",14.675
+"485","COLUMBUS",14,39,1,NA,39,-14.7,-13.3,-38.6,-39.4,"columbus","right_lim",13.325
+"486","COLUMBUS",14,39,1,NA,39,-14.7,-13.3,-38.6,-39.4,"columbus","left_lim",14.675
+"487","UTICA",14,40,0,NA,40,-14.7,-13.3,-39.6,-40.4,"utica","right_lim",13.325
+"488","UTICA",14,40,0,NA,40,-14.7,-13.3,-39.6,-40.4,"utica","left_lim",14.675
+"489","CHARLESTOWN",14,41,0,NA,41,-14.7,-13.3,-40.6,-41.4,"charlestown","right_lim",13.325
+"490","CHARLESTOWN",14,41,0,NA,41,-14.7,-13.3,-40.6,-41.4,"charlestown","left_lim",14.675
+"491","WORCESTER",14,42,1,NA,42,-14.7,-13.3,-41.6,-42.4,"worcester","right_lim",13.325
+"492","WORCESTER",14,42,1,NA,42,-14.7,-13.3,-41.6,-42.4,"worcester","left_lim",14.675
+"493","CLEVELAND",14,43,1,NA,43,-14.7,-13.3,-42.6,-43.4,"cleveland","right_lim",13.325
+"494","CLEVELAND",14,43,1,NA,43,-14.7,-13.3,-42.6,-43.4,"cleveland","left_lim",14.675
+"495","NEW BEDFORD",14,44,0,NA,44,-14.7,-13.3,-43.6,-44.4,"new_bedford","right_lim",13.325
+"496","NEW BEDFORD",14,44,0,NA,44,-14.7,-13.3,-43.6,-44.4,"new_bedford","left_lim",14.675
+"497","READING",14,45,0,NA,45,-14.7,-13.3,-44.6,-45.4,"reading","right_lim",13.325
+"498","READING",14,45,0,NA,45,-14.7,-13.3,-44.6,-45.4,"reading","left_lim",14.675
+"499","SAVANNAH",14,46,0,NA,46,-14.7,-13.3,-45.6,-46.4,"savannah","right_lim",13.325
+"500","SAVANNAH",14,46,0,NA,46,-14.7,-13.3,-45.6,-46.4,"savannah","left_lim",14.675
+"501","CAMBRIDGE",14,47,0,NA,47,-14.7,-13.3,-46.6,-47.4,"cambridge","right_lim",13.325
+"502","CAMBRIDGE",14,47,0,NA,47,-14.7,-13.3,-46.6,-47.4,"cambridge","left_lim",14.675
+"503","BANGOR",14,48,1,NA,48,-14.7,-13.3,-47.6,-48.4,"bangor","right_lim",13.325
+"504","BANGOR",14,48,1,NA,48,-14.7,-13.3,-47.6,-48.4,"bangor","left_lim",14.675
+"505","NORFOLK",14,49,1,NA,49,-14.7,-13.3,-48.6,-49.4,"norfolk","right_lim",13.325
+"506","NORFOLK",14,49,1,NA,49,-14.7,-13.3,-48.6,-49.4,"norfolk","left_lim",14.675
+"507","LYNN",14,50,0,NA,50,-14.7,-13.3,-49.6,-50.4,"lynn","right_lim",13.325
+"508","LYNN",14,50,0,NA,50,-14.7,-13.3,-49.6,-50.4,"lynn","left_lim",14.675
+"509","NEW YORK",16,1,0,NA,1,-16.7,-15.3,-0.6,-1.4,"new_york","right_lim",15.325
+"510","NEW YORK",16,1,0,NA,1,-16.7,-15.3,-0.6,-1.4,"new_york","left_lim",16.675
+"511","PHILADELPHIA",16,2,0,NA,2,-16.7,-15.3,-1.6,-2.4,"philadelphia","right_lim",15.325
+"512","PHILADELPHIA",16,2,0,NA,2,-16.7,-15.3,-1.6,-2.4,"philadelphia","left_lim",16.675
+"513","BROOKLYN",16,3,0,NA,3,-16.7,-15.3,-2.6,-3.4,"brooklyn","right_lim",15.325
+"514","BROOKLYN",16,3,0,NA,3,-16.7,-15.3,-2.6,-3.4,"brooklyn","left_lim",16.675
+"515","BALTIMORE",16,4,0,NA,4,-16.7,-15.3,-3.6,-4.4,"baltimore","right_lim",15.325
+"516","BALTIMORE",16,4,0,NA,4,-16.7,-15.3,-3.6,-4.4,"baltimore","left_lim",16.675
+"517","BOSTON",16,5,0,NA,5,-16.7,-15.3,-4.6,-5.4,"boston","right_lim",15.325
+"518","BOSTON",16,5,0,NA,5,-16.7,-15.3,-4.6,-5.4,"boston","left_lim",16.675
+"519","NEW ORLEANS",16,6,0,NA,6,-16.7,-15.3,-5.6,-6.4,"new_orleans","right_lim",15.325
+"520","NEW ORLEANS",16,6,0,NA,6,-16.7,-15.3,-5.6,-6.4,"new_orleans","left_lim",16.675
+"521","CINCINNATI",16,7,0,NA,7,-16.7,-15.3,-6.6,-7.4,"cincinnati","right_lim",15.325
+"522","CINCINNATI",16,7,0,NA,7,-16.7,-15.3,-6.6,-7.4,"cincinnati","left_lim",16.675
+"523","ST. LOUIS",16,8,0,NA,8,-16.7,-15.3,-7.6,-8.4,"st_louis","right_lim",15.325
+"524","ST. LOUIS",16,8,0,NA,8,-16.7,-15.3,-7.6,-8.4,"st_louis","left_lim",16.675
+"525","CHICAGO",16,9,0,NA,9,-16.7,-15.3,-8.6,-9.4,"chicago","right_lim",15.325
+"526","CHICAGO",16,9,0,NA,9,-16.7,-15.3,-8.6,-9.4,"chicago","left_lim",16.675
+"527","BUFFALO",16,10,0,NA,10,-16.7,-15.3,-9.6,-10.4,"buffalo","right_lim",15.325
+"528","BUFFALO",16,10,0,NA,10,-16.7,-15.3,-9.6,-10.4,"buffalo","left_lim",16.675
+"529","NEWARK",16,11,0,NA,11,-16.7,-15.3,-10.6,-11.4,"newark","right_lim",15.325
+"530","NEWARK",16,11,0,NA,11,-16.7,-15.3,-10.6,-11.4,"newark","left_lim",16.675
+"531","LOUISVILLE",16,12,0,NA,12,-16.7,-15.3,-11.6,-12.4,"louisville","right_lim",15.325
+"532","LOUISVILLE",16,12,0,NA,12,-16.7,-15.3,-11.6,-12.4,"louisville","left_lim",16.675
+"533","ALBANY",16,13,0,NA,13,-16.7,-15.3,-12.6,-13.4,"albany","right_lim",15.325
+"534","ALBANY",16,13,0,NA,13,-16.7,-15.3,-12.6,-13.4,"albany","left_lim",16.675
+"535","WASHINGTON",16,14,0,NA,14,-16.7,-15.3,-13.6,-14.4,"washington","right_lim",15.325
+"536","WASHINGTON",16,14,0,NA,14,-16.7,-15.3,-13.6,-14.4,"washington","left_lim",16.675
+"537","SAN FRANCISCO",16,15,0,NA,15,-16.7,-15.3,-14.6,-15.4,"san_francisco","right_lim",15.325
+"538","SAN FRANCISCO",16,15,0,NA,15,-16.7,-15.3,-14.6,-15.4,"san_francisco","left_lim",16.675
+"539","PROVIDENCE",16,16,0,NA,16,-16.7,-15.3,-15.6,-16.4,"providence","right_lim",15.325
+"540","PROVIDENCE",16,16,0,NA,16,-16.7,-15.3,-15.6,-16.4,"providence","left_lim",16.675
+"541","PITTSBURG",16,17,0,NA,17,-16.7,-15.3,-16.6,-17.4,"pittsburg","right_lim",15.325
+"542","PITTSBURG",16,17,0,NA,17,-16.7,-15.3,-16.6,-17.4,"pittsburg","left_lim",16.675
+"543","ROCHESTER",16,18,0,NA,18,-16.7,-15.3,-17.6,-18.4,"rochester","right_lim",15.325
+"544","ROCHESTER",16,18,0,NA,18,-16.7,-15.3,-17.6,-18.4,"rochester","left_lim",16.675
+"545","DETROIT",16,19,0,NA,19,-16.7,-15.3,-18.6,-19.4,"detroit","right_lim",15.325
+"546","DETROIT",16,19,0,NA,19,-16.7,-15.3,-18.6,-19.4,"detroit","left_lim",16.675
+"547","MILWAUKEE",16,20,0,NA,20,-16.7,-15.3,-19.6,-20.4,"milwaukee","right_lim",15.325
+"548","MILWAUKEE",16,20,0,NA,20,-16.7,-15.3,-19.6,-20.4,"milwaukee","left_lim",16.675
+"549","CLEVELAND",16,21,0,NA,21,-16.7,-15.3,-20.6,-21.4,"cleveland","right_lim",15.325
+"550","CLEVELAND",16,21,0,NA,21,-16.7,-15.3,-20.6,-21.4,"cleveland","left_lim",16.675
+"551","CHARLESTON",16,22,0,NA,22,-16.7,-15.3,-21.6,-22.4,"charleston","right_lim",15.325
+"552","CHARLESTON",16,22,0,NA,22,-16.7,-15.3,-21.6,-22.4,"charleston","left_lim",16.675
+"553","NEW HAVEN",16,23,0,NA,23,-16.7,-15.3,-22.6,-23.4,"new_haven","right_lim",15.325
+"554","NEW HAVEN",16,23,0,NA,23,-16.7,-15.3,-22.6,-23.4,"new_haven","left_lim",16.675
+"555","TROY",16,24,0,NA,24,-16.7,-15.3,-23.6,-24.4,"troy","right_lim",15.325
+"556","TROY",16,24,0,NA,24,-16.7,-15.3,-23.6,-24.4,"troy","left_lim",16.675
+"557","RICHMOND",16,25,0,NA,25,-16.7,-15.3,-24.6,-25.4,"richmond","right_lim",15.325
+"558","RICHMOND",16,25,0,NA,25,-16.7,-15.3,-24.6,-25.4,"richmond","left_lim",16.675
+"559","LOWELL",16,26,0,NA,26,-16.7,-15.3,-25.6,-26.4,"lowell","right_lim",15.325
+"560","LOWELL",16,26,0,NA,26,-16.7,-15.3,-25.6,-26.4,"lowell","left_lim",16.675
+"561","MOBILE",16,27,0,NA,27,-16.7,-15.3,-26.6,-27.4,"mobile","right_lim",15.325
+"562","MOBILE",16,27,0,NA,27,-16.7,-15.3,-26.6,-27.4,"mobile","left_lim",16.675
+"563","JERSEY CITY",16,28,1,NA,28,-16.7,-15.3,-27.6,-28.4,"jersey_city","right_lim",15.325
+"564","JERSEY CITY",16,28,1,NA,28,-16.7,-15.3,-27.6,-28.4,"jersey_city","left_lim",16.675
+"565","HARTFORD",16,29,0,NA,29,-16.7,-15.3,-28.6,-29.4,"hartford","right_lim",15.325
+"566","HARTFORD",16,29,0,NA,29,-16.7,-15.3,-28.6,-29.4,"hartford","left_lim",16.675
+"567","ALLEGHENY",16,30,0,NA,30,-16.7,-15.3,-29.6,-30.4,"allegheny","right_lim",15.325
+"568","ALLEGHENY",16,30,0,NA,30,-16.7,-15.3,-29.6,-30.4,"allegheny","left_lim",16.675
+"569","SYRACUSE",16,31,0,NA,31,-16.7,-15.3,-30.6,-31.4,"syracuse","right_lim",15.325
+"570","SYRACUSE",16,31,0,NA,31,-16.7,-15.3,-30.6,-31.4,"syracuse","left_lim",16.675
+"571","PORTLAND",16,32,0,NA,32,-16.7,-15.3,-31.6,-32.4,"portland","right_lim",15.325
+"572","PORTLAND",16,32,0,NA,32,-16.7,-15.3,-31.6,-32.4,"portland","left_lim",16.675
+"573","CAMBRIDGE",16,33,0,NA,33,-16.7,-15.3,-32.6,-33.4,"cambridge","right_lim",15.325
+"574","CAMBRIDGE",16,33,0,NA,33,-16.7,-15.3,-32.6,-33.4,"cambridge","left_lim",16.675
+"575","ROXBURY",16,34,1,NA,34,-16.7,-15.3,-33.6,-34.4,"roxbury","right_lim",15.325
+"576","ROXBURY",16,34,1,NA,34,-16.7,-15.3,-33.6,-34.4,"roxbury","left_lim",16.675
+"577","CHARLESTOWN",16,35,0,NA,35,-16.7,-15.3,-34.6,-35.4,"charlestown","right_lim",15.325
+"578","CHARLESTOWN",16,35,0,NA,35,-16.7,-15.3,-34.6,-35.4,"charlestown","left_lim",16.675
+"579","WORCESTER",16,36,0,NA,36,-16.7,-15.3,-35.6,-36.4,"worcester","right_lim",15.325
+"580","WORCESTER",16,36,0,NA,36,-16.7,-15.3,-35.6,-36.4,"worcester","left_lim",16.675
+"581","READING",16,37,0,NA,37,-16.7,-15.3,-36.6,-37.4,"reading","right_lim",15.325
+"582","READING",16,37,0,NA,37,-16.7,-15.3,-36.6,-37.4,"reading","left_lim",16.675
+"583","MEMPHIS",16,38,1,NA,38,-16.7,-15.3,-37.6,-38.4,"memphis","right_lim",15.325
+"584","MEMPHIS",16,38,1,NA,38,-16.7,-15.3,-37.6,-38.4,"memphis","left_lim",16.675
+"585","UTICA",16,39,0,NA,39,-16.7,-15.3,-38.6,-39.4,"utica","right_lim",15.325
+"586","UTICA",16,39,0,NA,39,-16.7,-15.3,-38.6,-39.4,"utica","left_lim",16.675
+"587","NEW BEDFORD",16,40,1,NA,40,-16.7,-15.3,-39.6,-40.4,"new_bedford","right_lim",15.325
+"588","NEW BEDFORD",16,40,1,NA,40,-16.7,-15.3,-39.6,-40.4,"new_bedford","left_lim",16.675
+"589","SAVANNAH",16,41,0,NA,41,-16.7,-15.3,-40.6,-41.4,"savannah","right_lim",15.325
+"590","SAVANNAH",16,41,0,NA,41,-16.7,-15.3,-40.6,-41.4,"savannah","left_lim",16.675
+"591","SALEM",16,42,1,NA,42,-16.7,-15.3,-41.6,-42.4,"salem","right_lim",15.325
+"592","SALEM",16,42,1,NA,42,-16.7,-15.3,-41.6,-42.4,"salem","left_lim",16.675
+"593","WILMINGTON",16,43,0,NA,43,-16.7,-15.3,-42.6,-43.4,"wilmington","right_lim",15.325
+"594","WILMINGTON",16,43,0,NA,43,-16.7,-15.3,-42.6,-43.4,"wilmington","left_lim",16.675
+"595","MANCHESTER",16,44,1,NA,44,-16.7,-15.3,-43.6,-44.4,"manchester","right_lim",15.325
+"596","MANCHESTER",16,44,1,NA,44,-16.7,-15.3,-43.6,-44.4,"manchester","left_lim",16.675
+"597","DAYTON",16,45,1,NA,45,-16.7,-15.3,-44.6,-45.4,"dayton","right_lim",15.325
+"598","DAYTON",16,45,1,NA,45,-16.7,-15.3,-44.6,-45.4,"dayton","left_lim",16.675
+"599","PATERSON",16,46,1,NA,46,-16.7,-15.3,-45.6,-46.4,"paterson","right_lim",15.325
+"600","PATERSON",16,46,1,NA,46,-16.7,-15.3,-45.6,-46.4,"paterson","left_lim",16.675
+"601","LYNN",16,47,0,NA,47,-16.7,-15.3,-46.6,-47.4,"lynn","right_lim",15.325
+"602","LYNN",16,47,0,NA,47,-16.7,-15.3,-46.6,-47.4,"lynn","left_lim",16.675
+"603","INDIANAPOLIS",16,48,1,NA,48,-16.7,-15.3,-47.6,-48.4,"indianapolis","right_lim",15.325
+"604","INDIANAPOLIS",16,48,1,NA,48,-16.7,-15.3,-47.6,-48.4,"indianapolis","left_lim",16.675
+"605","COLUMBUS",16,49,0,NA,49,-16.7,-15.3,-48.6,-49.4,"columbus","right_lim",15.325
+"606","COLUMBUS",16,49,0,NA,49,-16.7,-15.3,-48.6,-49.4,"columbus","left_lim",16.675
+"607","PETERSBURG",16,50,1,NA,50,-16.7,-15.3,-49.6,-50.4,"petersburg","right_lim",15.325
+"608","PETERSBURG",16,50,1,NA,50,-16.7,-15.3,-49.6,-50.4,"petersburg","left_lim",16.675
+"609","NEW YORK",18,1,0,NA,1,-18.7,-17.3,-0.6,-1.4,"new_york","right_lim",17.325
+"610","NEW YORK",18,1,0,NA,1,-18.7,-17.3,-0.6,-1.4,"new_york","left_lim",18.675
+"611","PHILADELPHIA",18,2,0,NA,2,-18.7,-17.3,-1.6,-2.4,"philadelphia","right_lim",17.325
+"612","PHILADELPHIA",18,2,0,NA,2,-18.7,-17.3,-1.6,-2.4,"philadelphia","left_lim",18.675
+"613","BROOKLYN",18,3,0,NA,3,-18.7,-17.3,-2.6,-3.4,"brooklyn","right_lim",17.325
+"614","BROOKLYN",18,3,0,NA,3,-18.7,-17.3,-2.6,-3.4,"brooklyn","left_lim",18.675
+"615","ST. LOUIS",18,4,0,NA,4,-18.7,-17.3,-3.6,-4.4,"st_louis","right_lim",17.325
+"616","ST. LOUIS",18,4,0,NA,4,-18.7,-17.3,-3.6,-4.4,"st_louis","left_lim",18.675
+"617","CHICAGO",18,5,0,NA,5,-18.7,-17.3,-4.6,-5.4,"chicago","right_lim",17.325
+"618","CHICAGO",18,5,0,NA,5,-18.7,-17.3,-4.6,-5.4,"chicago","left_lim",18.675
+"619","BALTIMORE",18,6,0,NA,6,-18.7,-17.3,-5.6,-6.4,"baltimore","right_lim",17.325
+"620","BALTIMORE",18,6,0,NA,6,-18.7,-17.3,-5.6,-6.4,"baltimore","left_lim",18.675
+"621","BOSTON",18,7,0,NA,7,-18.7,-17.3,-6.6,-7.4,"boston","right_lim",17.325
+"622","BOSTON",18,7,0,NA,7,-18.7,-17.3,-6.6,-7.4,"boston","left_lim",18.675
+"623","CINCINNATI",18,8,0,NA,8,-18.7,-17.3,-7.6,-8.4,"cincinnati","right_lim",17.325
+"624","CINCINNATI",18,8,0,NA,8,-18.7,-17.3,-7.6,-8.4,"cincinnati","left_lim",18.675
+"625","NEW ORLEANS",18,9,0,NA,9,-18.7,-17.3,-8.6,-9.4,"new_orleans","right_lim",17.325
+"626","NEW ORLEANS",18,9,0,NA,9,-18.7,-17.3,-8.6,-9.4,"new_orleans","left_lim",18.675
+"627","SAN FRANCISCO",18,10,0,NA,10,-18.7,-17.3,-9.6,-10.4,"san_francisco","right_lim",17.325
+"628","SAN FRANCISCO",18,10,0,NA,10,-18.7,-17.3,-9.6,-10.4,"san_francisco","left_lim",18.675
+"629","BUFFALO",18,11,0,NA,11,-18.7,-17.3,-10.6,-11.4,"buffalo","right_lim",17.325
+"630","BUFFALO",18,11,0,NA,11,-18.7,-17.3,-10.6,-11.4,"buffalo","left_lim",18.675
+"631","WASHINGTON",18,12,0,NA,12,-18.7,-17.3,-11.6,-12.4,"washington","right_lim",17.325
+"632","WASHINGTON",18,12,0,NA,12,-18.7,-17.3,-11.6,-12.4,"washington","left_lim",18.675
+"633","NEWARK",18,13,0,NA,13,-18.7,-17.3,-12.6,-13.4,"newark","right_lim",17.325
+"634","NEWARK",18,13,0,NA,13,-18.7,-17.3,-12.6,-13.4,"newark","left_lim",18.675
+"635","LOUISVILLE",18,14,0,NA,14,-18.7,-17.3,-13.6,-14.4,"louisville","right_lim",17.325
+"636","LOUISVILLE",18,14,0,NA,14,-18.7,-17.3,-13.6,-14.4,"louisville","left_lim",18.675
+"637","CLEVELAND",18,15,0,NA,15,-18.7,-17.3,-14.6,-15.4,"cleveland","right_lim",17.325
+"638","CLEVELAND",18,15,0,NA,15,-18.7,-17.3,-14.6,-15.4,"cleveland","left_lim",18.675
+"639","PITTSBURG",18,16,0,NA,16,-18.7,-17.3,-15.6,-16.4,"pittsburg","right_lim",17.325
+"640","PITTSBURG",18,16,0,NA,16,-18.7,-17.3,-15.6,-16.4,"pittsburg","left_lim",18.675
+"641","JERSEY CITY",18,17,0,NA,17,-18.7,-17.3,-16.6,-17.4,"jersey_city","right_lim",17.325
+"642","JERSEY CITY",18,17,0,NA,17,-18.7,-17.3,-16.6,-17.4,"jersey_city","left_lim",18.675
+"643","DETROIT",18,18,0,NA,18,-18.7,-17.3,-17.6,-18.4,"detroit","right_lim",17.325
+"644","DETROIT",18,18,0,NA,18,-18.7,-17.3,-17.6,-18.4,"detroit","left_lim",18.675
+"645","MILWAUKEE",18,19,0,NA,19,-18.7,-17.3,-18.6,-19.4,"milwaukee","right_lim",17.325
+"646","MILWAUKEE",18,19,0,NA,19,-18.7,-17.3,-18.6,-19.4,"milwaukee","left_lim",18.675
+"647","ALBANY",18,20,0,NA,20,-18.7,-17.3,-19.6,-20.4,"albany","right_lim",17.325
+"648","ALBANY",18,20,0,NA,20,-18.7,-17.3,-19.6,-20.4,"albany","left_lim",18.675
+"649","PROVIDENCE",18,21,0,NA,21,-18.7,-17.3,-20.6,-21.4,"providence","right_lim",17.325
+"650","PROVIDENCE",18,21,0,NA,21,-18.7,-17.3,-20.6,-21.4,"providence","left_lim",18.675
+"651","ROCHESTER",18,22,0,NA,22,-18.7,-17.3,-21.6,-22.4,"rochester","right_lim",17.325
+"652","ROCHESTER",18,22,0,NA,22,-18.7,-17.3,-21.6,-22.4,"rochester","left_lim",18.675
+"653","ALLEGHENY",18,23,0,NA,23,-18.7,-17.3,-22.6,-23.4,"allegheny","right_lim",17.325
+"654","ALLEGHENY",18,23,0,NA,23,-18.7,-17.3,-22.6,-23.4,"allegheny","left_lim",18.675
+"655","RICHMOND",18,24,0,NA,24,-18.7,-17.3,-23.6,-24.4,"richmond","right_lim",17.325
+"656","RICHMOND",18,24,0,NA,24,-18.7,-17.3,-23.6,-24.4,"richmond","left_lim",18.675
+"657","NEW HAVEN",18,25,0,NA,25,-18.7,-17.3,-24.6,-25.4,"new_haven","right_lim",17.325
+"658","NEW HAVEN",18,25,0,NA,25,-18.7,-17.3,-24.6,-25.4,"new_haven","left_lim",18.675
+"659","CHARLESTON",18,26,0,NA,26,-18.7,-17.3,-25.6,-26.4,"charleston","right_lim",17.325
+"660","CHARLESTON",18,26,0,NA,26,-18.7,-17.3,-25.6,-26.4,"charleston","left_lim",18.675
+"661","INDIANAPOLIS",18,27,0,NA,27,-18.7,-17.3,-26.6,-27.4,"indianapolis","right_lim",17.325
+"662","INDIANAPOLIS",18,27,0,NA,27,-18.7,-17.3,-26.6,-27.4,"indianapolis","left_lim",18.675
+"663","TROY",18,28,0,NA,28,-18.7,-17.3,-27.6,-28.4,"troy","right_lim",17.325
+"664","TROY",18,28,0,NA,28,-18.7,-17.3,-27.6,-28.4,"troy","left_lim",18.675
+"665","SYRACUSE",18,29,0,NA,29,-18.7,-17.3,-28.6,-29.4,"syracuse","right_lim",17.325
+"666","SYRACUSE",18,29,0,NA,29,-18.7,-17.3,-28.6,-29.4,"syracuse","left_lim",18.675
+"667","WORCESTER",18,30,0,NA,30,-18.7,-17.3,-29.6,-30.4,"worcester","right_lim",17.325
+"668","WORCESTER",18,30,0,NA,30,-18.7,-17.3,-29.6,-30.4,"worcester","left_lim",18.675
+"669","LOWELL",18,31,0,NA,31,-18.7,-17.3,-30.6,-31.4,"lowell","right_lim",17.325
+"670","LOWELL",18,31,0,NA,31,-18.7,-17.3,-30.6,-31.4,"lowell","left_lim",18.675
+"671","MEMPHIS",18,32,1,NA,32,-18.7,-17.3,-31.6,-32.4,"memphis","right_lim",17.325
+"672","MEMPHIS",18,32,1,NA,32,-18.7,-17.3,-31.6,-32.4,"memphis","left_lim",18.675
+"673","CAMBRIDGE",18,33,0,NA,33,-18.7,-17.3,-32.6,-33.4,"cambridge","right_lim",17.325
+"674","CAMBRIDGE",18,33,0,NA,33,-18.7,-17.3,-32.6,-33.4,"cambridge","left_lim",18.675
+"675","HARTFORD",18,34,0,NA,34,-18.7,-17.3,-33.6,-34.4,"hartford","right_lim",17.325
+"676","HARTFORD",18,34,0,NA,34,-18.7,-17.3,-33.6,-34.4,"hartford","left_lim",18.675
+"677","SCRANTON",18,35,1,NA,35,-18.7,-17.3,-34.6,-35.4,"scranton","right_lim",17.325
+"678","SCRANTON",18,35,1,NA,35,-18.7,-17.3,-34.6,-35.4,"scranton","left_lim",18.675
+"679","READING",18,36,0,NA,36,-18.7,-17.3,-35.6,-36.4,"reading","right_lim",17.325
+"680","READING",18,36,0,NA,36,-18.7,-17.3,-35.6,-36.4,"reading","left_lim",18.675
+"681","PATERSON",18,37,0,NA,37,-18.7,-17.3,-36.6,-37.4,"paterson","right_lim",17.325
+"682","PATERSON",18,37,0,NA,37,-18.7,-17.3,-36.6,-37.4,"paterson","left_lim",18.675
+"683","KANSAS CITY",18,38,1,NA,38,-18.7,-17.3,-37.6,-38.4,"kansas_city","right_lim",17.325
+"684","KANSAS CITY",18,38,1,NA,38,-18.7,-17.3,-37.6,-38.4,"kansas_city","left_lim",18.675
+"685","MOBILE",18,39,1,NA,39,-18.7,-17.3,-38.6,-39.4,"mobile","right_lim",17.325
+"686","MOBILE",18,39,1,NA,39,-18.7,-17.3,-38.6,-39.4,"mobile","left_lim",18.675
+"687","TOLEDO",18,40,1,NA,40,-18.7,-17.3,-39.6,-40.4,"toledo","right_lim",17.325
+"688","TOLEDO",18,40,1,NA,40,-18.7,-17.3,-39.6,-40.4,"toledo","left_lim",18.675
+"689","PORTLAND",18,41,1,NA,41,-18.7,-17.3,-40.6,-41.4,"portland","right_lim",17.325
+"690","PORTLAND",18,41,1,NA,41,-18.7,-17.3,-40.6,-41.4,"portland","left_lim",18.675
+"691","COLUMBUS",18,42,0,NA,42,-18.7,-17.3,-41.6,-42.4,"columbus","right_lim",17.325
+"692","COLUMBUS",18,42,0,NA,42,-18.7,-17.3,-41.6,-42.4,"columbus","left_lim",18.675
+"693","WILMINGTON",18,43,0,NA,43,-18.7,-17.3,-42.6,-43.4,"wilmington","right_lim",17.325
+"694","WILMINGTON",18,43,0,NA,43,-18.7,-17.3,-42.6,-43.4,"wilmington","left_lim",18.675
+"695","DAYTON",18,44,0,NA,44,-18.7,-17.3,-43.6,-44.4,"dayton","right_lim",17.325
+"696","DAYTON",18,44,0,NA,44,-18.7,-17.3,-43.6,-44.4,"dayton","left_lim",18.675
+"697","LAWRENCE",18,45,1,NA,45,-18.7,-17.3,-44.6,-45.4,"lawrence","right_lim",17.325
+"698","LAWRENCE",18,45,1,NA,45,-18.7,-17.3,-44.6,-45.4,"lawrence","left_lim",18.675
+"699","UTICA",18,46,1,NA,46,-18.7,-17.3,-45.6,-46.4,"utica","right_lim",17.325
+"700","UTICA",18,46,1,NA,46,-18.7,-17.3,-45.6,-46.4,"utica","left_lim",18.675
+"701","CHARLESTOWN",18,47,1,NA,47,-18.7,-17.3,-46.6,-47.4,"charlestown","right_lim",17.325
+"702","CHARLESTOWN",18,47,1,NA,47,-18.7,-17.3,-46.6,-47.4,"charlestown","left_lim",18.675
+"703","SAVANNAH",18,48,1,NA,48,-18.7,-17.3,-47.6,-48.4,"savannah","right_lim",17.325
+"704","SAVANNAH",18,48,1,NA,48,-18.7,-17.3,-47.6,-48.4,"savannah","left_lim",18.675
+"705","LYNN",18,49,0,NA,49,-18.7,-17.3,-48.6,-49.4,"lynn","right_lim",17.325
+"706","LYNN",18,49,0,NA,49,-18.7,-17.3,-48.6,-49.4,"lynn","left_lim",18.675
+"707","FALL RIVER",18,50,1,NA,50,-18.7,-17.3,-49.6,-50.4,"fall_river","right_lim",17.325
+"708","FALL RIVER",18,50,1,NA,50,-18.7,-17.3,-49.6,-50.4,"fall_river","left_lim",18.675
+"709","NEW YORK",20,1,0,NA,1,-20.7,-19.3,-0.6,-1.4,"new_york","right_lim",19.325
+"710","NEW YORK",20,1,0,NA,1,-20.7,-19.3,-0.6,-1.4,"new_york","left_lim",20.675
+"711","PHILADELPHIA",20,2,0,NA,2,-20.7,-19.3,-1.6,-2.4,"philadelphia","right_lim",19.325
+"712","PHILADELPHIA",20,2,0,NA,2,-20.7,-19.3,-1.6,-2.4,"philadelphia","left_lim",20.675
+"713","BROOKLYN",20,3,0,NA,3,-20.7,-19.3,-2.6,-3.4,"brooklyn","right_lim",19.325
+"714","BROOKLYN",20,3,0,NA,3,-20.7,-19.3,-2.6,-3.4,"brooklyn","left_lim",20.675
+"715","CHICAGO",20,4,0,NA,4,-20.7,-19.3,-3.6,-4.4,"chicago","right_lim",19.325
+"716","CHICAGO",20,4,0,NA,4,-20.7,-19.3,-3.6,-4.4,"chicago","left_lim",20.675
+"717","BOSTON",20,5,0,NA,5,-20.7,-19.3,-4.6,-5.4,"boston","right_lim",19.325
+"718","BOSTON",20,5,0,NA,5,-20.7,-19.3,-4.6,-5.4,"boston","left_lim",20.675
+"719","ST. LOUIS",20,6,0,NA,6,-20.7,-19.3,-5.6,-6.4,"st_louis","right_lim",19.325
+"720","ST. LOUIS",20,6,0,NA,6,-20.7,-19.3,-5.6,-6.4,"st_louis","left_lim",20.675
+"721","BALTIMORE",20,7,0,NA,7,-20.7,-19.3,-6.6,-7.4,"baltimore","right_lim",19.325
+"722","BALTIMORE",20,7,0,NA,7,-20.7,-19.3,-6.6,-7.4,"baltimore","left_lim",20.675
+"723","CINCINNATI",20,8,0,NA,8,-20.7,-19.3,-7.6,-8.4,"cincinnati","right_lim",19.325
+"724","CINCINNATI",20,8,0,NA,8,-20.7,-19.3,-7.6,-8.4,"cincinnati","left_lim",20.675
+"725","SAN FRANCISCO",20,9,0,NA,9,-20.7,-19.3,-8.6,-9.4,"san_francisco","right_lim",19.325
+"726","SAN FRANCISCO",20,9,0,NA,9,-20.7,-19.3,-8.6,-9.4,"san_francisco","left_lim",20.675
+"727","NEW ORLEANS",20,10,0,NA,10,-20.7,-19.3,-9.6,-10.4,"new_orleans","right_lim",19.325
+"728","NEW ORLEANS",20,10,0,NA,10,-20.7,-19.3,-9.6,-10.4,"new_orleans","left_lim",20.675
+"729","WASHINGTON",20,11,0,NA,11,-20.7,-19.3,-10.6,-11.4,"washington","right_lim",19.325
+"730","WASHINGTON",20,11,0,NA,11,-20.7,-19.3,-10.6,-11.4,"washington","left_lim",20.675
+"731","CLEVELAND",20,12,0,NA,12,-20.7,-19.3,-11.6,-12.4,"cleveland","right_lim",19.325
+"732","CLEVELAND",20,12,0,NA,12,-20.7,-19.3,-11.6,-12.4,"cleveland","left_lim",20.675
+"733","PITTSBURG",20,13,0,NA,13,-20.7,-19.3,-12.6,-13.4,"pittsburg","right_lim",19.325
+"734","PITTSBURG",20,13,0,NA,13,-20.7,-19.3,-12.6,-13.4,"pittsburg","left_lim",20.675
+"735","BUFFALO",20,14,0,NA,14,-20.7,-19.3,-13.6,-14.4,"buffalo","right_lim",19.325
+"736","BUFFALO",20,14,0,NA,14,-20.7,-19.3,-13.6,-14.4,"buffalo","left_lim",20.675
+"737","NEWARK",20,15,0,NA,15,-20.7,-19.3,-14.6,-15.4,"newark","right_lim",19.325
+"738","NEWARK",20,15,0,NA,15,-20.7,-19.3,-14.6,-15.4,"newark","left_lim",20.675
+"739","LOUISVILLE",20,16,0,NA,16,-20.7,-19.3,-15.6,-16.4,"louisville","right_lim",19.325
+"740","LOUISVILLE",20,16,0,NA,16,-20.7,-19.3,-15.6,-16.4,"louisville","left_lim",20.675
+"741","JERSEY CITY",20,17,0,NA,17,-20.7,-19.3,-16.6,-17.4,"jersey_city","right_lim",19.325
+"742","JERSEY CITY",20,17,0,NA,17,-20.7,-19.3,-16.6,-17.4,"jersey_city","left_lim",20.675
+"743","DETROIT",20,18,0,NA,18,-20.7,-19.3,-17.6,-18.4,"detroit","right_lim",19.325
+"744","DETROIT",20,18,0,NA,18,-20.7,-19.3,-17.6,-18.4,"detroit","left_lim",20.675
+"745","MILWAUKEE",20,19,0,NA,19,-20.7,-19.3,-18.6,-19.4,"milwaukee","right_lim",19.325
+"746","MILWAUKEE",20,19,0,NA,19,-20.7,-19.3,-18.6,-19.4,"milwaukee","left_lim",20.675
+"747","PROVIDENCE",20,20,0,NA,20,-20.7,-19.3,-19.6,-20.4,"providence","right_lim",19.325
+"748","PROVIDENCE",20,20,0,NA,20,-20.7,-19.3,-19.6,-20.4,"providence","left_lim",20.675
+"749","ALBANY",20,21,0,NA,21,-20.7,-19.3,-20.6,-21.4,"albany","right_lim",19.325
+"750","ALBANY",20,21,0,NA,21,-20.7,-19.3,-20.6,-21.4,"albany","left_lim",20.675
+"751","ROCHESTER",20,22,0,NA,22,-20.7,-19.3,-21.6,-22.4,"rochester","right_lim",19.325
+"752","ROCHESTER",20,22,0,NA,22,-20.7,-19.3,-21.6,-22.4,"rochester","left_lim",20.675
+"753","ALLEGHENY",20,23,0,NA,23,-20.7,-19.3,-22.6,-23.4,"allegheny","right_lim",19.325
+"754","ALLEGHENY",20,23,0,NA,23,-20.7,-19.3,-22.6,-23.4,"allegheny","left_lim",20.675
+"755","INDIANAPOLIS",20,24,0,NA,24,-20.7,-19.3,-23.6,-24.4,"indianapolis","right_lim",19.325
+"756","INDIANAPOLIS",20,24,0,NA,24,-20.7,-19.3,-23.6,-24.4,"indianapolis","left_lim",20.675
+"757","RICHMOND",20,25,0,NA,25,-20.7,-19.3,-24.6,-25.4,"richmond","right_lim",19.325
+"758","RICHMOND",20,25,0,NA,25,-20.7,-19.3,-24.6,-25.4,"richmond","left_lim",20.675
+"759","NEW HAVEN",20,26,0,NA,26,-20.7,-19.3,-25.6,-26.4,"new_haven","right_lim",19.325
+"760","NEW HAVEN",20,26,0,NA,26,-20.7,-19.3,-25.6,-26.4,"new_haven","left_lim",20.675
+"761","LOWELL",20,27,0,NA,27,-20.7,-19.3,-26.6,-27.4,"lowell","right_lim",19.325
+"762","LOWELL",20,27,0,NA,27,-20.7,-19.3,-26.6,-27.4,"lowell","left_lim",20.675
+"763","WORCESTER",20,28,0,NA,28,-20.7,-19.3,-27.6,-28.4,"worcester","right_lim",19.325
+"764","WORCESTER",20,28,0,NA,28,-20.7,-19.3,-27.6,-28.4,"worcester","left_lim",20.675
+"765","TROY",20,29,0,NA,29,-20.7,-19.3,-28.6,-29.4,"troy","right_lim",19.325
+"766","TROY",20,29,0,NA,29,-20.7,-19.3,-28.6,-29.4,"troy","left_lim",20.675
+"767","KANSAS CITY",20,30,0,NA,30,-20.7,-19.3,-29.6,-30.4,"kansas_city","right_lim",19.325
+"768","KANSAS CITY",20,30,0,NA,30,-20.7,-19.3,-29.6,-30.4,"kansas_city","left_lim",20.675
+"769","CAMBRIDGE",20,31,0,NA,31,-20.7,-19.3,-30.6,-31.4,"cambridge","right_lim",19.325
+"770","CAMBRIDGE",20,31,0,NA,31,-20.7,-19.3,-30.6,-31.4,"cambridge","left_lim",20.675
+"771","SYRACUSE",20,32,0,NA,32,-20.7,-19.3,-31.6,-32.4,"syracuse","right_lim",19.325
+"772","SYRACUSE",20,32,0,NA,32,-20.7,-19.3,-31.6,-32.4,"syracuse","left_lim",20.675
+"773","COLUMBUS",20,33,0,NA,33,-20.7,-19.3,-32.6,-33.4,"columbus","right_lim",19.325
+"774","COLUMBUS",20,33,0,NA,33,-20.7,-19.3,-32.6,-33.4,"columbus","left_lim",20.675
+"775","PATERSON",20,34,0,NA,34,-20.7,-19.3,-33.6,-34.4,"paterson","right_lim",19.325
+"776","PATERSON",20,34,0,NA,34,-20.7,-19.3,-33.6,-34.4,"paterson","left_lim",20.675
+"777","TOLEDO",20,35,0,NA,35,-20.7,-19.3,-34.6,-35.4,"toledo","right_lim",19.325
+"778","TOLEDO",20,35,0,NA,35,-20.7,-19.3,-34.6,-35.4,"toledo","left_lim",20.675
+"779","CHARLESTON",20,36,1,NA,36,-20.7,-19.3,-35.6,-36.4,"charleston","right_lim",19.325
+"780","CHARLESTON",20,36,1,NA,36,-20.7,-19.3,-35.6,-36.4,"charleston","left_lim",20.675
+"781","FALL RIVER",20,37,0,NA,37,-20.7,-19.3,-36.6,-37.4,"fall_river","right_lim",19.325
+"782","FALL RIVER",20,37,0,NA,37,-20.7,-19.3,-36.6,-37.4,"fall_river","left_lim",20.675
+"783","MINNEAPOLIS",20,38,1,NA,38,-20.7,-19.3,-37.6,-38.4,"minneapolis","right_lim",19.325
+"784","MINNEAPOLIS",20,38,1,NA,38,-20.7,-19.3,-37.6,-38.4,"minneapolis","left_lim",20.675
+"785","SCRANTON",20,39,0,NA,39,-20.7,-19.3,-38.6,-39.4,"scranton","right_lim",19.325
+"786","SCRANTON",20,39,0,NA,39,-20.7,-19.3,-38.6,-39.4,"scranton","left_lim",20.675
+"787","NASHVILLE",20,40,1,NA,40,-20.7,-19.3,-39.6,-40.4,"nashville","right_lim",19.325
+"788","NASHVILLE",20,40,1,NA,40,-20.7,-19.3,-39.6,-40.4,"nashville","left_lim",20.675
+"789","READING",20,41,0,NA,41,-20.7,-19.3,-40.6,-41.4,"reading","right_lim",19.325
+"790","READING",20,41,0,NA,41,-20.7,-19.3,-40.6,-41.4,"reading","left_lim",20.675
+"791","WILMINGTON",20,42,0,NA,42,-20.7,-19.3,-41.6,-42.4,"wilmington","right_lim",19.325
+"792","WILMINGTON",20,42,0,NA,42,-20.7,-19.3,-41.6,-42.4,"wilmington","left_lim",20.675
+"793","HARTFORD",20,43,1,NA,43,-20.7,-19.3,-42.6,-43.4,"hartford","right_lim",19.325
+"794","HARTFORD",20,43,1,NA,43,-20.7,-19.3,-42.6,-43.4,"hartford","left_lim",20.675
+"795","CAMDEN",20,44,1,NA,44,-20.7,-19.3,-43.6,-44.4,"camden","right_lim",19.325
+"796","CAMDEN",20,44,1,NA,44,-20.7,-19.3,-43.6,-44.4,"camden","left_lim",20.675
+"797","ST. PAUL",20,45,1,NA,45,-20.7,-19.3,-44.6,-45.4,"st_paul","right_lim",19.325
+"798","ST. PAUL",20,45,1,NA,45,-20.7,-19.3,-44.6,-45.4,"st_paul","left_lim",20.675
+"799","LAWRENCE",20,46,1,NA,46,-20.7,-19.3,-45.6,-46.4,"lawrence","right_lim",19.325
+"800","LAWRENCE",20,46,1,NA,46,-20.7,-19.3,-45.6,-46.4,"lawrence","left_lim",20.675
+"801","DAYTON",20,47,0,NA,47,-20.7,-19.3,-46.6,-47.4,"dayton","right_lim",19.325
+"802","DAYTON",20,47,0,NA,47,-20.7,-19.3,-46.6,-47.4,"dayton","left_lim",20.675
+"803","LYNN",20,48,1,NA,48,-20.7,-19.3,-47.6,-48.4,"lynn","right_lim",19.325
+"804","LYNN",20,48,1,NA,48,-20.7,-19.3,-47.6,-48.4,"lynn","left_lim",20.675
+"805","ATLANTA",20,49,1,NA,49,-20.7,-19.3,-48.6,-49.4,"atlanta","right_lim",19.325
+"806","ATLANTA",20,49,1,NA,49,-20.7,-19.3,-48.6,-49.4,"atlanta","left_lim",20.675
+"807","DENVER",20,50,1,NA,50,-20.7,-19.3,-49.6,-50.4,"denver","right_lim",19.325
+"808","DENVER",20,50,1,NA,50,-20.7,-19.3,-49.6,-50.4,"denver","left_lim",20.675
+"809","NEW YORK",22,1,0,"left",1,-22.7,-21.3,-0.6,-1.4,"new_york","right_lim",21.325
+"810","NEW YORK",22,1,0,"left",1,-22.7,-21.3,-0.6,-1.4,"new_york","left_lim",22.675
+"811","CHICAGO",22,2,0,"left",2,-22.7,-21.3,-1.6,-2.4,"chicago","right_lim",21.325
+"812","CHICAGO",22,2,0,"left",2,-22.7,-21.3,-1.6,-2.4,"chicago","left_lim",22.675
+"813","PHILADELPHIA",22,3,0,"left",3,-22.7,-21.3,-2.6,-3.4,"philadelphia","right_lim",21.325
+"814","PHILADELPHIA",22,3,0,"left",3,-22.7,-21.3,-2.6,-3.4,"philadelphia","left_lim",22.675
+"815","BROOKLYN",22,4,0,"left",4,-22.7,-21.3,-3.6,-4.4,"brooklyn","right_lim",21.325
+"816","BROOKLYN",22,4,0,"left",4,-22.7,-21.3,-3.6,-4.4,"brooklyn","left_lim",22.675
+"817","ST. LOUIS",22,5,0,"left",5,-22.7,-21.3,-4.6,-5.4,"st_louis","right_lim",21.325
+"818","ST. LOUIS",22,5,0,"left",5,-22.7,-21.3,-4.6,-5.4,"st_louis","left_lim",22.675
+"819","BOSTON",22,6,0,"left",6,-22.7,-21.3,-5.6,-6.4,"boston","right_lim",21.325
+"820","BOSTON",22,6,0,"left",6,-22.7,-21.3,-5.6,-6.4,"boston","left_lim",22.675
+"821","BALTIMORE",22,7,0,"left",7,-22.7,-21.3,-6.6,-7.4,"baltimore","right_lim",21.325
+"822","BALTIMORE",22,7,0,"left",7,-22.7,-21.3,-6.6,-7.4,"baltimore","left_lim",22.675
+"823","SAN FRANCISCO",22,8,0,"left",8,-22.7,-21.3,-7.6,-8.4,"san_francisco","right_lim",21.325
+"824","SAN FRANCISCO",22,8,0,"left",8,-22.7,-21.3,-7.6,-8.4,"san_francisco","left_lim",22.675
+"825","CINCINNATI",22,9,0,"left",9,-22.7,-21.3,-8.6,-9.4,"cincinnati","right_lim",21.325
+"826","CINCINNATI",22,9,0,"left",9,-22.7,-21.3,-8.6,-9.4,"cincinnati","left_lim",22.675
+"827","CLEVELAND",22,10,0,"left",10,-22.7,-21.3,-9.6,-10.4,"cleveland","right_lim",21.325
+"828","CLEVELAND",22,10,0,"left",10,-22.7,-21.3,-9.6,-10.4,"cleveland","left_lim",22.675
+"829","BUFFALO",22,11,0,"left",11,-22.7,-21.3,-10.6,-11.4,"buffalo","right_lim",21.325
+"830","BUFFALO",22,11,0,"left",11,-22.7,-21.3,-10.6,-11.4,"buffalo","left_lim",22.675
+"831","NEW ORLEANS",22,12,0,"left",12,-22.7,-21.3,-11.6,-12.4,"new_orleans","right_lim",21.325
+"832","NEW ORLEANS",22,12,0,"left",12,-22.7,-21.3,-11.6,-12.4,"new_orleans","left_lim",22.675
+"833","PITTSBURG",22,13,0,"left",13,-22.7,-21.3,-12.6,-13.4,"pittsburg","right_lim",21.325
+"834","PITTSBURG",22,13,0,"left",13,-22.7,-21.3,-12.6,-13.4,"pittsburg","left_lim",22.675
+"835","WASHINGTON",22,14,0,"left",14,-22.7,-21.3,-13.6,-14.4,"washington","right_lim",21.325
+"836","WASHINGTON",22,14,0,"left",14,-22.7,-21.3,-13.6,-14.4,"washington","left_lim",22.675
+"837","DETROIT",22,15,0,"left",15,-22.7,-21.3,-14.6,-15.4,"detroit","right_lim",21.325
+"838","DETROIT",22,15,0,"left",15,-22.7,-21.3,-14.6,-15.4,"detroit","left_lim",22.675
+"839","MILWAUKEE",22,16,0,"left",16,-22.7,-21.3,-15.6,-16.4,"milwaukee","right_lim",21.325
+"840","MILWAUKEE",22,16,0,"left",16,-22.7,-21.3,-15.6,-16.4,"milwaukee","left_lim",22.675
+"841","NEWARK",22,17,0,"left",17,-22.7,-21.3,-16.6,-17.4,"newark","right_lim",21.325
+"842","NEWARK",22,17,0,"left",17,-22.7,-21.3,-16.6,-17.4,"newark","left_lim",22.675
+"843","MINNEAPOLIS",22,18,0,"left",18,-22.7,-21.3,-17.6,-18.4,"minneapolis","right_lim",21.325
+"844","MINNEAPOLIS",22,18,0,"left",18,-22.7,-21.3,-17.6,-18.4,"minneapolis","left_lim",22.675
+"845","JERSEY CITY",22,19,0,"left",19,-22.7,-21.3,-18.6,-19.4,"jersey_city","right_lim",21.325
+"846","JERSEY CITY",22,19,0,"left",19,-22.7,-21.3,-18.6,-19.4,"jersey_city","left_lim",22.675
+"847","LOUISVILLE",22,20,0,"left",20,-22.7,-21.3,-19.6,-20.4,"louisville","right_lim",21.325
+"848","LOUISVILLE",22,20,0,"left",20,-22.7,-21.3,-19.6,-20.4,"louisville","left_lim",22.675
+"849","OMAHA",22,21,0,"left",21,-22.7,-21.3,-20.6,-21.4,"omaha","right_lim",21.325
+"850","OMAHA",22,21,0,"left",21,-22.7,-21.3,-20.6,-21.4,"omaha","left_lim",22.675
+"851","ROCHESTER",22,22,0,"left",22,-22.7,-21.3,-21.6,-22.4,"rochester","right_lim",21.325
+"852","ROCHESTER",22,22,0,"left",22,-22.7,-21.3,-21.6,-22.4,"rochester","left_lim",22.675
+"853","ST. PAUL",22,23,0,"left",23,-22.7,-21.3,-22.6,-23.4,"st_paul","right_lim",21.325
+"854","ST. PAUL",22,23,0,"left",23,-22.7,-21.3,-22.6,-23.4,"st_paul","left_lim",22.675
+"855","KANSAS CITY",22,24,0,"left",24,-22.7,-21.3,-23.6,-24.4,"kansas_city","right_lim",21.325
+"856","KANSAS CITY",22,24,0,"left",24,-22.7,-21.3,-23.6,-24.4,"kansas_city","left_lim",22.675
+"857","PROVIDENCE",22,25,0,"left",25,-22.7,-21.3,-24.6,-25.4,"providence","right_lim",21.325
+"858","PROVIDENCE",22,25,0,"left",25,-22.7,-21.3,-24.6,-25.4,"providence","left_lim",22.675
+"859","DENVER",22,26,0,"left",26,-22.7,-21.3,-25.6,-26.4,"denver","right_lim",21.325
+"860","DENVER",22,26,0,"left",26,-22.7,-21.3,-25.6,-26.4,"denver","left_lim",22.675
+"861","INDIANAPOLIS",22,27,0,"left",27,-22.7,-21.3,-26.6,-27.4,"indianapolis","right_lim",21.325
+"862","INDIANAPOLIS",22,27,0,"left",27,-22.7,-21.3,-26.6,-27.4,"indianapolis","left_lim",22.675
+"863","ALLEGHENY",22,28,0,"left",28,-22.7,-21.3,-27.6,-28.4,"allegheny","right_lim",21.325
+"864","ALLEGHENY",22,28,0,"left",28,-22.7,-21.3,-27.6,-28.4,"allegheny","left_lim",22.675
+"865","ALBANY",22,29,0,"left",29,-22.7,-21.3,-28.6,-29.4,"albany","right_lim",21.325
+"866","ALBANY",22,29,0,"left",29,-22.7,-21.3,-28.6,-29.4,"albany","left_lim",22.675
+"867","COLUMBUS",22,30,0,"left",30,-22.7,-21.3,-29.6,-30.4,"columbus","right_lim",21.325
+"868","COLUMBUS",22,30,0,"left",30,-22.7,-21.3,-29.6,-30.4,"columbus","left_lim",22.675
+"869","SYRACUSE",22,31,0,"left",31,-22.7,-21.3,-30.6,-31.4,"syracuse","right_lim",21.325
+"870","SYRACUSE",22,31,0,"left",31,-22.7,-21.3,-30.6,-31.4,"syracuse","left_lim",22.675
+"871","WORCESTER",22,32,0,"left",32,-22.7,-21.3,-31.6,-32.4,"worcester","right_lim",21.325
+"872","WORCESTER",22,32,0,"left",32,-22.7,-21.3,-31.6,-32.4,"worcester","left_lim",22.675
+"873","TOLEDO",22,33,0,"left",33,-22.7,-21.3,-32.6,-33.4,"toledo","right_lim",21.325
+"874","TOLEDO",22,33,0,"left",33,-22.7,-21.3,-32.6,-33.4,"toledo","left_lim",22.675
+"875","RICHMOND",22,34,0,"left",34,-22.7,-21.3,-33.6,-34.4,"richmond","right_lim",21.325
+"876","RICHMOND",22,34,0,"left",34,-22.7,-21.3,-33.6,-34.4,"richmond","left_lim",22.675
+"877","NEW HAVEN",22,35,0,"left",35,-22.7,-21.3,-34.6,-35.4,"new_haven","right_lim",21.325
+"878","NEW HAVEN",22,35,0,"left",35,-22.7,-21.3,-34.6,-35.4,"new_haven","left_lim",22.675
+"879","PATERSON",22,36,0,"left",36,-22.7,-21.3,-35.6,-36.4,"paterson","right_lim",21.325
+"880","PATERSON",22,36,0,"left",36,-22.7,-21.3,-35.6,-36.4,"paterson","left_lim",22.675
+"881","LOWELL",22,37,0,"left",37,-22.7,-21.3,-36.6,-37.4,"lowell","right_lim",21.325
+"882","LOWELL",22,37,0,"left",37,-22.7,-21.3,-36.6,-37.4,"lowell","left_lim",22.675
+"883","NASHVILLE",22,38,0,"left",38,-22.7,-21.3,-37.6,-38.4,"nashville","right_lim",21.325
+"884","NASHVILLE",22,38,0,"left",38,-22.7,-21.3,-37.6,-38.4,"nashville","left_lim",22.675
+"885","SCRANTON",22,39,0,"left",39,-22.7,-21.3,-38.6,-39.4,"scranton","right_lim",21.325
+"886","SCRANTON",22,39,0,"left",39,-22.7,-21.3,-38.6,-39.4,"scranton","left_lim",22.675
+"887","FALL RIVER",22,40,0,"left",40,-22.7,-21.3,-39.6,-40.4,"fall_river","right_lim",21.325
+"888","FALL RIVER",22,40,0,"left",40,-22.7,-21.3,-39.6,-40.4,"fall_river","left_lim",22.675
+"889","CAMBRIDGE",22,41,0,"left",41,-22.7,-21.3,-40.6,-41.4,"cambridge","right_lim",21.325
+"890","CAMBRIDGE",22,41,0,"left",41,-22.7,-21.3,-40.6,-41.4,"cambridge","left_lim",22.675
+"891","ATLANTA",22,42,0,"left",42,-22.7,-21.3,-41.6,-42.4,"atlanta","right_lim",21.325
+"892","ATLANTA",22,42,0,"left",42,-22.7,-21.3,-41.6,-42.4,"atlanta","left_lim",22.675
+"893","MEMPHIS",22,43,0,"left",43,-22.7,-21.3,-42.6,-43.4,"memphis_2","right_lim",21.325
+"894","MEMPHIS",22,43,0,"left",43,-22.7,-21.3,-42.6,-43.4,"memphis_2","left_lim",22.675
+"895","WILMINGTON",22,44,0,"left",44,-22.7,-21.3,-43.6,-44.4,"wilmington","right_lim",21.325
+"896","WILMINGTON",22,44,0,"left",44,-22.7,-21.3,-43.6,-44.4,"wilmington","left_lim",22.675
+"897","DAYTON",22,45,0,"left",45,-22.7,-21.3,-44.6,-45.4,"dayton","right_lim",21.325
+"898","DAYTON",22,45,0,"left",45,-22.7,-21.3,-44.6,-45.4,"dayton","left_lim",22.675
+"899","TROY",22,46,0,"left",46,-22.7,-21.3,-45.6,-46.4,"troy","right_lim",21.325
+"900","TROY",22,46,0,"left",46,-22.7,-21.3,-45.6,-46.4,"troy","left_lim",22.675
+"901","GRAND RAPIDS",22,47,0,"left",47,-22.7,-21.3,-46.6,-47.4,"grand_rapids","right_lim",21.325
+"902","GRAND RAPIDS",22,47,0,"left",47,-22.7,-21.3,-46.6,-47.4,"grand_rapids","left_lim",22.675
+"903","READING",22,48,0,"left",48,-22.7,-21.3,-47.6,-48.4,"reading","right_lim",21.325
+"904","READING",22,48,0,"left",48,-22.7,-21.3,-47.6,-48.4,"reading","left_lim",22.675
+"905","CAMDEN",22,49,0,"left",49,-22.7,-21.3,-48.6,-49.4,"camden","right_lim",21.325
+"906","CAMDEN",22,49,0,"left",49,-22.7,-21.3,-48.6,-49.4,"camden","left_lim",22.675
+"907","TRENTON",22,50,0,"left",50,-22.7,-21.3,-49.6,-50.4,"trenton","right_lim",21.325
+"908","TRENTON",22,50,0,"left",50,-22.7,-21.3,-49.6,-50.4,"trenton","left_lim",22.675

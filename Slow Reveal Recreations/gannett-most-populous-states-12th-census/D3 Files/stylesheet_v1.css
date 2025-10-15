@@ -1,0 +1,30 @@
+
+
+.tooltip {
+    width: 200px;
+    position: absolute;
+    text-align: center;
+    padding: 6px;
+    font-size: 12px;
+    background: lightsteelblue;
+    border: 1px solid #999;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+body {
+  background-color: #f1d9b5;
+}
+
+.city.center {
+    font-size: 10px;
+    fill: black;
+    font-weight: regular;
+}
+
+.city {
+  font-size: 12px;
+  fill: black;
+  font-weight: regular;
+}
